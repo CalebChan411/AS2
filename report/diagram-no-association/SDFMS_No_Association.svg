@@ -1,0 +1,1242 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7060.800000000001" height="6557" viewBox="0 0 7060.800000000001 6557">
+<rect width="7060.800000000001" height="6557" fill="#fff"/>
+<defs>
+<marker id="H" markerWidth="16" markerHeight="13" refX="15" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M 1,1 L 15,6.5 L 1,12 Z" fill="white" stroke="#334155" stroke-width="2.3"/></marker>
+<marker id="R" markerWidth="16" markerHeight="13" refX="15" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M 1,1 L 15,6.5 L 1,12 Z" fill="white" stroke="#7c3aed" stroke-width="2.3"/></marker>
+<marker id="C" markerWidth="12" markerHeight="11" refX="11" refY="5.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M 1,1 L 11,5.5 L 1,10" fill="none" stroke="#0891b2" stroke-width="2.3"/></marker>
+<marker id="U" markerWidth="12" markerHeight="11" refX="11" refY="5.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M 1,1 L 11,5.5 L 1,10" fill="none" stroke="#64748b" stroke-width="2.3"/></marker>
+</defs>
+<text x="70" y="58" font-family="DejaVu Sans" font-size="36" font-weight="bold" fill="#0f172a">SDFMS | Dependency and inheritance view - no associations</text>
+<text x="70" y="95" font-family="DejaVu Sans" font-size="18" fill="#475569">47 project types + RuntimeException (JDK) | 95 relationships | Main: 3 usage dependencies | AS2 main bf10bec</text>
+<path d="M70,137 H130" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#H)"/><text x="150" y="143" font-family="DejaVu Sans" font-size="17" fill="#334155">H - extends / generalization</text>
+<path d="M690,137 H750" fill="none" stroke="#7c3aed" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#R)"/><text x="770" y="143" font-family="DejaVu Sans" font-size="17" fill="#7c3aed">R - implements / realization</text>
+<path d="M1310,137 H1370" fill="none" stroke="#0891b2" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#C)"/><text x="1390" y="143" font-family="DejaVu Sans" font-size="17" fill="#0891b2">C - create dependency</text>
+<path d="M1930,137 H1990" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#U)"/><text x="2010" y="143" font-family="DejaVu Sans" font-size="17" fill="#64748b">U - usage dependency</text>
+<text x="70" y="185" font-family="DejaVu Sans" font-size="17" fill="#475569">No Association lines. Main startup construction links are intentionally omitted. White gaps mark crossings, not junctions. Underlined = static; italic = abstract.</text>
+<text x="70" y="219" font-family="DejaVu Sans" font-size="17" fill="#475569">Node headers: teal = commands; violet = factories; blue = domain; amber = history/mementos; slate = wiring/support.</text>
+<g transform="translate(70,265)">
+<g id="edge-H01" data-source="AddDriverCommand" data-target="UndoableCommand" data-kind="H"><title>H01: AddDriverCommand → UndoableCommand</title>
+<path d="M 3134.9,4279 L 3176.2000000000003,4279 L 3176.2000000000003,4136 L 3904.2000000000003,4136 L 3904.2000000000003,2654 L 4245.200000000001,2654" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3134.9,4279 L 3176.2000000000003,4279 L 3176.2000000000003,4136 L 3904.2000000000003,4136 L 3904.2000000000003,2654 L 4245.200000000001,2654" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-R01" data-source="AddDriverCommandFactory" data-target="CommandFactory" data-kind="R"><title>R01: AddDriverCommandFactory → CommandFactory</title>
+<path d="M 2164.8,4567 L 2199.8,4567 L 2199.8,4078 L 2345.2,4078 L 3176.2000000000003,4078 L 3176.2000000000003,4103 L 3496.2000000000003,4103 L 3860.2000000000003,4103 L 3860.2000000000003,2039 L 4229.661538461539,2039" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,4567 L 2199.8,4567 L 2199.8,4078 L 2345.2,4078 L 3176.2000000000003,4078 L 3176.2000000000003,4103 L 3496.2000000000003,4103 L 3860.2000000000003,4103 L 3860.2000000000003,2039 L 4229.661538461539,2039" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-R02" data-source="BaseCommand" data-target="Command" data-kind="R"><title>R02: BaseCommand → Command</title>
+<path d="M 6150.9,1455 L 6483.800000000001,1455 L 6483.800000000001,1890 L 6628.800000000001,1890" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 6150.9,1455 L 6483.800000000001,1455 L 6483.800000000001,1890 L 6628.800000000001,1890" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-H02" data-source="ChangeNameCommand" data-target="UndoableCommand" data-kind="H"><title>H02: ChangeNameCommand → UndoableCommand</title>
+<path d="M 3126.08,219 L 3198.2000000000003,219 L 3198.2000000000003,335 L 4124.200000000001,335 L 4124.200000000001,2532 L 4245.200000000001,2532" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3126.08,219 L 3198.2000000000003,219 L 3198.2000000000003,335 L 4124.200000000001,335 L 4124.200000000001,2532 L 4245.200000000001,2532" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-R03" data-source="ChangeNameCommandFactory" data-target="CommandFactory" data-kind="R"><title>R03: ChangeNameCommandFactory → CommandFactory</title>
+<path d="M 2164.8,240 L 2199.8,240 L 2199.8,626 L 2345.2,626 L 3496.2000000000003,626 L 4058.2000000000003,626 L 4058.2000000000003,1839 L 4229.661538461539,1839" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,240 L 2199.8,240 L 2199.8,626 L 2345.2,626 L 3496.2000000000003,626 L 4058.2000000000003,626 L 4058.2000000000003,1839 L 4229.661538461539,1839" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-H03" data-source="CommandExecutionException" data-target="RuntimeException" data-kind="H"><title>H03: CommandExecutionException → RuntimeException</title>
+<path d="M 6260.800000000001,2960 L 6628.800000000001,2960" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 6260.800000000001,2960 L 6628.800000000001,2960" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-H04" data-source="CreateFleetCommand" data-target="UndoableCommand" data-kind="H"><title>H04: CreateFleetCommand → UndoableCommand</title>
+<path d="M 3138.4000000000005,1737 L 3176.2000000000003,1737 L 3176.2000000000003,1630 L 3882.2000000000003,1630 L 3882.2000000000003,2563 L 4245.200000000001,2563" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3138.4000000000005,1737 L 3176.2000000000003,1737 L 3176.2000000000003,1630 L 3882.2000000000003,1630 L 3882.2000000000003,2563 L 4245.200000000001,2563" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-R04" data-source="CreateFleetCommandFactory" data-target="CommandFactory" data-kind="R"><title>R04: CreateFleetCommandFactory → CommandFactory</title>
+<path d="M 2164.8,1517 L 2199.8,1517 L 2199.8,1499 L 2345.2,1499 L 3496.2000000000003,1499 L 3904.2000000000003,1499 L 3904.2000000000003,1919 L 4229.661538461539,1919" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,1517 L 2199.8,1517 L 2199.8,1499 L 2345.2,1499 L 3496.2000000000003,1499 L 3904.2000000000003,1499 L 3904.2000000000003,1919 L 4229.661538461539,1919" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-H05" data-source="DeleteDriverCommand" data-target="UndoableCommand" data-kind="H"><title>H05: DeleteDriverCommand → UndoableCommand</title>
+<path d="M 3128.6000000000004,2768 L 3176.2000000000003,2768 L 3176.2000000000003,2782 L 3838.2000000000003,2782 L 3838.2000000000003,2593 L 4245.200000000001,2593" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3128.6000000000004,2768 L 3176.2000000000003,2768 L 3176.2000000000003,2782 L 3838.2000000000003,2782 L 3838.2000000000003,2593 L 4245.200000000001,2593" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-R05" data-source="DeleteDriverCommandFactory" data-target="CommandFactory" data-kind="R"><title>R05: DeleteDriverCommandFactory → CommandFactory</title>
+<path d="M 2164.8,2355 L 2199.8,2355 L 2199.8,2075 L 2345.2,2075 L 3176.2000000000003,2075 L 3176.2000000000003,2000 L 3496.2000000000003,2000 L 3706.2000000000003,2000 L 3706.2000000000003,1939 L 4229.661538461539,1939" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,2355 L 2199.8,2355 L 2199.8,2075 L 2345.2,2075 L 3176.2000000000003,2075 L 3176.2000000000003,2000 L 3496.2000000000003,2000 L 3706.2000000000003,2000 L 3706.2000000000003,1939 L 4229.661538461539,1939" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-H06" data-source="DeliveryVanFleet" data-target="VehicleFleet" data-kind="H"><title>H06: DeliveryVanFleet → VehicleFleet</title>
+<path d="M 4705.4,4882 L 5732.200000000001,4882 L 5732.200000000001,3788 L 5855.200000000001,3788" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4705.4,4882 L 5732.200000000001,4882 L 5732.200000000001,3788 L 5855.200000000001,3788" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-R06" data-source="DeliveryVanFleetFactory" data-target="FleetFactory" data-kind="R"><title>R06: DeliveryVanFleetFactory → FleetFactory</title>
+<path d="M 3141.2000000000003,5033 L 3264.2000000000003,5033 L 3264.2000000000003,4713 L 4036.2000000000003,4713 L 4036.2000000000003,4184 L 4238.200000000001,4184" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,5033 L 3264.2000000000003,5033 L 3264.2000000000003,4713 L 4036.2000000000003,4713 L 4036.2000000000003,4184 L 4238.200000000001,4184" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-R07" data-source="DriverRoleMemento" data-target="Memento" data-kind="R"><title>R07: DriverRoleMemento → Memento</title>
+<path d="M 4680.200000000001,2988 L 5314.200000000001,2988 L 5314.200000000001,1248 L 5855.200000000001,1248" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4680.200000000001,2988 L 5314.200000000001,2988 L 5314.200000000001,1248 L 5855.200000000001,1248" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-R08" data-source="FleetNameMemento" data-target="Memento" data-kind="R"><title>R08: FleetNameMemento → Memento</title>
+<path d="M 4697,203 L 5732.200000000001,203 L 5732.200000000001,1190 L 5855.200000000001,1190" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4697,203 L 5732.200000000001,203 L 5732.200000000001,1190 L 5855.200000000001,1190" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-H07" data-source="ListCommand" data-target="BaseCommand" data-kind="H"><title>H07: ListCommand → BaseCommand</title>
+<path d="M 4692.8,776 L 5666.200000000001,776 L 5666.200000000001,1409 L 5870.9,1409" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4692.8,776 L 5666.200000000001,776 L 5666.200000000001,1409 L 5870.9,1409" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-R09" data-source="ListCommandFactory" data-target="CommandFactory" data-kind="R"><title>R09: ListCommandFactory → CommandFactory</title>
+<path d="M 3141.2000000000003,841 L 4036.2000000000003,841 L 4036.2000000000003,1859 L 4229.661538461539,1859" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,841 L 4036.2000000000003,841 L 4036.2000000000003,1859 L 4229.661538461539,1859" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-H08" data-source="ModifyRoleCommand" data-target="UndoableCommand" data-kind="H"><title>H08: ModifyRoleCommand → UndoableCommand</title>
+<path d="M 3141.2000000000003,3223 L 3220.2000000000003,3223 L 3220.2000000000003,3047 L 3882.2000000000003,3047 L 3882.2000000000003,2623 L 4245.200000000001,2623" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,3223 L 3220.2000000000003,3223 L 3220.2000000000003,3047 L 3882.2000000000003,3047 L 3882.2000000000003,2623 L 4245.200000000001,2623" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-R10" data-source="ModifyRoleCommandFactory" data-target="CommandFactory" data-kind="R"><title>R10: ModifyRoleCommandFactory → CommandFactory</title>
+<path d="M 2164.8,3902 L 2221.8,3902 L 2221.8,3728 L 2345.2,3728 L 3496.2000000000003,3728 L 3816.2000000000003,3728 L 3816.2000000000003,2019 L 4229.661538461539,2019" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,3902 L 2221.8,3902 L 2221.8,3728 L 2345.2,3728 L 3496.2000000000003,3728 L 3816.2000000000003,3728 L 3816.2000000000003,2019 L 4229.661538461539,2019" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-H09" data-source="RedoCommand" data-target="BaseCommand" data-kind="H"><title>H09: RedoCommand → BaseCommand</title>
+<path d="M 4692.8,3344 L 5490.200000000001,3344 L 5490.200000000001,1525 L 5870.9,1525" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4692.8,3344 L 5490.200000000001,3344 L 5490.200000000001,1525 L 5870.9,1525" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-R11" data-source="RedoCommandFactory" data-target="CommandFactory" data-kind="R"><title>R11: RedoCommandFactory → CommandFactory</title>
+<path d="M 3141.2000000000003,3545 L 3794.2000000000003,3545 L 3794.2000000000003,1999 L 4229.661538461539,1999" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,3545 L 3794.2000000000003,3545 L 3794.2000000000003,1999 L 4229.661538461539,1999" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-H10" data-source="RefrigeratedTruckFleet" data-target="VehicleFleet" data-kind="H"><title>H10: RefrigeratedTruckFleet → VehicleFleet</title>
+<path d="M 4755.8,4504 L 5644.200000000001,4504 L 5644.200000000001,3737 L 5855.200000000001,3737" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4755.8,4504 L 5644.200000000001,4504 L 5644.200000000001,3737 L 5855.200000000001,3737" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-R12" data-source="RefrigeratedTruckFleetFactory" data-target="FleetFactory" data-kind="R"><title>R12: RefrigeratedTruckFleetFactory → FleetFactory</title>
+<path d="M 3141.2000000000003,4784 L 3198.2000000000003,4784 L 3198.2000000000003,4574 L 4014.2000000000003,4574 L 4014.2000000000003,4153 L 4238.200000000001,4153" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,4784 L 3198.2000000000003,4784 L 3198.2000000000003,4574 L 4014.2000000000003,4574 L 4014.2000000000003,4153 L 4238.200000000001,4153" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-H11" data-source="SetCurrentFleetCommand" data-target="BaseCommand" data-kind="H"><title>H11: SetCurrentFleetCommand → BaseCommand</title>
+<path d="M 4816.700000000001,2170 L 5402.200000000001,2170 L 5402.200000000001,1478 L 5870.9,1478" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4816.700000000001,2170 L 5402.200000000001,2170 L 5402.200000000001,1478 L 5870.9,1478" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-R13" data-source="SetCurrentFleetCommandFactory" data-target="CommandFactory" data-kind="R"><title>R13: SetCurrentFleetCommandFactory → CommandFactory</title>
+<path d="M 3141.2000000000003,2232 L 3198.2000000000003,2232 L 3198.2000000000003,2033 L 3728.2000000000003,2033 L 3728.2000000000003,1959 L 4229.661538461539,1959" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,2232 L 3198.2000000000003,2232 L 3198.2000000000003,2033 L 3728.2000000000003,2033 L 3728.2000000000003,1959 L 4229.661538461539,1959" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-H12" data-source="ShowAllFleetsCommand" data-target="BaseCommand" data-kind="H"><title>H12: ShowAllFleetsCommand → BaseCommand</title>
+<path d="M 3090.8,1091 L 3176.2000000000003,1091 L 3176.2000000000003,989 L 3496.2000000000003,989 L 5107.200000000001,989 L 5644.200000000001,989 L 5644.200000000001,1432 L 5870.9,1432" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3090.8,1091 L 3176.2000000000003,1091 L 3176.2000000000003,989 L 3496.2000000000003,989 L 5107.200000000001,989 L 5644.200000000001,989 L 5644.200000000001,1432 L 5870.9,1432" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-R14" data-source="ShowAllFleetsCommandFactory" data-target="CommandFactory" data-kind="R"><title>R14: ShowAllFleetsCommandFactory → CommandFactory</title>
+<path d="M 2164.8,941 L 2199.8,941 L 2199.8,940 L 2345.2,940 L 3496.2000000000003,940 L 4014.2000000000003,940 L 4014.2000000000003,1879 L 4229.661538461539,1879" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,941 L 2199.8,941 L 2199.8,940 L 2345.2,940 L 3496.2000000000003,940 L 4014.2000000000003,940 L 4014.2000000000003,1879 L 4229.661538461539,1879" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-H13" data-source="ShowFleetCommand" data-target="BaseCommand" data-kind="H"><title>H13: ShowFleetCommand → BaseCommand</title>
+<path d="M 4766.299999999999,1435 L 5292.200000000001,1435 L 5292.200000000001,1455 L 5870.9,1455" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4766.299999999999,1435 L 5292.200000000001,1435 L 5292.200000000001,1455 L 5870.9,1455" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-R15" data-source="ShowFleetCommandFactory" data-target="CommandFactory" data-kind="R"><title>R15: ShowFleetCommandFactory → CommandFactory</title>
+<path d="M 3141.2,1365 L 3926.2000000000003,1365 L 3926.2000000000003,1899 L 4229.661538461539,1899" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2,1365 L 3926.2000000000003,1365 L 3926.2000000000003,1899 L 4229.661538461539,1899" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-H14" data-source="UndoCommand" data-target="BaseCommand" data-kind="H"><title>H14: UndoCommand → BaseCommand</title>
+<path d="M 4692.8,551 L 5688.200000000001,551 L 5688.200000000001,1385 L 5870.9,1385" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4692.8,551 L 5688.200000000001,551 L 5688.200000000001,1385 L 5870.9,1385" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-R16" data-source="UndoCommandFactory" data-target="CommandFactory" data-kind="R"><title>R16: UndoCommandFactory → CommandFactory</title>
+<path d="M 3141.2000000000003,507 L 3176.2000000000003,507 L 3176.2000000000003,568 L 4102.200000000001,568 L 4102.200000000001,1819 L 4229.661538461539,1819" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,507 L 3176.2000000000003,507 L 3176.2000000000003,568 L 4102.200000000001,568 L 4102.200000000001,1819 L 4229.661538461539,1819" fill="none" stroke="#7c3aed" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#R)"/>
+</g>
+<g id="edge-H15" data-source="UndoableCommand" data-target="BaseCommand" data-kind="H"><title>H15: UndoableCommand → BaseCommand</title>
+<path d="M 4617.200000000001,2593 L 5446.200000000001,2593 L 5446.200000000001,1502 L 5870.9,1502" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4617.200000000001,2593 L 5446.200000000001,2593 L 5446.200000000001,1502 L 5870.9,1502" fill="none" stroke="#334155" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#H)"/>
+</g>
+<g id="edge-C01" data-source="AddDriverCommand" data-target="CommandExecutionException" data-kind="C"><title>C01: AddDriverCommand → CommandExecutionException</title>
+<path d="M 3134.9,4458 L 3496.2000000000003,4458 L 4058.2000000000003,4458 L 4058.2000000000003,4302 L 5107.200000000001,4302 L 5600.200000000001,4302 L 5600.200000000001,2990 L 5855.200000000001,2990" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3134.9,4458 L 3496.2000000000003,4458 L 4058.2000000000003,4458 L 4058.2000000000003,4302 L 5107.200000000001,4302 L 5600.200000000001,4302 L 5600.200000000001,2990 L 5855.200000000001,2990" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C02" data-source="AddDriverCommandFactory" data-target="AddDriverCommand" data-kind="C"><title>C02: AddDriverCommandFactory → AddDriverCommand</title>
+<path d="M 2164.8,4600 L 2221.8,4600 L 2221.8,4368 L 2544.5,4368" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,4600 L 2221.8,4600 L 2221.8,4368 L 2544.5,4368" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C03" data-source="AddDriverCommandFactory" data-target="CommandExecutionException" data-kind="C"><title>C03: AddDriverCommandFactory → CommandExecutionException</title>
+<path d="M 2164.8,4729 L 2199.8,4729 L 2199.8,6074 L 2345.2,6074 L 2833.4,6074 L 4515.200000000001,6074 L 5107.200000000001,6074 L 5798.200000000001,6074 L 5798.200000000001,3070 L 5855.200000000001,3070" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,4729 L 2199.8,4729 L 2199.8,6074 L 2345.2,6074 L 2833.4,6074 L 4515.200000000001,6074 L 5107.200000000001,6074 L 5798.200000000001,6074 L 5798.200000000001,3070 L 5855.200000000001,3070" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C04" data-source="ChangeNameCommand" data-target="CommandExecutionException" data-kind="C"><title>C04: ChangeNameCommand → CommandExecutionException</title>
+<path d="M 3126.08,268 L 3176.2000000000003,268 L 3176.2000000000003,393 L 3496.2000000000003,393 L 5107.200000000001,393 L 5710.200000000001,393 L 5710.200000000001,2850 L 5855.200000000001,2850" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3126.08,268 L 3176.2000000000003,268 L 3176.2000000000003,393 L 3496.2000000000003,393 L 5107.200000000001,393 L 5710.200000000001,393 L 5710.200000000001,2850 L 5855.200000000001,2850" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C05" data-source="ChangeNameCommand" data-target="FleetNameMemento" data-kind="C"><title>C05: ChangeNameCommand → FleetNameMemento</title>
+<path d="M 3126.08,120 L 3242.2000000000003,120 L 3242.2000000000003,203 L 4333.4,203" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3126.08,120 L 3242.2000000000003,120 L 3242.2000000000003,203 L 4333.4,203" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C06" data-source="ChangeNameCommand" data-target="MementoCaretaker" data-kind="C"><title>C06: ChangeNameCommand → MementoCaretaker</title>
+<path d="M 3126.08,169 L 3220.2000000000003,169 L 3220.2000000000003,287 L 4168.200000000001,287 L 4168.200000000001,1189 L 4312.4,1189" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3126.08,169 L 3220.2000000000003,169 L 3220.2000000000003,287 L 4168.200000000001,287 L 4168.200000000001,1189 L 4312.4,1189" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C07" data-source="ChangeNameCommandFactory" data-target="ChangeNameCommand" data-kind="C"><title>C07: ChangeNameCommandFactory → ChangeNameCommand</title>
+<path d="M 2164.8,194 L 2586.08,194" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,194 L 2586.08,194" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C08" data-source="CommandInvoker" data-target="CommandHistory" data-kind="C"><title>C08: CommandInvoker → CommandHistory</title>
+<path d="M 3141.2000000000003,5727 L 4358.6,5727" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,5727 L 4358.6,5727" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C09" data-source="CreateFleetCommand" data-target="CommandExecutionException" data-kind="C"><title>C09: CreateFleetCommand → CommandExecutionException</title>
+<path d="M 3138.4000000000005,1863 L 3496.2000000000003,1863 L 3706.2000000000003,1863 L 3706.2000000000003,1688 L 5107.200000000001,1688 L 5424.200000000001,1688 L 5424.200000000001,2890 L 5855.200000000001,2890" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3138.4000000000005,1863 L 3496.2000000000003,1863 L 3706.2000000000003,1863 L 3706.2000000000003,1688 L 5107.200000000001,1688 L 5424.200000000001,1688 L 5424.200000000001,2890 L 5855.200000000001,2890" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C10" data-source="CreateFleetCommandFactory" data-target="CreateFleetCommand" data-kind="C"><title>C10: CreateFleetCommandFactory → CreateFleetCommand</title>
+<path d="M 2164.8,1568 L 2430.6000000000004,1568 L 2430.6000000000004,1800 L 2531.2000000000003,1800" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,1568 L 2430.6000000000004,1568 L 2430.6000000000004,1800 L 2531.2000000000003,1800" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C11" data-source="DeleteDriverCommand" data-target="CommandExecutionException" data-kind="C"><title>C11: DeleteDriverCommand → CommandExecutionException</title>
+<path d="M 3128.6000000000004,2903 L 3176.2000000000003,2903 L 3176.2000000000003,2888 L 3496.2000000000003,2888 L 4014.2000000000003,2888 L 4014.2000000000003,2797 L 5107.200000000001,2797 L 5292.200000000001,2797 L 5292.200000000001,2930 L 5855.200000000001,2930" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3128.6000000000004,2903 L 3176.2000000000003,2903 L 3176.2000000000003,2888 L 3496.2000000000003,2888 L 4014.2000000000003,2888 L 4014.2000000000003,2797 L 5107.200000000001,2797 L 5292.200000000001,2797 L 5292.200000000001,2930 L 5855.200000000001,2930" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C12" data-source="DeleteDriverCommandFactory" data-target="DeleteDriverCommand" data-kind="C"><title>C12: DeleteDriverCommandFactory → DeleteDriverCommand</title>
+<path d="M 2164.8,2446 L 2430.6000000000004,2446 L 2430.6000000000004,2835 L 2563.4,2835" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,2446 L 2430.6000000000004,2446 L 2430.6000000000004,2835 L 2563.4,2835" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C13" data-source="DeliveryVanFleetFactory" data-target="DeliveryVanFleet" data-kind="C"><title>C13: DeliveryVanFleetFactory → DeliveryVanFleet</title>
+<path d="M 3141.2000000000003,5074 L 3286.2000000000003,5074 L 3286.2000000000003,4882 L 4325,4882" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,5074 L 3286.2000000000003,5074 L 3286.2000000000003,4882 L 4325,4882" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C14" data-source="DriverFactory" data-target="Driver" data-kind="C"><title>C14: DriverFactory → Driver</title>
+<path d="M 4827.2,3787 L 5534.200000000001,3787 L 5534.200000000001,3355 L 5855.200000000001,3355" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4827.2,3787 L 5534.200000000001,3787 L 5534.200000000001,3355 L 5855.200000000001,3355" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C15" data-source="FleetManager" data-target="CommandExecutionException" data-kind="C"><title>C15: FleetManager → CommandExecutionException</title>
+<path d="M 4827.2,5248 L 5666.200000000001,5248 L 5666.200000000001,3010 L 5855.200000000001,3010" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4827.2,5248 L 5666.200000000001,5248 L 5666.200000000001,3010 L 5855.200000000001,3010" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C16" data-source="ListCommandFactory" data-target="ListCommand" data-kind="C"><title>C16: ListCommandFactory → ListCommand</title>
+<path d="M 3141.2000000000003,806 L 3198.2000000000003,806 L 3198.2000000000003,776 L 4337.6,776" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,806 L 3198.2000000000003,806 L 3198.2000000000003,776 L 4337.6,776" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C37" data-source="ModifyRoleCommand" data-target="CommandExecutionException" data-kind="C"><title>C37: ModifyRoleCommand → CommandExecutionException</title>
+<path d="M 3141.2000000000003,3335 L 3264.2000000000003,3335 L 3264.2000000000003,3153 L 3496.2000000000003,3153 L 5107.200000000001,3153 L 5512.200000000001,3153 L 5512.200000000001,2950 L 5855.200000000001,2950" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,3335 L 3264.2000000000003,3335 L 3264.2000000000003,3153 L 3496.2000000000003,3153 L 5107.200000000001,3153 L 5512.200000000001,3153 L 5512.200000000001,2950 L 5855.200000000001,2950" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C38" data-source="ModifyRoleCommand" data-target="DriverRoleMemento" data-kind="C"><title>C38: ModifyRoleCommand → DriverRoleMemento</title>
+<path d="M 3141.2000000000003,3167 L 3198.2000000000003,3167 L 3198.2000000000003,2988 L 4350.200000000001,2988" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,3167 L 3198.2000000000003,3167 L 3198.2000000000003,2988 L 4350.200000000001,2988" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C39" data-source="ModifyRoleCommand" data-target="MementoCaretaker" data-kind="C"><title>C39: ModifyRoleCommand → MementoCaretaker</title>
+<path d="M 3141.2000000000003,3111 L 3176.2000000000003,3111 L 3176.2000000000003,2921 L 3750.2000000000003,2921 L 3750.2000000000003,1249 L 4312.4,1249" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,3111 L 3176.2000000000003,3111 L 3176.2000000000003,2921 L 3750.2000000000003,2921 L 3750.2000000000003,1249 L 4312.4,1249" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C40" data-source="ModifyRoleCommandFactory" data-target="CommandExecutionException" data-kind="C"><title>C40: ModifyRoleCommandFactory → CommandExecutionException</title>
+<path d="M 2164.8,4006 L 2199.8,4006 L 2199.8,4045 L 2345.2,4045 L 2833.4,4045 L 3706.2000000000003,4045 L 3706.2000000000003,4269 L 4515.200000000001,4269 L 5107.200000000001,4269 L 5556.200000000001,4269 L 5556.200000000001,2970 L 5855.200000000001,2970" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,4006 L 2199.8,4006 L 2199.8,4045 L 2345.2,4045 L 2833.4,4045 L 3706.2000000000003,4045 L 3706.2000000000003,4269 L 4515.200000000001,4269 L 5107.200000000001,4269 L 5556.200000000001,4269 L 5556.200000000001,2970 L 5855.200000000001,2970" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C41" data-source="ModifyRoleCommandFactory" data-target="ModifyRoleCommand" data-kind="C"><title>C41: ModifyRoleCommandFactory → ModifyRoleCommand</title>
+<path d="M 2164.8,3876 L 2199.8,3876 L 2199.8,3223 L 2525.6000000000004,3223" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,3876 L 2199.8,3876 L 2199.8,3223 L 2525.6000000000004,3223" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C42" data-source="RedoCommandFactory" data-target="RedoCommand" data-kind="C"><title>C42: RedoCommandFactory → RedoCommand</title>
+<path d="M 3141.2000000000003,3511 L 3286.2000000000003,3511 L 3286.2000000000003,3344 L 4337.6,3344" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,3511 L 3286.2000000000003,3511 L 3286.2000000000003,3344 L 4337.6,3344" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C43" data-source="RefrigeratedTruckFleetFactory" data-target="RefrigeratedTruckFleet" data-kind="C"><title>C43: RefrigeratedTruckFleetFactory → RefrigeratedTruckFleet</title>
+<path d="M 3141.2000000000003,4825 L 3220.2000000000003,4825 L 3220.2000000000003,4622 L 4058.2000000000003,4622 L 4058.2000000000003,4504 L 4274.6,4504" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,4825 L 3220.2000000000003,4825 L 3220.2000000000003,4622 L 4058.2000000000003,4622 L 4058.2000000000003,4504 L 4274.6,4504" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C44" data-source="SetCurrentFleetCommand" data-target="CommandExecutionException" data-kind="C"><title>C44: SetCurrentFleetCommand → CommandExecutionException</title>
+<path d="M 4816.700000000001,2261 L 4862.200000000001,2261 L 4862.200000000001,2266 L 5402.200000000001,2266 L 5402.200000000001,2910 L 5855.200000000001,2910" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4816.700000000001,2261 L 4862.200000000001,2261 L 4862.200000000001,2266 L 5402.200000000001,2266 L 5402.200000000001,2910 L 5855.200000000001,2910" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C45" data-source="SetCurrentFleetCommandFactory" data-target="SetCurrentFleetCommand" data-kind="C"><title>C45: SetCurrentFleetCommandFactory → SetCurrentFleetCommand</title>
+<path d="M 3141.2000000000003,2323 L 3242.2000000000003,2323 L 3242.2000000000003,2215 L 4234.700000000001,2215" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,2323 L 3242.2000000000003,2323 L 3242.2000000000003,2215 L 4234.700000000001,2215" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C46" data-source="ShowAllFleetsCommandFactory" data-target="ShowAllFleetsCommand" data-kind="C"><title>C46: ShowAllFleetsCommandFactory → ShowAllFleetsCommand</title>
+<path d="M 2164.8,976 L 2430.6000000000004,976 L 2430.6000000000004,1131 L 2676.8,1131" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,976 L 2430.6000000000004,976 L 2430.6000000000004,1131 L 2676.8,1131" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C47" data-source="ShowFleetCommand" data-target="CommandExecutionException" data-kind="C"><title>C47: ShowFleetCommand → CommandExecutionException</title>
+<path d="M 4766.299999999999,1515 L 4862.200000000001,1515 L 4862.200000000001,1531 L 5468.200000000001,1531 L 5468.200000000001,2870 L 5855.200000000001,2870" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4766.299999999999,1515 L 4862.200000000001,1515 L 4862.200000000001,1531 L 5468.200000000001,1531 L 5468.200000000001,2870 L 5855.200000000001,2870" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C48" data-source="ShowFleetCommandFactory" data-target="ShowFleetCommand" data-kind="C"><title>C48: ShowFleetCommandFactory → ShowFleetCommand</title>
+<path d="M 3141.2,1400 L 3176.2000000000003,1400 L 3176.2000000000003,1418 L 4146.200000000001,1418 L 4146.200000000001,1475 L 4385.9,1475" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2,1400 L 3176.2000000000003,1400 L 3176.2000000000003,1418 L 4146.200000000001,1418 L 4146.200000000001,1475 L 4385.9,1475" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-C49" data-source="UndoCommandFactory" data-target="UndoCommand" data-kind="C"><title>C49: UndoCommandFactory → UndoCommand</title>
+<path d="M 3141.2000000000003,472 L 4146.200000000001,472 L 4146.200000000001,551 L 4337.6,551" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,472 L 4146.200000000001,472 L 4146.200000000001,551 L 4337.6,551" fill="none" stroke="#0891b2" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#C)"/>
+</g>
+<g id="edge-U01" data-source="AddDriverCommand" data-target="FleetUtil" data-kind="U"><title>U01: AddDriverCommand → FleetUtil</title>
+<path d="M 3134.9,4368 L 3198.2000000000003,4368 L 3198.2000000000003,4244 L 3926.2000000000003,4244 L 3926.2000000000003,3632 L 4203.200000000001,3632" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3134.9,4368 L 3198.2000000000003,4368 L 3198.2000000000003,4244 L 3926.2000000000003,4244 L 3926.2000000000003,3632 L 4203.200000000001,3632" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U02" data-source="AddDriverCommandFactory" data-target="Command" data-kind="U"><title>U02: AddDriverCommandFactory → Command</title>
+<path d="M 2164.8,4696 L 2221.8,4696 L 2221.8,6016 L 2345.2,6016 L 2833.4,6016 L 3496.2000000000003,6016 L 5107.200000000001,6016 L 6058,6016 L 6408.800000000001,6016 L 6593.800000000001,6016 L 6593.800000000001,2066 L 6628.800000000001,2066" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,4696 L 2221.8,4696 L 2221.8,6016 L 2345.2,6016 L 2833.4,6016 L 3496.2000000000003,6016 L 5107.200000000001,6016 L 6058,6016 L 6408.800000000001,6016 L 6593.800000000001,6016 L 6593.800000000001,2066 L 6628.800000000001,2066" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U03" data-source="AddDriverCommandFactory" data-target="FleetFactory" data-kind="U"><title>U03: AddDriverCommandFactory → FleetFactory</title>
+<path d="M 2164.8,4632 L 2345.2,4632 L 3176.2000000000003,4632 L 3176.2000000000003,4541 L 3496.2000000000003,4541 L 3992.2000000000003,4541 L 3992.2000000000003,4123 L 4238.200000000001,4123" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,4632 L 2345.2,4632 L 3176.2000000000003,4632 L 3176.2000000000003,4541 L 3496.2000000000003,4541 L 3992.2000000000003,4541 L 3992.2000000000003,4123 L 4238.200000000001,4123" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U04" data-source="AddDriverCommandFactory" data-target="VehicleFleet" data-kind="U"><title>U04: AddDriverCommandFactory → VehicleFleet</title>
+<path d="M 2164.8,4664 L 2243.8,4664 L 2243.8,5958 L 2345.2,5958 L 2833.4,5958 L 3706.2000000000003,5958 L 3706.2000000000003,5983 L 4515.200000000001,5983 L 5107.200000000001,5983 L 5820.200000000001,5983 L 5820.200000000001,3840 L 5855.200000000001,3840" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,4664 L 2243.8,4664 L 2243.8,5958 L 2345.2,5958 L 2833.4,5958 L 3706.2000000000003,5958 L 3706.2000000000003,5983 L 4515.200000000001,5983 L 5107.200000000001,5983 L 5820.200000000001,5983 L 5820.200000000001,3840 L 5855.200000000001,3840" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U05" data-source="ChangeNameCommandFactory" data-target="Command" data-kind="U"><title>U05: ChangeNameCommandFactory → Command</title>
+<path d="M 2164.8,149 L 2199.8,149 L 2199.8,37 L 2345.2,37 L 2833.4,37 L 3496.2000000000003,37 L 5107.200000000001,37 L 6058,37 L 6408.800000000001,37 L 6593.800000000001,37 L 6593.800000000001,1792 L 6628.800000000001,1792" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,149 L 2199.8,149 L 2199.8,37 L 2345.2,37 L 2833.4,37 L 3496.2000000000003,37 L 5107.200000000001,37 L 6058,37 L 6408.800000000001,37 L 6593.800000000001,37 L 6593.800000000001,1792 L 6628.800000000001,1792" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U06" data-source="CommandFactory" data-target="Command" data-kind="U"><title>U06: CommandFactory → Command</title>
+<path d="M 4509.661538461539,1929 L 5107.200000000001,1929 L 6408.800000000001,1929 L 6628.800000000001,1929" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4509.661538461539,1929 L 5107.200000000001,1929 L 6408.800000000001,1929 L 6628.800000000001,1929" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U07" data-source="CommandHistory" data-target="CommandExecutionException" data-kind="U"><title>U07: CommandHistory → CommandExecutionException</title>
+<path d="M 4671.8,5727 L 5710.200000000001,5727 L 5710.200000000001,3030 L 5855.200000000001,3030" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4671.8,5727 L 5710.200000000001,5727 L 5710.200000000001,3030 L 5855.200000000001,3030" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U08" data-source="CommandInvoker" data-target="Command" data-kind="U"><title>U08: CommandInvoker → Command</title>
+<path d="M 3141.2000000000003,5671 L 3176.2000000000003,5671 L 3176.2000000000003,5581 L 3496.2000000000003,5581 L 4515.200000000001,5581 L 6058,5581 L 6408.800000000001,5581 L 6571.800000000001,5581 L 6571.800000000001,2047 L 6628.800000000001,2047" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,5671 L 3176.2000000000003,5671 L 3176.2000000000003,5581 L 3496.2000000000003,5581 L 4515.200000000001,5581 L 6058,5581 L 6408.800000000001,5581 L 6571.800000000001,5581 L 6571.800000000001,2047 L 6628.800000000001,2047" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U09" data-source="CommandInvoker" data-target="CommandExecutionException" data-kind="U"><title>U09: CommandInvoker → CommandExecutionException</title>
+<path d="M 3141.2000000000003,5784 L 3176.2000000000003,5784 L 3176.2000000000003,5925 L 3496.2000000000003,5925 L 5107.200000000001,5925 L 5754.200000000001,5925 L 5754.200000000001,3050 L 5855.200000000001,3050" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,5784 L 3176.2000000000003,5784 L 3176.2000000000003,5925 L 3496.2000000000003,5925 L 5107.200000000001,5925 L 5754.200000000001,5925 L 5754.200000000001,3050 L 5855.200000000001,3050" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U10" data-source="CreateFleetCommandFactory" data-target="Command" data-kind="U"><title>U10: CreateFleetCommandFactory → Command</title>
+<path d="M 2164.8,1466 L 2345.2,1466 L 2833.4,1466 L 3176.2000000000003,1466 L 3176.2000000000003,1476 L 3496.2000000000003,1476 L 4080.2000000000003,1476 L 4080.2000000000003,1665 L 5107.200000000001,1665 L 6058,1665 L 6408.800000000001,1665 L 6461.800000000001,1665 L 6461.800000000001,1909 L 6628.800000000001,1909" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,1466 L 2345.2,1466 L 2833.4,1466 L 3176.2000000000003,1466 L 3176.2000000000003,1476 L 3496.2000000000003,1476 L 4080.2000000000003,1476 L 4080.2000000000003,1665 L 5107.200000000001,1665 L 6058,1665 L 6408.800000000001,1665 L 6461.800000000001,1665 L 6461.800000000001,1909 L 6628.800000000001,1909" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U11" data-source="DeleteDriverCommand" data-target="FleetUtil" data-kind="U"><title>U11: DeleteDriverCommand → FleetUtil</title>
+<path d="M 3128.6000000000004,2835 L 3176.2000000000003,2835 L 3176.2000000000003,2830 L 4036.2000000000003,2830 L 4036.2000000000003,3550 L 4203.200000000001,3550" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3128.6000000000004,2835 L 3176.2000000000003,2835 L 3176.2000000000003,2830 L 4036.2000000000003,2830 L 4036.2000000000003,3550 L 4203.200000000001,3550" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U12" data-source="DeleteDriverCommandFactory" data-target="Command" data-kind="U"><title>U12: DeleteDriverCommandFactory → Command</title>
+<path d="M 2164.8,2400 L 2345.2,2400 L 2833.4,2400 L 3496.2000000000003,2400 L 4146.200000000001,2400 L 4146.200000000001,2391 L 5107.200000000001,2391 L 6058,2391 L 6408.800000000001,2391 L 6483.800000000001,2391 L 6483.800000000001,1968 L 6628.800000000001,1968" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,2400 L 2345.2,2400 L 2833.4,2400 L 3496.2000000000003,2400 L 4146.200000000001,2400 L 4146.200000000001,2391 L 5107.200000000001,2391 L 6058,2391 L 6408.800000000001,2391 L 6483.800000000001,2391 L 6483.800000000001,1968 L 6628.800000000001,1968" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U13" data-source="DeliveryVanFleetFactory" data-target="VehicleFleet" data-kind="U"><title>U13: DeliveryVanFleetFactory → VehicleFleet</title>
+<path d="M 3141.2000000000003,5115 L 3176.2000000000003,5115 L 3176.2000000000003,5548 L 3496.2000000000003,5548 L 5107.200000000001,5548 L 5776.200000000001,5548 L 5776.200000000001,3814 L 5855.200000000001,3814" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,5115 L 3176.2000000000003,5115 L 3176.2000000000003,5548 L 3496.2000000000003,5548 L 5107.200000000001,5548 L 5776.200000000001,5548 L 5776.200000000001,3814 L 5855.200000000001,3814" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U14" data-source="FleetFactory" data-target="VehicleFleet" data-kind="U"><title>U14: FleetFactory → VehicleFleet</title>
+<path d="M 4652.200000000001,4123 L 5578.200000000001,4123 L 5578.200000000001,3685 L 5855.200000000001,3685" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4652.200000000001,4123 L 5578.200000000001,4123 L 5578.200000000001,3685 L 5855.200000000001,3685" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U15" data-source="FleetUtil" data-target="Driver" data-kind="U"><title>U15: FleetUtil → Driver</title>
+<path d="M 4827.200000000001,3564 L 5512.200000000001,3564 L 5512.200000000001,3265 L 5855.200000000001,3265" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4827.200000000001,3564 L 5512.200000000001,3564 L 5512.200000000001,3265 L 5855.200000000001,3265" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U16" data-source="FleetUtil" data-target="VehicleFleet" data-kind="U"><title>U16: FleetUtil → VehicleFleet</title>
+<path d="M 4827.200000000001,3618 L 5292.200000000001,3618 L 5292.200000000001,3659 L 5855.200000000001,3659" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4827.200000000001,3618 L 5292.200000000001,3618 L 5292.200000000001,3659 L 5855.200000000001,3659" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U17" data-source="ListCommandFactory" data-target="Command" data-kind="U"><title>U17: ListCommandFactory → Command</title>
+<path d="M 3141.2000000000003,772 L 3176.2000000000003,772 L 3176.2000000000003,663 L 3496.2000000000003,663 L 4515.200000000001,663 L 6058,663 L 6408.800000000001,663 L 6549.800000000001,663 L 6549.800000000001,1831 L 6628.800000000001,1831" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,772 L 3176.2000000000003,772 L 3176.2000000000003,663 L 3496.2000000000003,663 L 4515.200000000001,663 L 6058,663 L 6408.800000000001,663 L 6549.800000000001,663 L 6549.800000000001,1831 L 6628.800000000001,1831" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U18" data-source="Main" data-target="Command" data-kind="U"><title>U18: Main → Command</title>
+<path d="M 3141.2,2479 L 3496.2000000000003,2479 L 3706.2000000000003,2479 L 3706.2000000000003,2716 L 4515.200000000001,2716 L 6058,2716 L 6408.800000000001,2716 L 6505.800000000001,2716 L 6505.800000000001,1988 L 6628.800000000001,1988" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2,2479 L 3496.2000000000003,2479 L 3706.2000000000003,2479 L 3706.2000000000003,2716 L 4515.200000000001,2716 L 6058,2716 L 6408.800000000001,2716 L 6505.800000000001,2716 L 6505.800000000001,1988 L 6628.800000000001,1988" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U20" data-source="Main" data-target="CommandFactory" data-kind="U"><title>U20: Main → CommandFactory</title>
+<path d="M 3141.2,2524 L 3198.2000000000003,2524 L 3198.2000000000003,2691 L 3772.2000000000003,2691 L 3772.2000000000003,1979 L 4229.661538461539,1979" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2,2524 L 3198.2000000000003,2524 L 3198.2000000000003,2691 L 3772.2000000000003,2691 L 3772.2000000000003,1979 L 4229.661538461539,1979" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U21" data-source="Main" data-target="VehicleFleet" data-kind="U"><title>U21: Main → VehicleFleet</title>
+<path d="M 3141.2,2570 L 3176.2000000000003,2570 L 3176.2000000000003,2749 L 3496.2000000000003,2749 L 4862.200000000001,2749 L 4862.200000000001,2774 L 5107.200000000001,2774 L 5336.200000000001,2774 L 5336.200000000001,3633 L 5855.200000000001,3633" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2,2570 L 3176.2000000000003,2570 L 3176.2000000000003,2749 L 3496.2000000000003,2749 L 4862.200000000001,2749 L 4862.200000000001,2774 L 5107.200000000001,2774 L 5336.200000000001,2774 L 5336.200000000001,3633 L 5855.200000000001,3633" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U22" data-source="ModifyRoleCommand" data-target="FleetUtil" data-kind="U"><title>U22: ModifyRoleCommand → FleetUtil</title>
+<path d="M 3141.2000000000003,3279 L 3242.2000000000003,3279 L 3242.2000000000003,3095 L 3706.2000000000003,3095 L 3706.2000000000003,3591 L 4203.200000000001,3591" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,3279 L 3242.2000000000003,3279 L 3242.2000000000003,3095 L 3706.2000000000003,3095 L 3706.2000000000003,3591 L 4203.200000000001,3591" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U23" data-source="ModifyRoleCommandFactory" data-target="Command" data-kind="U"><title>U23: ModifyRoleCommandFactory → Command</title>
+<path d="M 2164.8,3928 L 2199.8,3928 L 2199.8,3921 L 2345.2,3921 L 2833.4,3921 L 3496.2000000000003,3921 L 5107.200000000001,3921 L 6058,3921 L 6408.800000000001,3921 L 6549.800000000001,3921 L 6549.800000000001,2027 L 6628.800000000001,2027" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,3928 L 2199.8,3928 L 2199.8,3921 L 2345.2,3921 L 2833.4,3921 L 3496.2000000000003,3921 L 5107.200000000001,3921 L 6058,3921 L 6408.800000000001,3921 L 6549.800000000001,3921 L 6549.800000000001,2027 L 6628.800000000001,2027" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U24" data-source="ModifyRoleCommandFactory" data-target="FleetFactory" data-kind="U"><title>U24: ModifyRoleCommandFactory → FleetFactory</title>
+<path d="M 2164.8,3980 L 2199.8,3980 L 2199.8,3987 L 2345.2,3987 L 3176.2000000000003,3987 L 3176.2000000000003,4012 L 3496.2000000000003,4012 L 3948.2000000000003,4012 L 3948.2000000000003,4093 L 4238.200000000001,4093" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,3980 L 2199.8,3980 L 2199.8,3987 L 2345.2,3987 L 3176.2000000000003,3987 L 3176.2000000000003,4012 L 3496.2000000000003,4012 L 3948.2000000000003,4012 L 3948.2000000000003,4093 L 4238.200000000001,4093" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U25" data-source="ModifyRoleCommandFactory" data-target="VehicleFleet" data-kind="U"><title>U25: ModifyRoleCommandFactory → VehicleFleet</title>
+<path d="M 2164.8,3954 L 2345.2,3954 L 2833.4,3954 L 3970.2000000000003,3954 L 3970.2000000000003,4246 L 4515.200000000001,4246 L 5107.200000000001,4246 L 5622.200000000001,4246 L 5622.200000000001,3711 L 5855.200000000001,3711" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,3954 L 2345.2,3954 L 2833.4,3954 L 3970.2000000000003,3954 L 3970.2000000000003,4246 L 4515.200000000001,4246 L 5107.200000000001,4246 L 5622.200000000001,4246 L 5622.200000000001,3711 L 5855.200000000001,3711" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U26" data-source="RedoCommandFactory" data-target="Command" data-kind="U"><title>U26: RedoCommandFactory → Command</title>
+<path d="M 3141.2000000000003,3580 L 3176.2000000000003,3580 L 3176.2000000000003,3705 L 3496.2000000000003,3705 L 4515.200000000001,3705 L 5292.200000000001,3705 L 5292.200000000001,3898 L 6058,3898 L 6408.800000000001,3898 L 6527.800000000001,3898 L 6527.800000000001,2008 L 6628.800000000001,2008" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,3580 L 3176.2000000000003,3580 L 3176.2000000000003,3705 L 3496.2000000000003,3705 L 4515.200000000001,3705 L 5292.200000000001,3705 L 5292.200000000001,3898 L 6058,3898 L 6408.800000000001,3898 L 6527.800000000001,3898 L 6527.800000000001,2008 L 6628.800000000001,2008" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U27" data-source="RefrigeratedTruckFleetFactory" data-target="VehicleFleet" data-kind="U"><title>U27: RefrigeratedTruckFleetFactory → VehicleFleet</title>
+<path d="M 3141.2000000000003,4866 L 3242.2000000000003,4866 L 3242.2000000000003,4680 L 3496.2000000000003,4680 L 5107.200000000001,4680 L 5688.200000000001,4680 L 5688.200000000001,3763 L 5855.200000000001,3763" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,4866 L 3242.2000000000003,4866 L 3242.2000000000003,4680 L 3496.2000000000003,4680 L 5107.200000000001,4680 L 5688.200000000001,4680 L 5688.200000000001,3763 L 5855.200000000001,3763" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U28" data-source="SetCurrentFleetCommand" data-target="VehicleFleet" data-kind="U"><title>U28: SetCurrentFleetCommand → VehicleFleet</title>
+<path d="M 4816.700000000001,2215 L 4862.200000000001,2215 L 4862.200000000001,2218 L 5358.200000000001,2218 L 5358.200000000001,3608 L 5855.200000000001,3608" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4816.700000000001,2215 L 4862.200000000001,2215 L 4862.200000000001,2218 L 5358.200000000001,2218 L 5358.200000000001,3608 L 5855.200000000001,3608" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U29" data-source="SetCurrentFleetCommandFactory" data-target="Command" data-kind="U"><title>U29: SetCurrentFleetCommandFactory → Command</title>
+<path d="M 3141.2000000000003,2277 L 3220.2000000000003,2277 L 3220.2000000000003,2091 L 3496.2000000000003,2091 L 4515.200000000001,2091 L 6058,2091 L 6408.800000000001,2091 L 6461.800000000001,2091 L 6461.800000000001,1949 L 6628.800000000001,1949" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,2277 L 3220.2000000000003,2277 L 3220.2000000000003,2091 L 3496.2000000000003,2091 L 4515.200000000001,2091 L 6058,2091 L 6408.800000000001,2091 L 6461.800000000001,2091 L 6461.800000000001,1949 L 6628.800000000001,1949" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U30" data-source="ShowAllFleetsCommand" data-target="FleetFactory" data-kind="U"><title>U30: ShowAllFleetsCommand → FleetFactory</title>
+<path d="M 3090.8,1171 L 3220.2000000000003,1171 L 3220.2000000000003,1070 L 3992.2000000000003,1070 L 3992.2000000000003,4062 L 4238.200000000001,4062" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3090.8,1171 L 3220.2000000000003,1171 L 3220.2000000000003,1070 L 3992.2000000000003,1070 L 3992.2000000000003,4062 L 4238.200000000001,4062" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U31" data-source="ShowAllFleetsCommand" data-target="VehicleFleet" data-kind="U"><title>U31: ShowAllFleetsCommand → VehicleFleet</title>
+<path d="M 3090.8,1131 L 3198.2000000000003,1131 L 3198.2000000000003,1037 L 3496.2000000000003,1037 L 5107.200000000001,1037 L 5622.200000000001,1037 L 5622.200000000001,3556 L 5855.200000000001,3556" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3090.8,1131 L 3198.2000000000003,1131 L 3198.2000000000003,1037 L 3496.2000000000003,1037 L 5107.200000000001,1037 L 5622.200000000001,1037 L 5622.200000000001,3556 L 5855.200000000001,3556" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U32" data-source="ShowAllFleetsCommandFactory" data-target="Command" data-kind="U"><title>U32: ShowAllFleetsCommandFactory → Command</title>
+<path d="M 2164.8,907 L 2345.2,907 L 2833.4,907 L 3176.2000000000003,907 L 3176.2000000000003,917 L 3496.2000000000003,917 L 4146.200000000001,917 L 4146.200000000001,941 L 5107.200000000001,941 L 6058,941 L 6408.800000000001,941 L 6527.800000000001,941 L 6527.800000000001,1851 L 6628.800000000001,1851" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 2164.8,907 L 2345.2,907 L 2833.4,907 L 3176.2000000000003,907 L 3176.2000000000003,917 L 3496.2000000000003,917 L 4146.200000000001,917 L 4146.200000000001,941 L 5107.200000000001,941 L 6058,941 L 6408.800000000001,941 L 6527.800000000001,941 L 6527.800000000001,1851 L 6628.800000000001,1851" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U33" data-source="ShowFleetCommand" data-target="VehicleFleet" data-kind="U"><title>U33: ShowFleetCommand → VehicleFleet</title>
+<path d="M 4766.299999999999,1475 L 4862.200000000001,1475 L 4862.200000000001,1483 L 5380.200000000001,1483 L 5380.200000000001,3582 L 5855.200000000001,3582" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4766.299999999999,1475 L 4862.200000000001,1475 L 4862.200000000001,1483 L 5380.200000000001,1483 L 5380.200000000001,3582 L 5855.200000000001,3582" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U34" data-source="ShowFleetCommandFactory" data-target="Command" data-kind="U"><title>U34: ShowFleetCommandFactory → Command</title>
+<path d="M 3141.2,1331 L 3496.2000000000003,1331 L 3706.2000000000003,1331 L 3706.2000000000003,1095 L 4515.200000000001,1095 L 6058,1095 L 6408.800000000001,1095 L 6505.800000000001,1095 L 6505.800000000001,1870 L 6628.800000000001,1870" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2,1331 L 3496.2000000000003,1331 L 3706.2000000000003,1331 L 3706.2000000000003,1095 L 4515.200000000001,1095 L 6058,1095 L 6408.800000000001,1095 L 6505.800000000001,1095 L 6505.800000000001,1870 L 6628.800000000001,1870" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U35" data-source="UndoCommandFactory" data-target="Command" data-kind="U"><title>U35: UndoCommandFactory → Command</title>
+<path d="M 3141.2000000000003,438 L 3496.2000000000003,438 L 4515.200000000001,438 L 6058,438 L 6408.800000000001,438 L 6571.800000000001,438 L 6571.800000000001,1811 L 6628.800000000001,1811" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 3141.2000000000003,438 L 3496.2000000000003,438 L 4515.200000000001,438 L 6058,438 L 6408.800000000001,438 L 6571.800000000001,438 L 6571.800000000001,1811 L 6628.800000000001,1811" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="edge-U36" data-source="MementoCaretaker" data-target="Memento" data-kind="U"><title>U36: MementoCaretaker → Memento</title>
+<path d="M 4608.799999999999,1219 L 5855.200000000001,1219" fill="none" stroke="white" stroke-width="7" stroke-linejoin="round"/>
+<path d="M 4608.799999999999,1219 L 5855.200000000001,1219" fill="none" stroke="#64748b" stroke-width="2.3" stroke-linejoin="round" stroke-dasharray="9 5" marker-end="url(#U)"/>
+</g>
+<g id="label-H01">
+<rect x="3474.2000000000003" y="4138" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="4155" font-family="DejaVu Sans" font-size="13" fill="#334155">H01</text>
+</g>
+<g id="label-R01">
+<rect x="2811.4" y="4080" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="2817.4" y="4097" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R01</text>
+</g>
+<g id="label-R02">
+<rect x="6386.800000000001" y="1457" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="6392.800000000001" y="1474" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R02</text>
+</g>
+<g id="label-H02">
+<rect x="3474.2000000000003" y="337" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="354" font-family="DejaVu Sans" font-size="13" fill="#334155">H02</text>
+</g>
+<g id="label-R03">
+<rect x="2811.4" y="628" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="2817.4" y="645" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R03</text>
+</g>
+<g id="label-H03">
+<rect x="6386.800000000001" y="2962" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="6392.800000000001" y="2979" font-family="DejaVu Sans" font-size="13" fill="#334155">H03</text>
+</g>
+<g id="label-H04">
+<rect x="3474.2000000000003" y="1632" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="1649" font-family="DejaVu Sans" font-size="13" fill="#334155">H04</text>
+</g>
+<g id="label-R04">
+<rect x="2811.4" y="1501" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="2817.4" y="1518" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R04</text>
+</g>
+<g id="label-H05">
+<rect x="3474.2000000000003" y="2784" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="2801" font-family="DejaVu Sans" font-size="13" fill="#334155">H05</text>
+</g>
+<g id="label-R05">
+<rect x="2811.4" y="2077" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="2817.4" y="2094" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R05</text>
+</g>
+<g id="label-H06">
+<rect x="5085.200000000001" y="4884" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="4901" font-family="DejaVu Sans" font-size="13" fill="#334155">H06</text>
+</g>
+<g id="label-R06">
+<rect x="3474.2000000000003" y="4715" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="4732" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R06</text>
+</g>
+<g id="label-R07">
+<rect x="5085.200000000001" y="2990" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="3007" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R07</text>
+</g>
+<g id="label-R08">
+<rect x="5085.200000000001" y="205" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="222" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R08</text>
+</g>
+<g id="label-H07">
+<rect x="5085.200000000001" y="778" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="795" font-family="DejaVu Sans" font-size="13" fill="#334155">H07</text>
+</g>
+<g id="label-R09">
+<rect x="3474.2000000000003" y="843" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="860" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R09</text>
+</g>
+<g id="label-H08">
+<rect x="3474.2000000000003" y="3049" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="3066" font-family="DejaVu Sans" font-size="13" fill="#334155">H08</text>
+</g>
+<g id="label-R10">
+<rect x="2811.4" y="3730" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="2817.4" y="3747" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R10</text>
+</g>
+<g id="label-H09">
+<rect x="5085.200000000001" y="3346" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="3363" font-family="DejaVu Sans" font-size="13" fill="#334155">H09</text>
+</g>
+<g id="label-R11">
+<rect x="3474.2000000000003" y="3547" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="3564" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R11</text>
+</g>
+<g id="label-H10">
+<rect x="5085.200000000001" y="4506" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="4523" font-family="DejaVu Sans" font-size="13" fill="#334155">H10</text>
+</g>
+<g id="label-R12">
+<rect x="3474.2000000000003" y="4576" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="4593" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R12</text>
+</g>
+<g id="label-H11">
+<rect x="5085.200000000001" y="2172" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="2189" font-family="DejaVu Sans" font-size="13" fill="#334155">H11</text>
+</g>
+<g id="label-R13">
+<rect x="3474.2000000000003" y="2035" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="2052" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R13</text>
+</g>
+<g id="label-H12">
+<rect x="4493.200000000001" y="991" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4499.200000000001" y="1008" font-family="DejaVu Sans" font-size="13" fill="#334155">H12</text>
+</g>
+<g id="label-R14">
+<rect x="2811.4" y="942" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="2817.4" y="959" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R14</text>
+</g>
+<g id="label-H13">
+<rect x="5085.200000000001" y="1437" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="1454" font-family="DejaVu Sans" font-size="13" fill="#334155">H13</text>
+</g>
+<g id="label-R15">
+<rect x="3474.2000000000003" y="1367" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="1384" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R15</text>
+</g>
+<g id="label-H14">
+<rect x="5085.200000000001" y="553" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="570" font-family="DejaVu Sans" font-size="13" fill="#334155">H14</text>
+</g>
+<g id="label-R16">
+<rect x="3474.2000000000003" y="570" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="587" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">R16</text>
+</g>
+<g id="label-H15">
+<rect x="5085.200000000001" y="2595" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="2612" font-family="DejaVu Sans" font-size="13" fill="#334155">H15</text>
+</g>
+<g id="label-C01">
+<rect x="4460.8" y="4304" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4466.8" y="4321" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C01 «create»</text>
+</g>
+<g id="label-C02">
+<rect x="2290.8" y="4370" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="2296.8" y="4387" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C02 «create»</text>
+</g>
+<g id="label-C03">
+<rect x="3441.8" y="6076" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3447.8" y="6093" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C03 «create»</text>
+</g>
+<g id="label-C04">
+<rect x="4460.8" y="367" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4466.8" y="384" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C04 «create»</text>
+</g>
+<g id="label-C05">
+<rect x="3317.2000000000003" y="205" width="358" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3323.2000000000003" y="222" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C05 «create» snapshot; pass to caretaker</text>
+</g>
+<g id="label-C06">
+<rect x="3322.2000000000003" y="289" width="348" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3328.2000000000003" y="306" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C06 «create» caretaker; use save/restore</text>
+</g>
+<g id="label-C07">
+<rect x="2290.8" y="196" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="2296.8" y="213" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C07 «create»</text>
+</g>
+<g id="label-C08">
+<rect x="3441.8" y="5729" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3447.8" y="5746" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C08 «create»</text>
+</g>
+<g id="label-C09">
+<rect x="4460.8" y="1690" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4466.8" y="1707" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C09 «create»</text>
+</g>
+<g id="label-C10">
+<rect x="2290.8" y="1570" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="2296.8" y="1587" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C10 «create»</text>
+</g>
+<g id="label-C11">
+<rect x="4460.8" y="2799" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4466.8" y="2816" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C11 «create»</text>
+</g>
+<g id="label-C12">
+<rect x="2290.8" y="2448" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="2296.8" y="2465" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C12 «create»</text>
+</g>
+<g id="label-C13">
+<rect x="3441.8" y="4884" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3447.8" y="4901" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C13 «create»</text>
+</g>
+<g id="label-C14">
+<rect x="5052.8" y="3789" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5058.8" y="3806" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C14 «create»</text>
+</g>
+<g id="label-C15">
+<rect x="5052.8" y="5250" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5058.8" y="5267" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C15 «create»</text>
+</g>
+<g id="label-C16">
+<rect x="3441.8" y="778" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3447.8" y="795" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C16 «create»</text>
+</g>
+<g id="label-C37">
+<rect x="4460.8" y="3155" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4466.8" y="3172" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C37 «create»</text>
+</g>
+<g id="label-C38">
+<rect x="3317.2000000000003" y="2990" width="358" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3323.2000000000003" y="3007" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C38 «create» snapshot; pass to caretaker</text>
+</g>
+<g id="label-C39">
+<rect x="3322.2000000000003" y="2923" width="348" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3328.2000000000003" y="2940" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C39 «create» caretaker; use save/restore</text>
+</g>
+<g id="label-C40">
+<rect x="3441.8" y="4047" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3447.8" y="4064" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C40 «create»</text>
+</g>
+<g id="label-C41">
+<rect x="2290.8" y="3225" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="2296.8" y="3242" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C41 «create»</text>
+</g>
+<g id="label-C42">
+<rect x="3441.8" y="3346" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3447.8" y="3363" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C42 «create»</text>
+</g>
+<g id="label-C43">
+<rect x="3441.8" y="4624" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3447.8" y="4641" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C43 «create»</text>
+</g>
+<g id="label-C44">
+<rect x="5052.8" y="2268" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5058.8" y="2285" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C44 «create»</text>
+</g>
+<g id="label-C45">
+<rect x="3441.8" y="2217" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3447.8" y="2234" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C45 «create»</text>
+</g>
+<g id="label-C46">
+<rect x="2290.8" y="978" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="2296.8" y="995" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C46 «create»</text>
+</g>
+<g id="label-C47">
+<rect x="5052.8" y="1533" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5058.8" y="1550" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C47 «create»</text>
+</g>
+<g id="label-C48">
+<rect x="3441.8" y="1420" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3447.8" y="1437" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C48 «create»</text>
+</g>
+<g id="label-C49">
+<rect x="3441.8" y="474" width="108.80000000000001" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3447.8" y="491" font-family="DejaVu Sans" font-size="13" fill="#0891b2">C49 «create»</text>
+</g>
+<g id="label-U01">
+<rect x="3474.2000000000003" y="4246" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="4263" font-family="DejaVu Sans" font-size="13" fill="#64748b">U01</text>
+</g>
+<g id="label-U02">
+<rect x="4493.200000000001" y="6018" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4499.200000000001" y="6035" font-family="DejaVu Sans" font-size="13" fill="#64748b">U02</text>
+</g>
+<g id="label-U03">
+<rect x="2811.4" y="4634" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="2817.4" y="4651" font-family="DejaVu Sans" font-size="13" fill="#64748b">U03</text>
+</g>
+<g id="label-U04">
+<rect x="3474.2000000000003" y="5960" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="5977" font-family="DejaVu Sans" font-size="13" fill="#64748b">U04</text>
+</g>
+<g id="label-U05">
+<rect x="4493.200000000001" y="11" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4499.200000000001" y="28" font-family="DejaVu Sans" font-size="13" fill="#64748b">U05</text>
+</g>
+<g id="label-U06">
+<rect x="6036" y="1931" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="6042" y="1948" font-family="DejaVu Sans" font-size="13" fill="#64748b">U06</text>
+</g>
+<g id="label-U07">
+<rect x="5085.200000000001" y="5729" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="5746" font-family="DejaVu Sans" font-size="13" fill="#64748b">U07</text>
+</g>
+<g id="label-U08">
+<rect x="5085.200000000001" y="5583" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="5600" font-family="DejaVu Sans" font-size="13" fill="#64748b">U08</text>
+</g>
+<g id="label-U09">
+<rect x="4493.200000000001" y="5927" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4499.200000000001" y="5944" font-family="DejaVu Sans" font-size="13" fill="#64748b">U09</text>
+</g>
+<g id="label-U10">
+<rect x="4493.200000000001" y="1639" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4499.200000000001" y="1656" font-family="DejaVu Sans" font-size="13" fill="#64748b">U10</text>
+</g>
+<g id="label-U11">
+<rect x="3474.2000000000003" y="2832" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="2849" font-family="DejaVu Sans" font-size="13" fill="#64748b">U11</text>
+</g>
+<g id="label-U12">
+<rect x="4493.200000000001" y="2393" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4499.200000000001" y="2410" font-family="DejaVu Sans" font-size="13" fill="#64748b">U12</text>
+</g>
+<g id="label-U13">
+<rect x="4493.200000000001" y="5522" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4499.200000000001" y="5539" font-family="DejaVu Sans" font-size="13" fill="#64748b">U13</text>
+</g>
+<g id="label-U14">
+<rect x="5085.200000000001" y="4125" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="4142" font-family="DejaVu Sans" font-size="13" fill="#64748b">U14</text>
+</g>
+<g id="label-U15">
+<rect x="5085.200000000001" y="3566" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="3583" font-family="DejaVu Sans" font-size="13" fill="#64748b">U15</text>
+</g>
+<g id="label-U16">
+<rect x="5085.200000000001" y="3620" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="3637" font-family="DejaVu Sans" font-size="13" fill="#64748b">U16</text>
+</g>
+<g id="label-U17">
+<rect x="5085.200000000001" y="665" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="682" font-family="DejaVu Sans" font-size="13" fill="#64748b">U17</text>
+</g>
+<g id="label-U18">
+<rect x="5008.200000000001" y="2718" width="198" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5014.200000000001" y="2735" font-family="DejaVu Sans" font-size="13" fill="#64748b">U18 dispatch request</text>
+</g>
+<g id="label-U20">
+<rect x="3397.2000000000003" y="2693" width="198" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3403.2000000000003" y="2710" font-family="DejaVu Sans" font-size="13" fill="#64748b">U20 createCommand()</text>
+</g>
+<g id="label-U21">
+<rect x="4416.200000000001" y="2751" width="198" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4422.200000000001" y="2768" font-family="DejaVu Sans" font-size="13" fill="#64748b">U21 read current fleet</text>
+</g>
+<g id="label-U22">
+<rect x="3474.2000000000003" y="3097" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="3114" font-family="DejaVu Sans" font-size="13" fill="#64748b">U22</text>
+</g>
+<g id="label-U23">
+<rect x="4493.200000000001" y="3923" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4499.200000000001" y="3940" font-family="DejaVu Sans" font-size="13" fill="#64748b">U23</text>
+</g>
+<g id="label-U24">
+<rect x="2811.4" y="3989" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="2817.4" y="4006" font-family="DejaVu Sans" font-size="13" fill="#64748b">U24</text>
+</g>
+<g id="label-U25">
+<rect x="3474.2000000000003" y="3956" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="3973" font-family="DejaVu Sans" font-size="13" fill="#64748b">U25</text>
+</g>
+<g id="label-U26">
+<rect x="5085.200000000001" y="3707" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="3724" font-family="DejaVu Sans" font-size="13" fill="#64748b">U26</text>
+</g>
+<g id="label-U27">
+<rect x="4493.200000000001" y="4682" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4499.200000000001" y="4699" font-family="DejaVu Sans" font-size="13" fill="#64748b">U27</text>
+</g>
+<g id="label-U28">
+<rect x="5085.200000000001" y="2220" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="2237" font-family="DejaVu Sans" font-size="13" fill="#64748b">U28</text>
+</g>
+<g id="label-U29">
+<rect x="5085.200000000001" y="2093" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="2110" font-family="DejaVu Sans" font-size="13" fill="#64748b">U29</text>
+</g>
+<g id="label-U30">
+<rect x="3474.2000000000003" y="1072" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="3480.2000000000003" y="1089" font-family="DejaVu Sans" font-size="13" fill="#64748b">U30</text>
+</g>
+<g id="label-U31">
+<rect x="4493.200000000001" y="1039" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4499.200000000001" y="1056" font-family="DejaVu Sans" font-size="13" fill="#64748b">U31</text>
+</g>
+<g id="label-U32">
+<rect x="4493.200000000001" y="943" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4499.200000000001" y="960" font-family="DejaVu Sans" font-size="13" fill="#64748b">U32</text>
+</g>
+<g id="label-U33">
+<rect x="5085.200000000001" y="1485" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="1502" font-family="DejaVu Sans" font-size="13" fill="#64748b">U33</text>
+</g>
+<g id="label-U34">
+<rect x="5085.200000000001" y="1097" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="1114" font-family="DejaVu Sans" font-size="13" fill="#64748b">U34</text>
+</g>
+<g id="label-U35">
+<rect x="5085.200000000001" y="440" width="44" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="5091.200000000001" y="457" font-family="DejaVu Sans" font-size="13" fill="#64748b">U35</text>
+</g>
+<g id="label-U36">
+<rect x="4953.200000000001" y="1221" width="308" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="4959.200000000001" y="1238" font-family="DejaVu Sans" font-size="13" fill="#64748b">U36 uses save(Memento) / restore()</text>
+</g>
+<g id="class-AddDriverCommand"><title>AddDriverCommand</title><rect x="2544.5" y="4189" width="590.4" height="358" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="2544.5" y="4189" width="590.4" height="40" fill="#ccfbf1"/>
+<text x="2839.7" y="4215" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">AddDriverCommand</text>
+<path d="M2544.5,4229 H3134.9 M2544.5,4399 H3134.9" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+<text x="2560.5" y="4253" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-driverFactory : DriverFactory</text>
+<text x="2560.5" y="4275" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleetFactory : FleetFactory</text>
+<text x="2560.5" y="4297" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-driverID : String</text>
+<text x="2560.5" y="4319" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-driverName : String</text>
+<text x="2560.5" y="4341" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-role : int</text>
+<text x="2560.5" y="4363" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleet : VehicleFleet</text>
+<text x="2560.5" y="4385" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-driver : Driver</text>
+<text x="2560.5" y="4423" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+AddDriverCommand(manager : FleetManager, factory : DriverFactory,</text>
+<text x="2560.5" y="4445" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">  driverID : String, driverName : String, role : int)</text>
+<text x="2560.5" y="4467" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+execute() : void</text>
+<text x="2560.5" y="4489" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+undo() : void</text>
+<text x="2560.5" y="4511" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+redo() : void</text>
+<text x="2560.5" y="4533" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+displayName() : String</text>
+</g>
+<g id="class-AddDriverCommandFactory"><title>AddDriverCommandFactory</title><rect x="1591.2" y="4535" width="573.6" height="226" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="1591.2" y="4535" width="573.6" height="40" fill="#ede9fe"/>
+<text x="1878.0" y="4561" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">AddDriverCommandFactory</text>
+<path d="M1591.2,4575 H2164.8 M1591.2,4657 H2164.8" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="1607.2" y="4599" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-manager : FleetManager</text>
+<text x="1607.2" y="4621" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-driverFactory : DriverFactory</text>
+<text x="1607.2" y="4643" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-input : ConsoleInput</text>
+<text x="1607.2" y="4681" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+AddDriverCommandFactory(manager : FleetManager, driverFactory :</text>
+<text x="1607.2" y="4703" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">  DriverFactory, input : ConsoleInput)</text>
+<text x="1607.2" y="4725" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createCommand() : Command</text>
+<text x="1607.2" y="4747" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-parseDriverDetails(information : String) : String[]</text>
+</g>
+<g id="class-BaseCommand"><title>BaseCommand</title><rect x="5870.9" y="1362" width="280" height="186" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="5870.9" y="1362" width="280" height="40" fill="#ccfbf1"/>
+<text x="6010.9" y="1388" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a" font-style="italic">BaseCommand</text>
+<path d="M5870.9,1402 H6150.9 M5870.9,1422 H6150.9" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+<text x="5886.9" y="1446" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+undo() : void</text>
+<text x="5886.9" y="1468" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+redo() : void</text>
+<text x="5886.9" y="1490" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+isUndoable() : boolean</text>
+<text x="5886.9" y="1512" font-family="DejaVu Sans Mono" font-size="14" fill="#172033" font-style="italic">+execute() : void</text>
+<text x="5886.9" y="1534" font-family="DejaVu Sans Mono" font-size="14" fill="#172033" font-style="italic">+displayName() : String</text>
+</g>
+<g id="class-ChangeNameCommand"><title>ChangeNameCommand</title><rect x="2586.08" y="70" width="540" height="248" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="2586.08" y="70" width="540" height="40" fill="#ccfbf1"/>
+<text x="2856.08" y="96" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">ChangeNameCommand</text>
+<path d="M2586.08,110 H3126.08 M2586.08,192 H3126.08" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+<text x="2602.08" y="134" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-newName : String</text>
+<text x="2602.08" y="156" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleet : VehicleFleet</text>
+<text x="2602.08" y="178" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-caretaker : MementoCaretaker</text>
+<text x="2602.08" y="216" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+ChangeNameCommand(manager : FleetManager, newName : String)</text>
+<text x="2602.08" y="238" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+execute() : void</text>
+<text x="2602.08" y="260" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+undo() : void</text>
+<text x="2602.08" y="282" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+redo() : void</text>
+<text x="2602.08" y="304" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+displayName() : String</text>
+</g>
+<g id="class-ChangeNameCommandFactory"><title>ChangeNameCommandFactory</title><rect x="1650" y="103" width="514.8" height="182" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="1650" y="103" width="514.8" height="40" fill="#ede9fe"/>
+<text x="1907.4" y="129" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">ChangeNameCommandFactory</text>
+<path d="M1650,143 H2164.8 M1650,203 H2164.8" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="1666" y="167" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-manager : FleetManager</text>
+<text x="1666" y="189" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-input : ConsoleInput</text>
+<text x="1666" y="227" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+ChangeNameCommandFactory(manager : FleetManager, input :</text>
+<text x="1666" y="249" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">  ConsoleInput)</text>
+<text x="1666" y="271" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createCommand() : Command</text>
+</g>
+<g id="class-Command"><title>Command</title><rect x="6628.800000000001" y="1772" width="280" height="314" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="6628.800000000001" y="1772" width="280" height="58" fill="#ccfbf1"/>
+<text x="6768.800000000001" y="1792" text-anchor="middle" font-family="DejaVu Sans" font-size="13" fill="#0f766e">«interface»</text>
+<text x="6768.800000000001" y="1817" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">Command</text>
+<path d="M6628.800000000001,1830 H6908.800000000001 M6628.800000000001,1850 H6908.800000000001" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+<text x="6644.800000000001" y="1874" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+execute() : void</text>
+<text x="6644.800000000001" y="1896" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+undo() : void</text>
+<text x="6644.800000000001" y="1918" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+redo() : void</text>
+<text x="6644.800000000001" y="1940" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+displayName() : String</text>
+<text x="6644.800000000001" y="1962" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+isUndoable() : boolean</text>
+</g>
+<g id="class-CommandExecutionException"><title>CommandExecutionException</title><rect x="5855.200000000001" y="2830" width="405.6" height="260" fill="white" stroke="#475569" stroke-width="2"/><rect x="5855.200000000001" y="2830" width="405.6" height="40" fill="#f1f5f9"/>
+<text x="6058.000000000001" y="2856" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">CommandExecutionException</text>
+<path d="M5855.200000000001,2870 H6260.800000000001 M5855.200000000001,2890 H6260.800000000001" fill="none" stroke="#475569" stroke-width="1.2"/>
+<text x="5871.200000000001" y="2914" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+CommandExecutionException(message : String)</text>
+</g>
+<g id="class-CommandFactory"><title>CommandFactory</title><rect x="4229.661538461539" y="1799" width="280" height="260" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="4229.661538461539" y="1799" width="280" height="58" fill="#ede9fe"/>
+<text x="4369.661538461539" y="1819" text-anchor="middle" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">«interface»</text>
+<text x="4369.661538461539" y="1844" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">CommandFactory</text>
+<path d="M4229.661538461539,1857 H4509.661538461539 M4229.661538461539,1877 H4509.661538461539" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="4245.661538461539" y="1901" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createCommand() : Command</text>
+</g>
+<g id="class-CommandFactoryRegistry"><title>CommandFactoryRegistry</title><rect x="980.8" y="12" width="573.6" height="160" fill="white" stroke="#475569" stroke-width="2"/><rect x="980.8" y="12" width="573.6" height="40" fill="#f1f5f9"/>
+<text x="1267.6" y="38" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">CommandFactoryRegistry</text>
+<path d="M980.8,52 H1554.4 M980.8,90 H1554.4" fill="none" stroke="#475569" stroke-width="1.2"/>
+<text x="996.8" y="76" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-factories : Map&lt;String, CommandFactory&gt;</text>
+<text x="996.8" y="114" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+CommandFactoryRegistry()</text>
+<text x="996.8" y="136" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+registerFactory(code : String, factory : CommandFactory) : void</text>
+<text x="996.8" y="158" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getFactory(code : String) : CommandFactory</text>
+</g>
+<g id="class-CommandHistory"><title>CommandHistory</title><rect x="4358.6" y="5614" width="313.2" height="226" fill="white" stroke="#d97706" stroke-width="2"/><rect x="4358.6" y="5614" width="313.2" height="40" fill="#fef3c7"/>
+<text x="4515.200000000001" y="5640" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">CommandHistory</text>
+<path d="M4358.6,5654 H4671.8 M4358.6,5714 H4671.8" fill="none" stroke="#d97706" stroke-width="1.2"/>
+<text x="4374.6" y="5678" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-undoStack : Stack&lt;Command&gt;</text>
+<text x="4374.6" y="5700" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-redoStack : Stack&lt;Command&gt;</text>
+<text x="4374.6" y="5738" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+CommandHistory()</text>
+<text x="4374.6" y="5760" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+record(command : Command) : void</text>
+<text x="4374.6" y="5782" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+undo() : void</text>
+<text x="4374.6" y="5804" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+redo() : void</text>
+<text x="4374.6" y="5826" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+showUndoRedoList() : void</text>
+</g>
+<g id="class-CommandInvoker"><title>CommandInvoker</title><rect x="2760.8" y="5614" width="380.40000000000003" height="226" fill="white" stroke="#475569" stroke-width="2"/><rect x="2760.8" y="5614" width="380.40000000000003" height="40" fill="#f1f5f9"/>
+<text x="2951.0" y="5640" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">CommandInvoker</text>
+<path d="M2760.8,5654 H3141.2000000000003 M2760.8,5692 H3141.2000000000003" fill="none" stroke="#475569" stroke-width="1.2"/>
+<text x="2776.8" y="5678" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-history : CommandHistory</text>
+<text x="2776.8" y="5716" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+CommandInvoker()</text>
+<text x="2776.8" y="5738" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+CommandInvoker(history : CommandHistory)</text>
+<text x="2776.8" y="5760" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+execute(command : Command) : void</text>
+<text x="2776.8" y="5782" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+undo() : void</text>
+<text x="2776.8" y="5804" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+redo() : void</text>
+<text x="2776.8" y="5826" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+showUndoRedoList() : void</text>
+</g>
+<g id="class-ConsoleInput"><title>ConsoleInput</title><rect x="462.8" y="12" width="498" height="182" fill="white" stroke="#475569" stroke-width="2"/><rect x="462.8" y="12" width="498" height="40" fill="#f1f5f9"/>
+<text x="711.8" y="38" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">ConsoleInput</text>
+<path d="M462.8,52 H960.8 M462.8,112 H960.8" fill="none" stroke="#475569" stroke-width="1.2"/>
+<text x="478.8" y="76" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-scanner : Scanner</text>
+<text x="478.8" y="98" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-interactive : boolean</text>
+<text x="478.8" y="136" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+ConsoleInput(scanner : Scanner, interactive : boolean)</text>
+<text x="478.8" y="158" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+readLine(prompt : String) : String</text>
+<text x="478.8" y="180" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+readInt(prompt : String) : Integer</text>
+</g>
+<g id="class-CreateFleetCommand"><title>CreateFleetCommand</title><rect x="2531.2000000000003" y="1610" width="607.2" height="380" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="2531.2000000000003" y="1610" width="607.2" height="40" fill="#ccfbf1"/>
+<text x="2834.8" y="1636" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">CreateFleetCommand</text>
+<path d="M2531.2000000000003,1650 H3138.4000000000005 M2531.2000000000003,1820 H3138.4000000000005" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+<text x="2547.2000000000003" y="1674" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleetRegistry : FleetFactoryRegistry</text>
+<text x="2547.2000000000003" y="1696" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-factory : FleetFactory</text>
+<text x="2547.2000000000003" y="1718" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-type : String</text>
+<text x="2547.2000000000003" y="1740" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleetID : String</text>
+<text x="2547.2000000000003" y="1762" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleetName : String</text>
+<text x="2547.2000000000003" y="1784" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleet : VehicleFleet</text>
+<text x="2547.2000000000003" y="1806" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-previousCurrentFleet : VehicleFleet</text>
+<text x="2547.2000000000003" y="1844" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+CreateFleetCommand(manager : FleetManager, registry :</text>
+<text x="2547.2000000000003" y="1866" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">  FleetFactoryRegistry, type : String, fleetID : String, fleetName :</text>
+<text x="2547.2000000000003" y="1888" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">  String)</text>
+<text x="2547.2000000000003" y="1910" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+execute() : void</text>
+<text x="2547.2000000000003" y="1932" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+undo() : void</text>
+<text x="2547.2000000000003" y="1954" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+redo() : void</text>
+<text x="2547.2000000000003" y="1976" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+displayName() : String</text>
+</g>
+<g id="class-CreateFleetCommandFactory"><title>CreateFleetCommandFactory</title><rect x="1574.4" y="1415" width="590.4" height="204" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="1574.4" y="1415" width="590.4" height="40" fill="#ede9fe"/>
+<text x="1869.6000000000001" y="1441" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">CreateFleetCommandFactory</text>
+<path d="M1574.4,1455 H2164.8 M1574.4,1537 H2164.8" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="1590.4" y="1479" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-manager : FleetManager</text>
+<text x="1590.4" y="1501" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleetRegistry : FleetFactoryRegistry</text>
+<text x="1590.4" y="1523" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-input : ConsoleInput</text>
+<text x="1590.4" y="1561" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+CreateFleetCommandFactory(manager : FleetManager, fleetRegistry :</text>
+<text x="1590.4" y="1583" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">  FleetFactoryRegistry, input : ConsoleInput)</text>
+<text x="1590.4" y="1605" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createCommand() : Command</text>
+</g>
+<g id="class-DeleteDriverCommand"><title>DeleteDriverCommand</title><rect x="2563.4" y="2700" width="565.2" height="270" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="2563.4" y="2700" width="565.2" height="40" fill="#ccfbf1"/>
+<text x="2846.0" y="2726" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">DeleteDriverCommand</text>
+<path d="M2563.4,2740 H3128.6000000000004 M2563.4,2844 H3128.6000000000004" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+<text x="2579.4" y="2764" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-driverID : String</text>
+<text x="2579.4" y="2786" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleet : VehicleFleet</text>
+<text x="2579.4" y="2808" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-driver : Driver</text>
+<text x="2579.4" y="2830" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-originalDriverOrder : List&lt;Driver&gt;</text>
+<text x="2579.4" y="2868" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+DeleteDriverCommand(manager : FleetManager, driverID : String)</text>
+<text x="2579.4" y="2890" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+execute() : void</text>
+<text x="2579.4" y="2912" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+undo() : void</text>
+<text x="2579.4" y="2934" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+redo() : void</text>
+<text x="2579.4" y="2956" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+displayName() : String</text>
+</g>
+<g id="class-DeleteDriverCommandFactory"><title>DeleteDriverCommandFactory</title><rect x="1633.2" y="2309" width="531.6" height="182" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="1633.2" y="2309" width="531.6" height="40" fill="#ede9fe"/>
+<text x="1899.0" y="2335" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">DeleteDriverCommandFactory</text>
+<path d="M1633.2,2349 H2164.8 M1633.2,2409 H2164.8" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="1649.2" y="2373" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-manager : FleetManager</text>
+<text x="1649.2" y="2395" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-input : ConsoleInput</text>
+<text x="1649.2" y="2433" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+DeleteDriverCommandFactory(manager : FleetManager, input :</text>
+<text x="1649.2" y="2455" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">  ConsoleInput)</text>
+<text x="1649.2" y="2477" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createCommand() : Command</text>
+</g>
+<g id="class-DeliveryVanFleet"><title>DeliveryVanFleet</title><rect x="4325" y="4791" width="380.40000000000003" height="182" fill="white" stroke="#2563eb" stroke-width="2"/><rect x="4325" y="4791" width="380.40000000000003" height="40" fill="#dbeafe"/>
+<text x="4515.2" y="4817" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">DeliveryVanFleet</text>
+<path d="M4325,4831 H4705.4 M4325,4891 H4705.4" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+<text x="4341" y="4855" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-VAN_DRIVER_ROLE : int = 1 {readOnly}</text>
+<text x="4341" y="4877" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-COURIER_DRIVER_ROLE : int = 2 {readOnly}</text>
+<text x="4341" y="4915" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+DeliveryVanFleet(fleetID : String)</text>
+<text x="4341" y="4937" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+updateDriverRole() : void</text>
+<text x="4341" y="4959" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+showFleet() : void</text>
+</g>
+<g id="class-DeliveryVanFleetFactory"><title>DeliveryVanFleetFactory</title><rect x="2727.2000000000003" y="4992" width="414" height="164" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="2727.2000000000003" y="4992" width="414" height="40" fill="#ede9fe"/>
+<text x="2934.2000000000003" y="5018" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">DeliveryVanFleetFactory</text>
+<path d="M2727.2000000000003,5032 H3141.2000000000003 M2727.2000000000003,5052 H3141.2000000000003" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="2743.2000000000003" y="5076" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createFleet(fleetID : String) : VehicleFleet</text>
+<text x="2743.2000000000003" y="5098" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getType() : String</text>
+<text x="2743.2000000000003" y="5120" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getFleetTypeName() : String</text>
+<text x="2743.2000000000003" y="5142" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getDriverRoleName(role : int) : String</text>
+</g>
+<g id="class-Driver"><title>Driver</title><rect x="5855.200000000001" y="3175" width="288" height="270" fill="white" stroke="#2563eb" stroke-width="2"/><rect x="5855.200000000001" y="3175" width="288" height="40" fill="#dbeafe"/>
+<text x="5999.200000000001" y="3201" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">Driver</text>
+<path d="M5855.200000000001,3215 H6143.200000000001 M5855.200000000001,3297 H6143.200000000001" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+<text x="5871.200000000001" y="3239" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-driverID : String</text>
+<text x="5871.200000000001" y="3261" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-driverName : String</text>
+<text x="5871.200000000001" y="3283" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-role : int</text>
+<text x="5871.200000000001" y="3321" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+Driver(driverID : String)</text>
+<text x="5871.200000000001" y="3343" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getDriverID() : String</text>
+<text x="5871.200000000001" y="3365" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getRole() : int</text>
+<text x="5871.200000000001" y="3387" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+setRole(role : int) : void</text>
+<text x="5871.200000000001" y="3409" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getName() : String</text>
+<text x="5871.200000000001" y="3431" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+setName(name : String) : void</text>
+</g>
+<g id="class-DriverFactory"><title>DriverFactory</title><rect x="4270.4" y="3738" width="556.8000000000001" height="98" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="4270.4" y="3738" width="556.8000000000001" height="40" fill="#ede9fe"/>
+<text x="4548.799999999999" y="3764" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">DriverFactory</text>
+<path d="M4270.4,3778 H4827.2 M4270.4,3798 H4827.2" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="4286.4" y="3822" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createDriver(driverID : String, driverName : String) : Driver</text>
+</g>
+<g id="class-DriverRoleMemento"><title>DriverRoleMemento</title><rect x="4350.200000000001" y="2908" width="330" height="160" fill="white" stroke="#d97706" stroke-width="2"/><rect x="4350.200000000001" y="2908" width="330" height="40" fill="#fef3c7"/>
+<text x="4515.200000000001" y="2934" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">DriverRoleMemento</text>
+<path d="M4350.200000000001,2948 H4680.200000000001 M4350.200000000001,3008 H4680.200000000001" fill="none" stroke="#d97706" stroke-width="1.2"/>
+<text x="4366.200000000001" y="2972" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-driver : Driver</text>
+<text x="4366.200000000001" y="2994" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-oldRole : int</text>
+<text x="4366.200000000001" y="3032" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+DriverRoleMemento(driver : Driver)</text>
+<text x="4366.200000000001" y="3054" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+restore() : void</text>
+</g>
+<g id="class-FleetFactory"><title>FleetFactory</title><rect x="4238.200000000001" y="4032" width="414" height="182" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="4238.200000000001" y="4032" width="414" height="58" fill="#ede9fe"/>
+<text x="4445.200000000001" y="4052" text-anchor="middle" font-family="DejaVu Sans" font-size="13" fill="#7c3aed">«interface»</text>
+<text x="4445.200000000001" y="4077" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">FleetFactory</text>
+<path d="M4238.200000000001,4090 H4652.200000000001 M4238.200000000001,4110 H4652.200000000001" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="4254.200000000001" y="4134" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createFleet(fleetID : String) : VehicleFleet</text>
+<text x="4254.200000000001" y="4156" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getType() : String</text>
+<text x="4254.200000000001" y="4178" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getFleetTypeName() : String</text>
+<text x="4254.200000000001" y="4200" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getDriverRoleName(role : int) : String</text>
+</g>
+<g id="class-FleetFactoryRegistry"><title>FleetFactoryRegistry</title><rect x="12" y="12" width="430.8" height="160" fill="white" stroke="#475569" stroke-width="2"/><rect x="12" y="12" width="430.8" height="40" fill="#f1f5f9"/>
+<text x="227.4" y="38" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">FleetFactoryRegistry</text>
+<path d="M12,52 H442.8 M12,90 H442.8" fill="none" stroke="#475569" stroke-width="1.2"/>
+<text x="28" y="76" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-factories : Map&lt;String, FleetFactory&gt;</text>
+<text x="28" y="114" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+FleetFactoryRegistry()</text>
+<text x="28" y="136" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+registerFactory(factory : FleetFactory) : void</text>
+<text x="28" y="158" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getFactory(type : String) : FleetFactory</text>
+</g>
+<g id="class-FleetManager"><title>FleetManager</title><rect x="4270.4" y="5058" width="556.8000000000001" height="380" fill="white" stroke="#475569" stroke-width="2"/><rect x="4270.4" y="5058" width="556.8000000000001" height="40" fill="#f1f5f9"/>
+<text x="4548.799999999999" y="5084" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">FleetManager</text>
+<path d="M4270.4,5098 H4827.2 M4270.4,5180 H4827.2" fill="none" stroke="#475569" stroke-width="1.2"/>
+<text x="4286.4" y="5122" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleets : List&lt;VehicleFleet&gt;</text>
+<text x="4286.4" y="5144" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-currentFleet : VehicleFleet</text>
+<text x="4286.4" y="5166" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleetFactories : Map&lt;VehicleFleet, FleetFactory&gt;</text>
+<text x="4286.4" y="5204" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+FleetManager()</text>
+<text x="4286.4" y="5226" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+addFleet(fleet : VehicleFleet) : void</text>
+<text x="4286.4" y="5248" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+removeFleet(fleet : VehicleFleet) : void</text>
+<text x="4286.4" y="5270" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+addFleet(fleet : VehicleFleet, factory : FleetFactory) : void</text>
+<text x="4286.4" y="5292" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getFleetFactory(fleet : VehicleFleet) : FleetFactory</text>
+<text x="4286.4" y="5314" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getFleets() : List&lt;VehicleFleet&gt;</text>
+<text x="4286.4" y="5336" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+findFleet(fleetID : String) : VehicleFleet</text>
+<text x="4286.4" y="5358" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+setCurrentFleet(fleet : VehicleFleet) : void</text>
+<text x="4286.4" y="5380" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getCurrentFleet() : VehicleFleet</text>
+<text x="4286.4" y="5402" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getFleetCount() : int</text>
+<text x="4286.4" y="5424" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+hasFleet(fleetID : String) : boolean</text>
+</g>
+<g id="class-FleetNameMemento"><title>FleetNameMemento</title><rect x="4333.4" y="123" width="363.6" height="160" fill="white" stroke="#d97706" stroke-width="2"/><rect x="4333.4" y="123" width="363.6" height="40" fill="#fef3c7"/>
+<text x="4515.2" y="149" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">FleetNameMemento</text>
+<path d="M4333.4,163 H4697.0 M4333.4,223 H4697.0" fill="none" stroke="#d97706" stroke-width="1.2"/>
+<text x="4349.4" y="187" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleet : VehicleFleet</text>
+<text x="4349.4" y="209" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-oldName : String</text>
+<text x="4349.4" y="247" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+FleetNameMemento(fleet : VehicleFleet)</text>
+<text x="4349.4" y="269" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+restore() : void</text>
+</g>
+<g id="class-FleetUtil"><title>FleetUtil</title><rect x="4203.200000000001" y="3509" width="624" height="164" fill="white" stroke="#2563eb" stroke-width="2"/><rect x="4203.200000000001" y="3509" width="624" height="40" fill="#dbeafe"/>
+<text x="4515.200000000001" y="3535" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">FleetUtil</text>
+<path d="M4203.200000000001,3549 H4827.200000000001 M4203.200000000001,3569 H4827.200000000001" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+<text x="4219.200000000001" y="3593" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+findDriver(fleet : VehicleFleet, driverID : String) : Driver</text>
+<path d="M4219.200000000001,3596 h512.4" stroke="#172033" stroke-width="0.8"/>
+<text x="4219.200000000001" y="3615" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+indexOfDriver(fleet : VehicleFleet, driverID : String) : int</text>
+<path d="M4219.200000000001,3618 h512.4" stroke="#172033" stroke-width="0.8"/>
+<text x="4219.200000000001" y="3637" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getAllDrivers(fleet : VehicleFleet) : List&lt;Driver&gt;</text>
+<path d="M4219.200000000001,3640 h428.40000000000003" stroke="#172033" stroke-width="0.8"/>
+<text x="4219.200000000001" y="3659" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+restoreDriverOrder(fleet : VehicleFleet, order : List&lt;Driver&gt;) : void</text>
+<path d="M4219.200000000001,3662 h588.0" stroke="#172033" stroke-width="0.8"/>
+</g>
+<g id="class-ListCommand"><title>ListCommand</title><rect x="4337.6" y="696" width="355.2" height="160" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="4337.6" y="696" width="355.2" height="40" fill="#ccfbf1"/>
+<text x="4515.200000000001" y="722" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">ListCommand</text>
+<path d="M4337.6,736 H4692.8 M4337.6,774 H4692.8" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+<text x="4353.6" y="760" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-invoker : CommandInvoker</text>
+<text x="4353.6" y="798" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+ListCommand(invoker : CommandInvoker)</text>
+<text x="4353.6" y="820" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+execute() : void</text>
+<text x="4353.6" y="842" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+displayName() : String</text>
+</g>
+<g id="class-ListCommandFactory"><title>ListCommandFactory</title><rect x="2727.2000000000003" y="737" width="414" height="138" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="2727.2000000000003" y="737" width="414" height="40" fill="#ede9fe"/>
+<text x="2934.2000000000003" y="763" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">ListCommandFactory</text>
+<path d="M2727.2000000000003,777 H3141.2000000000003 M2727.2000000000003,815 H3141.2000000000003" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="2743.2000000000003" y="801" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-invoker : CommandInvoker</text>
+<text x="2743.2000000000003" y="839" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+ListCommandFactory(invoker : CommandInvoker)</text>
+<text x="2743.2000000000003" y="861" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createCommand() : Command</text>
+</g>
+<g id="class-Main"><title>Main</title><rect x="2744" y="2433" width="397.2" height="182" fill="white" stroke="#475569" stroke-width="2"/><rect x="2744" y="2433" width="397.2" height="40" fill="#f1f5f9"/>
+<text x="2942.6" y="2459" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">Main</text>
+<path d="M2744,2473 H3141.2 M2744,2533 H3141.2" fill="none" stroke="#475569" stroke-width="1.2"/>
+<text x="2760" y="2497" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-interactive : boolean</text>
+<path d="M2760,2500 h184.8" stroke="#172033" stroke-width="0.8"/>
+<text x="2760" y="2519" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-MENU_PROMPT : String {readOnly}</text>
+<path d="M2760,2522 h268.8" stroke="#172033" stroke-width="0.8"/>
+<text x="2760" y="2557" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+main(args : String[]) : void</text>
+<path d="M2760,2560 h243.60000000000002" stroke="#172033" stroke-width="0.8"/>
+<text x="2760" y="2579" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-printHeader(manager : FleetManager) : void</text>
+<path d="M2760,2582 h361.2" stroke="#172033" stroke-width="0.8"/>
+<text x="2760" y="2601" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-showMenu() : void</text>
+<path d="M2760,2604 h151.20000000000002" stroke="#172033" stroke-width="0.8"/>
+</g>
+<g id="class-Memento"><title>Memento</title><rect x="5855.200000000001" y="1161" width="280" height="116" fill="white" stroke="#d97706" stroke-width="2"/><rect x="5855.200000000001" y="1161" width="280" height="58" fill="#fef3c7"/>
+<text x="5995.200000000001" y="1181" text-anchor="middle" font-family="DejaVu Sans" font-size="13" fill="#d97706">«interface»</text>
+<text x="5995.200000000001" y="1206" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">Memento</text>
+<path d="M5855.200000000001,1219 H6135.200000000001 M5855.200000000001,1239 H6135.200000000001" fill="none" stroke="#d97706" stroke-width="1.2"/>
+<text x="5871.200000000001" y="1263" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+restore() : void</text>
+</g>
+<g id="class-MementoCaretaker"><title>MementoCaretaker</title><rect x="4312.4" y="1128" width="296.40000000000003" height="182" fill="white" stroke="#d97706" stroke-width="2"/><rect x="4312.4" y="1128" width="296.40000000000003" height="40" fill="#fef3c7"/>
+<text x="4460.599999999999" y="1154" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">MementoCaretaker</text>
+<path d="M4312.4,1168 H4608.799999999999 M4312.4,1206 H4608.799999999999" fill="none" stroke="#d97706" stroke-width="1.2"/>
+<text x="4328.4" y="1192" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-memento : Memento</text>
+<text x="4328.4" y="1230" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+MementoCaretaker()</text>
+<text x="4328.4" y="1252" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+save(memento : Memento) : void</text>
+<text x="4328.4" y="1274" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+hasMemento() : boolean</text>
+<text x="4328.4" y="1296" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+restore() : void</text>
+</g>
+<g id="class-ModifyRoleCommand"><title>ModifyRoleCommand</title><rect x="2525.6000000000004" y="3055" width="615.6" height="336" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="2525.6000000000004" y="3055" width="615.6" height="40" fill="#ccfbf1"/>
+<text x="2833.4000000000005" y="3081" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">ModifyRoleCommand</text>
+<path d="M2525.6000000000004,3095 H3141.2000000000003 M2525.6000000000004,3243 H3141.2000000000003" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+<text x="2541.6000000000004" y="3119" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-driverID : String</text>
+<text x="2541.6000000000004" y="3141" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-newRole : int</text>
+<text x="2541.6000000000004" y="3163" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleet : VehicleFleet</text>
+<text x="2541.6000000000004" y="3185" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-driver : Driver</text>
+<text x="2541.6000000000004" y="3207" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-caretaker : MementoCaretaker</text>
+<text x="2541.6000000000004" y="3229" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleetFactory : FleetFactory</text>
+<text x="2541.6000000000004" y="3267" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+ModifyRoleCommand(manager : FleetManager, driverID : String, newRole</text>
+<text x="2541.6000000000004" y="3289" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">  : int)</text>
+<text x="2541.6000000000004" y="3311" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+execute() : void</text>
+<text x="2541.6000000000004" y="3333" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+undo() : void</text>
+<text x="2541.6000000000004" y="3355" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+redo() : void</text>
+<text x="2541.6000000000004" y="3377" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+displayName() : String</text>
+</g>
+<g id="class-ModifyRoleCommandFactory"><title>ModifyRoleCommandFactory</title><rect x="1650" y="3850" width="514.8" height="182" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="1650" y="3850" width="514.8" height="40" fill="#ede9fe"/>
+<text x="1907.4" y="3876" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">ModifyRoleCommandFactory</text>
+<path d="M1650,3890 H2164.8 M1650,3950 H2164.8" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="1666" y="3914" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-manager : FleetManager</text>
+<text x="1666" y="3936" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-input : ConsoleInput</text>
+<text x="1666" y="3974" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+ModifyRoleCommandFactory(manager : FleetManager, input :</text>
+<text x="1666" y="3996" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">  ConsoleInput)</text>
+<text x="1666" y="4018" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createCommand() : Command</text>
+</g>
+<g id="class-RedoCommand"><title>RedoCommand</title><rect x="4337.6" y="3264" width="355.2" height="160" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="4337.6" y="3264" width="355.2" height="40" fill="#ccfbf1"/>
+<text x="4515.200000000001" y="3290" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">RedoCommand</text>
+<path d="M4337.6,3304 H4692.8 M4337.6,3342 H4692.8" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+<text x="4353.6" y="3328" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-invoker : CommandInvoker</text>
+<text x="4353.6" y="3366" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+RedoCommand(invoker : CommandInvoker)</text>
+<text x="4353.6" y="3388" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+execute() : void</text>
+<text x="4353.6" y="3410" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+displayName() : String</text>
+</g>
+<g id="class-RedoCommandFactory"><title>RedoCommandFactory</title><rect x="2727.2000000000003" y="3476" width="414" height="138" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="2727.2000000000003" y="3476" width="414" height="40" fill="#ede9fe"/>
+<text x="2934.2000000000003" y="3502" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">RedoCommandFactory</text>
+<path d="M2727.2000000000003,3516 H3141.2000000000003 M2727.2000000000003,3554 H3141.2000000000003" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="2743.2000000000003" y="3540" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-invoker : CommandInvoker</text>
+<text x="2743.2000000000003" y="3578" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+RedoCommandFactory(invoker : CommandInvoker)</text>
+<text x="2743.2000000000003" y="3600" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createCommand() : Command</text>
+</g>
+<g id="class-RefrigeratedTruckFleet"><title>RefrigeratedTruckFleet</title><rect x="4274.6" y="4413" width="481.20000000000005" height="182" fill="white" stroke="#2563eb" stroke-width="2"/><rect x="4274.6" y="4413" width="481.20000000000005" height="40" fill="#dbeafe"/>
+<text x="4515.200000000001" y="4439" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">RefrigeratedTruckFleet</text>
+<path d="M4274.6,4453 H4755.8 M4274.6,4513 H4755.8" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+<text x="4290.6" y="4477" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-REFRIGERATED_TRUCK_DRIVER_ROLE : int = 1 {readOnly}</text>
+<text x="4290.6" y="4499" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-COLD_CHAIN_DELIVERY_DRIVER_ROLE : int = 2 {readOnly}</text>
+<text x="4290.6" y="4537" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+RefrigeratedTruckFleet(fleetID : String)</text>
+<text x="4290.6" y="4559" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+updateDriverRole() : void</text>
+<text x="4290.6" y="4581" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+showFleet() : void</text>
+</g>
+<g id="class-RefrigeratedTruckFleetFactory"><title>RefrigeratedTruckFleetFactory</title><rect x="2727.2000000000003" y="4743" width="414" height="164" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="2727.2000000000003" y="4743" width="414" height="40" fill="#ede9fe"/>
+<text x="2934.2000000000003" y="4769" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">RefrigeratedTruckFleetFactory</text>
+<path d="M2727.2000000000003,4783 H3141.2000000000003 M2727.2000000000003,4803 H3141.2000000000003" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="2743.2000000000003" y="4827" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createFleet(fleetID : String) : VehicleFleet</text>
+<text x="2743.2000000000003" y="4849" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getType() : String</text>
+<text x="2743.2000000000003" y="4871" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getFleetTypeName() : String</text>
+<text x="2743.2000000000003" y="4893" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getDriverRoleName(role : int) : String</text>
+</g>
+<g id="class-SetCurrentFleetCommand"><title>SetCurrentFleetCommand</title><rect x="4234.700000000001" y="2124" width="582" height="182" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="4234.700000000001" y="2124" width="582" height="40" fill="#ccfbf1"/>
+<text x="4525.700000000001" y="2150" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">SetCurrentFleetCommand</text>
+<path d="M4234.700000000001,2164 H4816.700000000001 M4234.700000000001,2224 H4816.700000000001" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+<text x="4250.700000000001" y="2188" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-manager : FleetManager</text>
+<text x="4250.700000000001" y="2210" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleetID : String</text>
+<text x="4250.700000000001" y="2248" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+SetCurrentFleetCommand(manager : FleetManager, fleetID : String)</text>
+<text x="4250.700000000001" y="2270" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+execute() : void</text>
+<text x="4250.700000000001" y="2292" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+displayName() : String</text>
+</g>
+<g id="class-SetCurrentFleetCommandFactory"><title>SetCurrentFleetCommandFactory</title><rect x="2584.4" y="2186" width="556.8000000000001" height="182" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="2584.4" y="2186" width="556.8000000000001" height="40" fill="#ede9fe"/>
+<text x="2862.8" y="2212" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">SetCurrentFleetCommandFactory</text>
+<path d="M2584.4,2226 H3141.2000000000003 M2584.4,2286 H3141.2000000000003" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="2600.4" y="2250" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-manager : FleetManager</text>
+<text x="2600.4" y="2272" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-input : ConsoleInput</text>
+<text x="2600.4" y="2310" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+SetCurrentFleetCommandFactory(manager : FleetManager, input :</text>
+<text x="2600.4" y="2332" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">  ConsoleInput)</text>
+<text x="2600.4" y="2354" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createCommand() : Command</text>
+</g>
+<g id="class-ShowAllFleetsCommand"><title>ShowAllFleetsCommand</title><rect x="2676.8" y="1051" width="414" height="160" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="2676.8" y="1051" width="414" height="40" fill="#ccfbf1"/>
+<text x="2883.8" y="1077" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">ShowAllFleetsCommand</text>
+<path d="M2676.8,1091 H3090.8 M2676.8,1129 H3090.8" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+<text x="2692.8" y="1115" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-manager : FleetManager</text>
+<text x="2692.8" y="1153" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+ShowAllFleetsCommand(manager : FleetManager)</text>
+<text x="2692.8" y="1175" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+execute() : void</text>
+<text x="2692.8" y="1197" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+displayName() : String</text>
+</g>
+<g id="class-ShowAllFleetsCommandFactory"><title>ShowAllFleetsCommandFactory</title><rect x="1692" y="872" width="472.8" height="138" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="1692" y="872" width="472.8" height="40" fill="#ede9fe"/>
+<text x="1928.4" y="898" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">ShowAllFleetsCommandFactory</text>
+<path d="M1692,912 H2164.8 M1692,950 H2164.8" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="1708" y="936" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-manager : FleetManager</text>
+<text x="1708" y="974" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+ShowAllFleetsCommandFactory(manager : FleetManager)</text>
+<text x="1708" y="996" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createCommand() : Command</text>
+</g>
+<g id="class-ShowFleetCommand"><title>ShowFleetCommand</title><rect x="4385.9" y="1395" width="380.40000000000003" height="160" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="4385.9" y="1395" width="380.40000000000003" height="40" fill="#ccfbf1"/>
+<text x="4576.099999999999" y="1421" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">ShowFleetCommand</text>
+<path d="M4385.9,1435 H4766.299999999999 M4385.9,1473 H4766.299999999999" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+<text x="4401.9" y="1459" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-manager : FleetManager</text>
+<text x="4401.9" y="1497" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+ShowFleetCommand(manager : FleetManager)</text>
+<text x="4401.9" y="1519" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+execute() : void</text>
+<text x="4401.9" y="1541" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+displayName() : String</text>
+</g>
+<g id="class-ShowFleetCommandFactory"><title>ShowFleetCommandFactory</title><rect x="2702" y="1296" width="439.20000000000005" height="138" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="2702" y="1296" width="439.20000000000005" height="40" fill="#ede9fe"/>
+<text x="2921.6" y="1322" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">ShowFleetCommandFactory</text>
+<path d="M2702,1336 H3141.2 M2702,1374 H3141.2" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="2718" y="1360" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-manager : FleetManager</text>
+<text x="2718" y="1398" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+ShowFleetCommandFactory(manager : FleetManager)</text>
+<text x="2718" y="1420" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createCommand() : Command</text>
+</g>
+<g id="class-UndoCommand"><title>UndoCommand</title><rect x="4337.6" y="471" width="355.2" height="160" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="4337.6" y="471" width="355.2" height="40" fill="#ccfbf1"/>
+<text x="4515.200000000001" y="497" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">UndoCommand</text>
+<path d="M4337.6,511 H4692.8 M4337.6,549 H4692.8" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+<text x="4353.6" y="535" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-invoker : CommandInvoker</text>
+<text x="4353.6" y="573" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+UndoCommand(invoker : CommandInvoker)</text>
+<text x="4353.6" y="595" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+execute() : void</text>
+<text x="4353.6" y="617" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+displayName() : String</text>
+</g>
+<g id="class-UndoCommandFactory"><title>UndoCommandFactory</title><rect x="2727.2000000000003" y="403" width="414" height="138" fill="white" stroke="#7c3aed" stroke-width="2"/><rect x="2727.2000000000003" y="403" width="414" height="40" fill="#ede9fe"/>
+<text x="2934.2000000000003" y="429" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">UndoCommandFactory</text>
+<path d="M2727.2000000000003,443 H3141.2000000000003 M2727.2000000000003,481 H3141.2000000000003" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="2743.2000000000003" y="467" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-invoker : CommandInvoker</text>
+<text x="2743.2000000000003" y="505" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+UndoCommandFactory(invoker : CommandInvoker)</text>
+<text x="2743.2000000000003" y="527" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+createCommand() : Command</text>
+</g>
+<g id="class-UndoableCommand"><title>UndoableCommand</title><rect x="4245.200000000001" y="2502" width="372" height="182" fill="white" stroke="#0f766e" stroke-width="2"/><rect x="4245.200000000001" y="2502" width="372" height="40" fill="#ccfbf1"/>
+<text x="4431.200000000001" y="2528" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a" font-style="italic">UndoableCommand</text>
+<path d="M4245.200000000001,2542 H4617.200000000001 M4245.200000000001,2580 H4617.200000000001" fill="none" stroke="#0f766e" stroke-width="1.2"/>
+<text x="4261.200000000001" y="2566" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">#manager : FleetManager</text>
+<text x="4261.200000000001" y="2604" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+UndoableCommand(manager : FleetManager)</text>
+<text x="4261.200000000001" y="2626" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+isUndoable() : boolean</text>
+<text x="4261.200000000001" y="2648" font-family="DejaVu Sans Mono" font-size="14" fill="#172033" font-style="italic">+undo() : void</text>
+<text x="4261.200000000001" y="2670" font-family="DejaVu Sans Mono" font-size="14" fill="#172033" font-style="italic">+redo() : void</text>
+</g>
+<g id="class-VehicleFleet"><title>VehicleFleet</title><rect x="5855.200000000001" y="3530" width="330" height="336" fill="white" stroke="#2563eb" stroke-width="2"/><rect x="5855.200000000001" y="3530" width="330" height="40" fill="#dbeafe"/>
+<text x="6020.200000000001" y="3556" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a" font-style="italic">VehicleFleet</text>
+<path d="M5855.200000000001,3570 H6185.200000000001 M5855.200000000001,3652 H6185.200000000001" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+<text x="5871.200000000001" y="3594" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleetID : String</text>
+<text x="5871.200000000001" y="3616" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-fleetName : String</text>
+<text x="5871.200000000001" y="3638" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">-drivers : AbstractList</text>
+<text x="5871.200000000001" y="3676" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+VehicleFleet(fleetID : String)</text>
+<text x="5871.200000000001" y="3698" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getFleetID() : String</text>
+<text x="5871.200000000001" y="3720" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getName() : String</text>
+<text x="5871.200000000001" y="3742" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+setName(name : String) : void</text>
+<text x="5871.200000000001" y="3764" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+addDriver(driver : Driver) : void</text>
+<text x="5871.200000000001" y="3786" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+dropDriver(driver : Driver) : void</text>
+<text x="5871.200000000001" y="3808" font-family="DejaVu Sans Mono" font-size="14" fill="#172033">+getDrivers() : Iterator&lt;Driver&gt;</text>
+<text x="5871.200000000001" y="3830" font-family="DejaVu Sans Mono" font-size="14" fill="#172033" font-style="italic">+updateDriverRole() : void</text>
+<text x="5871.200000000001" y="3852" font-family="DejaVu Sans Mono" font-size="14" fill="#172033" font-style="italic">+showFleet() : void</text>
+</g>
+<g id="class-RuntimeException"><title>RuntimeException</title><rect x="6628.800000000001" y="2905" width="260" height="110" fill="white" stroke="#64748b" stroke-width="2"/><rect x="6628.800000000001" y="2905" width="260" height="70" fill="#f8fafc"/>
+<text x="6758.800000000001" y="2925" text-anchor="middle" font-family="DejaVu Sans" font-size="13" fill="#64748b">«JDK external»</text>
+<text x="6758.800000000001" y="2962" text-anchor="middle" font-family="DejaVu Sans" font-size="18" font-weight="bold" fill="#0f172a">RuntimeException</text>
+</g>
+</g>
+<text x="70" y="6432" font-family="DejaVu Sans" font-size="16" fill="#475569">Commands create their caretaker in the constructor, create a concrete memento before the first change, then call caretaker.save(snapshot).</text>
+<text x="70" y="6460" font-family="DejaVu Sans" font-size="16" fill="#475569">Caretaker depends only on Memento: save(Memento), hasMemento(), restore(). It does not construct DriverRoleMemento or FleetNameMemento.</text>
+<text x="70" y="6488" font-family="DejaVu Sans" font-size="16" fill="#475569">This learning view omits retained-reference associations. Add Command -&gt; Caretaker and Caretaker -&gt; Memento associations later in the complete model.</text>
+<text x="70" y="6522" font-family="DejaVu Sans" font-size="16" fill="#64748b">One page / one model. Relationship IDs match the accompanying complete connection index. No project class is duplicated. Generated from source declarations, not an edited Visual Paradigm project.</text>
+</svg>

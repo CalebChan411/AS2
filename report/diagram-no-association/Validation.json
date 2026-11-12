@@ -1,0 +1,29 @@
+{
+  "source_commit": "bf10becbdceb873e77c5c36b0c8d59d5cebaed4b",
+  "project_type_count": 47,
+  "external_type_count": 1,
+  "relation_counts": {
+    "H": 15,
+    "R": 16,
+    "C": 29,
+    "U": 35
+  },
+  "geometry_checks": {
+    "node_count": 48,
+    "project_types": 47,
+    "edge_count": 95,
+    "unrelated_node_intersections": []
+  },
+  "label_checks": {
+    "label_node": [],
+    "label_label": [],
+    "collinear_segments": []
+  },
+  "main_dependencies": [
+    "CommandFactory",
+    "Command",
+    "VehicleFleet"
+  ],
+  "association_count": 0,
+  "view_scope": "All associations omitted; Main startup construction details omitted; caretaker interface use shown as dependency"
+}

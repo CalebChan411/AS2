@@ -17,3 +17,10 @@ Files: `report/SDFMS_Report.docx`, `report/SDFMS_Report.pdf`, `report/Part3_Scre
 The report currently has 128 pages, mostly full source and per-case evidence. Current code was recompiled and all 26 scenario outputs were rerun and matched the validated evidence; all 166 independent output assertions remain satisfied. Figures are actual application output, not rendered expected answers.
 
 Before submission: complete name/number/date, insert Part 2 diagram and Part 3 code screenshots, remove placeholder instructions, update Word fields/contents (Ctrl+A, F9), and export a new PDF. This is intentionally a report with student image positions; it is not yet a fully filled submission. Windows execution was not tested here; Linux compilation/execution were tested. Source files and run.bat must be submitted separately as well as listed in the report.
+
+
+## Simplified diagram view
+
+`report/diagram-no-association/` contains a single-page view with all Association lines omitted. Main has only three usage dependencies: CommandFactory, Command and VehicleFleet. The view retains snapshot creation by commands and interface use by MementoCaretaker; the Chinese explanation distinguishes creation from stored-reference relationships. The full application and report source remain the same.
+
+Word download: https://github.com/CalebChan411/AS2/raw/refs/heads/report/report/SDFMS_Report.docx

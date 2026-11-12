@@ -78,5 +78,15 @@
     "Refresh contents/fields and PDF after inserting images"
   ],
   "fresh_console_scenarios": 26,
-  "fresh_console_passed": 26
+  "fresh_console_passed": 26,
+  "no_association_diagram": {
+    "path": "report/diagram-no-association/SDFMS_No_Association.pdf",
+    "relations": 95,
+    "association_count": 0,
+    "main_usage_dependencies": [
+      "CommandFactory",
+      "Command",
+      "VehicleFleet"
+    ]
+  }
 }

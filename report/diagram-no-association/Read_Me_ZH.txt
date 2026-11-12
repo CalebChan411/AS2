@@ -1,0 +1,8 @@
+SDFMS 无 Association 单张总图
+
+本版47个项目类型全部保留，另有JDK RuntimeException框；95条关系，Association为0。
+Main只连CommandFactory、Command、VehicleFleet三条使用Dependency。
+重点：Command创建Caretaker与具体快照；Caretaker使用Memento接口，具体Memento实现该接口。
+Word报告下载链接及具体原因见 Main_And_Memento_Explanation_ZH.md。
+HTML可搜索/点击类框高亮；PDF和SVG为单页矢量图；PNG为高清图；drawio可编辑。
+本版是分步查看连线的学习视图，完整提交图的Association另补。
