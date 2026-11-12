@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "groups": 9,
+  "assertions": 65,
+  "group_titles": [
+    "create undo/redo collection, current fleet and identity",
+    "delete restores driver order and identities through repeated cycles",
+    "role snapshots bind original object across current-fleet changes",
+    "independent name snapshots, replay and original target",
+    "direct Memento interface and caretaker restoration",
+    "history moves only after success; failed operations retain retryable entries",
+    "failed mutations roll back state and preserve redo",
+    "factories create fresh requests; undo/redo never recreates business objects",
+    "backward constructor compatibility and missing-snapshot feedback"
+  ],
+  "stdout": "state-tests.out"
+}

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "TC01",
+    "title": "Create a delivery van fleet and select it",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\nsf\nx\n",
+    "steps": "Create a delivery van fleet and select it",
+    "expected": "One V201 van fleet becomes current, both roles empty.",
+    "ordered": [
+      "Delivery van fleet is created.\nCurrent fleet is changed to V201.\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC02",
+    "title": "Create a refrigerated truck fleet",
+    "input": "c\nr\nR301\nARCTIC LINE\nsf\nx\n",
+    "steps": "Create a refrigerated truck fleet",
+    "expected": "One R301 refrigerated fleet becomes current; both roles empty.",
+    "ordered": [
+      "Refrigerated truck fleet is created.\nCurrent fleet is changed to R301.\n",
+      "Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC03",
+    "title": "Add both legal delivery van roles",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\na\nD202, Riley Ng\n2\nsf\nx\n",
+    "steps": "Add both legal delivery van roles",
+    "expected": "Casey is van driver and Riley is courier driver.",
+    "ordered": [
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver:\n\nD202, Riley Ng\n\n"
+    ],
+    "counts": {
+      "Driver is added.": 2
+    },
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC04",
+    "title": "Add both legal refrigerated truck roles",
+    "input": "c\nr\nR301\nARCTIC LINE\na\nD201, Casey Ho\n1\na\nD202, Riley Ng\n2\nsf\nx\n",
+    "steps": "Add both legal refrigerated truck roles",
+    "expected": "Casey is refrigerated-truck driver and Riley is cold-chain delivery driver.",
+    "ordered": [
+      "Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Casey Ho\n\nCold-Chain Delivery Driver:\n\nD202, Riley Ng\n\n"
+    ],
+    "counts": {
+      "Driver is added.": 2
+    },
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC05",
+    "title": "Switch current fleet in both directions",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\nc\nr\nR301\nARCTIC LINE\ns\nV201\nsf\ns\nR301\nsf\nx\n",
+    "steps": "Switch current fleet in both directions",
+    "expected": "Switching selects each existing fleet without changing membership.",
+    "ordered": [
+      "Changed current fleet to V201.",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Changed current fleet to R301.",
+      "Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC06",
+    "title": "Modify delivery van driver role",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\nm\nD201\n2\nsf\nx\n",
+    "steps": "Modify delivery van driver role",
+    "expected": "Casey moves from van to courier role.",
+    "ordered": [
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\n"
+    ],
+    "counts": {
+      "Driver role is updated.": 1
+    },
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC07",
+    "title": "Modify refrigerated truck driver role",
+    "input": "c\nr\nR301\nARCTIC LINE\na\nD201, Casey Ho\n1\nm\nD201\n2\nsf\nx\n",
+    "steps": "Modify refrigerated truck driver role",
+    "expected": "Casey moves from refrigerated-truck to cold-chain delivery role.",
+    "ordered": [
+      "Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver:\n\nD201, Casey Ho\n\n"
+    ],
+    "counts": {
+      "Driver role is updated.": 1
+    },
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC08",
+    "title": "Delete middle driver, undo order, and redo",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\na\nD202, Riley Ng\n1\na\nD203, Jordan Yip\n1\nd\nD202\nsf\nu\nsf\nr\nsf\nx\n",
+    "steps": "Delete middle driver, undo order, and redo",
+    "expected": "Membership progresses Casey/Jordan, Casey/Riley/Jordan, Casey/Jordan.",
+    "ordered": [
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD203, Jordan Yip\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD202, Riley Ng\n\nD203, Jordan Yip\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD203, Jordan Yip\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC09",
+    "title": "Rename without changing fleet ID or drivers",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\ncn\nHARBOUR PLUS\nsf\nx\n",
+    "steps": "Rename without changing fleet ID or drivers",
+    "expected": "Name changes to HARBOUR PLUS; ID V201 and Casey remain.",
+    "ordered": [
+      "Delivery Van Fleet HARBOUR PLUS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC10",
+    "title": "Undo and redo creation with previous selection",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\nc\nr\nR301\nARCTIC LINE\nu\nsa\nsf\nr\nsa\nsf\nx\n",
+    "steps": "Undo and redo creation with previous selection",
+    "expected": "Undo removes R301 and restores V201 current; redo restores same fleet and selects R301.",
+    "ordered": [
+      "Command (Create refrigerated truck fleet, R301, ARCTIC LINE) is undone.",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Command (Create refrigerated truck fleet, R301, ARCTIC LINE) is redone.",
+      "Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC11",
+    "title": "Repeat undo and redo of adding a driver",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\nu\nsf\nr\nsf\nu\nsf\nr\nsf\nx\n",
+    "steps": "Repeat undo and redo of adding a driver",
+    "expected": "Two undo/redo cycles alternate empty and exactly one Casey.",
+    "ordered": [
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {
+      "D201, Casey Ho\n": 2
+    },
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC12",
+    "title": "Repeat role restoration 2 to 1 to 2 to 1 to 2",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n2\nsf\nm\nD201\n1\nsf\nu\nsf\nr\nsf\nu\nsf\nx\n",
+    "steps": "Repeat role restoration 2 to 1 to 2 to 1 to 2",
+    "expected": "The displayed role sequence is 2, 1, 2, 1, 2.",
+    "ordered": [
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC13",
+    "title": "Undo and redo two successive name changes",
+    "input": "c\nv\nV201\nA\nsf\ncn\nB\nsf\ncn\nC\nsf\nu\nsf\nu\nsf\nr\nsf\nr\nsf\nx\n",
+    "steps": "Undo and redo two successive name changes",
+    "expected": "Name sequence is A, B, C, B, A, B, C.",
+    "ordered": [
+      "Delivery Van Fleet A (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet C (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet A (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet C (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC14",
+    "title": "Restore original target despite same driver ID in another fleet",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\nc\nr\nR301\nARCTIC LINE\na\nD201, Sam Tse\n1\ns\nV201\nm\nD201\n2\ns\nR301\nu\nsf\ns\nV201\nsf\ns\nR301\nr\nsf\ns\nV201\nsf\nx\n",
+    "steps": "Restore original target despite same driver ID in another fleet",
+    "expected": "Undo/redo affects Casey in V201; Sam in R301 stays role 1.",
+    "ordered": [
+      "Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Sam Tse\n\nCold-Chain Delivery Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n",
+      "Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Sam Tse\n\nCold-Chain Delivery Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC15",
+    "title": "Record only the five undoable commands",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\nm\nD201\n2\nd\nD201\ncn\nRENAMED\nsf\nsa\ns\nV201\nl\nx\n",
+    "steps": "Record only the five undoable commands",
+    "expected": "Undo list contains create, add, modify, delete and rename only; redo empty.",
+    "ordered": [],
+    "counts": {},
+    "absent": [],
+    "history": [
+      [
+        "Create delivery van fleet, V201, HARBOUR EXPRESS",
+        "Add driver, D201, Casey Ho, van driver",
+        "Modify driver role, D201, courier driver",
+        "Delete driver, D201",
+        "Change fleet name, V201, RENAMED"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "TC16",
+    "title": "Undo all five mutation types then redo all in LIFO order",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\nm\nD201\n2\nd\nD201\ncn\nRENAMED\nu\nu\nu\nu\nu\nsa\nl\nr\nr\nr\nr\nr\nsf\nl\nx\n",
+    "steps": "Undo all five mutation types then redo all in LIFO order",
+    "expected": "All undo empties fleets. All redo restores renamed V201 with no drivers.",
+    "ordered": [
+      "No fleets available.",
+      "Delivery Van Fleet RENAMED (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {
+      " is undone.": 5,
+      " is redone.": 5
+    },
+    "absent": [],
+    "history": [
+      [
+        "Create delivery van fleet, V201, HARBOUR EXPRESS",
+        "Add driver, D201, Casey Ho, van driver",
+        "Modify driver role, D201, courier driver",
+        "Delete driver, D201",
+        "Change fleet name, V201, RENAMED"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "TC17",
+    "title": "Successful new mutation clears redo",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\nu\ncn\nNEW NAME\nr\nsf\nl\nx\n",
+    "steps": "Successful new mutation clears redo",
+    "expected": "Rename after undo clears redo; Casey stays absent.",
+    "ordered": [
+      "Nothing to redo.",
+      "Delivery Van Fleet NEW NAME (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": [
+      [
+        "Create delivery van fleet, V201, HARBOUR EXPRESS",
+        "Change fleet name, V201, NEW NAME"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "TC18",
+    "title": "Read and selection commands preserve redo",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\nu\nsf\nsa\nl\ns\nV201\nr\nsf\nx\n",
+    "steps": "Read and selection commands preserve redo",
+    "expected": "sf, sa, l and s preserve undone add; redo restores Casey.",
+    "ordered": [
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Command (Add driver, D201, Casey Ho, van driver) is redone.",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [
+      "Nothing to redo."
+    ],
+    "history": null
+  },
+  {
+    "id": "TC19",
+    "title": "Reject duplicate fleet ID case-insensitively",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\nc\nr\nv201\nDUPLICATE\nsa\nsf\nl\nx\n",
+    "steps": "Reject duplicate fleet ID case-insensitively",
+    "expected": "Duplicate v201 is rejected and original V201 unchanged.",
+    "ordered": [
+      "Fleet ID v201 already exists!",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [
+      "DUPLICATE (v201)"
+    ],
+    "history": [
+      [
+        "Create delivery van fleet, V201, HARBOUR EXPRESS"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "TC20",
+    "title": "Reject duplicate driver ID in the same fleet",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\na\nd201, Other Person\n2\nsf\nl\nx\n",
+    "steps": "Reject duplicate driver ID in the same fleet",
+    "expected": "Duplicate d201 rejected; only original Casey remains.",
+    "ordered": [
+      "Driver d201 already exists in the current fleet!",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [
+      "Other Person\n"
+    ],
+    "history": [
+      [
+        "Create delivery van fleet, V201, HARBOUR EXPRESS",
+        "Add driver, D201, Casey Ho, van driver"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "TC21",
+    "title": "Reject unknown fleet type then accept valid input",
+    "input": "c\nz\nZ999\nINVALID\nc\nv\nV201\nHARBOUR EXPRESS\nsa\nx\n",
+    "steps": "Reject unknown fleet type then accept valid input",
+    "expected": "Unknown type rejected; valid creation afterward succeeds.",
+    "ordered": [
+      "Invalid fleet type!",
+      "Delivery van fleet is created.",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)"
+    ],
+    "counts": {
+      " is created.": 1
+    },
+    "absent": [
+      "INVALID (Z999)"
+    ],
+    "history": null
+  },
+  {
+    "id": "TC22",
+    "title": "Handle missing targets and unknown command",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\ns\nF999\nm\nD999\n2\nd\nD999\nq\nsf\nx\n",
+    "steps": "Handle missing targets and unknown command",
+    "expected": "Three missing targets and unknown command reported; original state unchanged.",
+    "ordered": [
+      "Fleet F999 is not found!",
+      "Driver D999 is not found in the current fleet!",
+      "Driver D999 is not found in the current fleet!",
+      "Invalid command!",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null
+  },
+  {
+    "id": "TC23",
+    "title": "Reject malformed input, blank fields and invalid roles",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nmissing comma\na\n , Name\na\nD999,   \na\nD998, Nope\nword\na\nD997, Nope\n3\ncn\n   \nc\nv\n\nEMPTY ID\nc\nr\nR999\n\na\nD201, Casey Ho\n1\nm\nD201\nword\nm\nD201\n9\nsf\nl\nx\n",
+    "steps": "Reject malformed input, blank fields and invalid roles",
+    "expected": "Invalid values rejected with recovery; V201 and one original role-1 driver remain.",
+    "ordered": [
+      "Please enter driver information in the format: ID, Name.",
+      "Driver ID and name cannot be empty.",
+      "Driver ID and name cannot be empty.",
+      "Invalid driver role. Please enter 1 or 2.",
+      "Invalid driver role for delivery van fleet.",
+      "Fleet name cannot be empty.",
+      "Fleet ID cannot be empty.",
+      "Fleet name cannot be empty.",
+      "Driver is added.",
+      "Invalid driver role. Please enter 1 or 2.",
+      "Invalid driver role for delivery van fleet.",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": [
+      [
+        "Create delivery van fleet, V201, HARBOUR EXPRESS",
+        "Add driver, D201, Casey Ho, van driver"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "TC24",
+    "title": "Failed mutations preserve redo",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\ncn\nNEW NAME\nu\nc\nv\nV201\nDUPLICATE\na\nD201, Duplicate\n2\nm\nD201\n9\nr\nsf\nl\nx\n",
+    "steps": "Failed mutations preserve redo",
+    "expected": "Duplicate fleet/driver and invalid role do not clear undone rename; redo restores NEW NAME.",
+    "ordered": [
+      "Fleet ID V201 already exists!",
+      "Driver D201 already exists in the current fleet!",
+      "Invalid driver role for delivery van fleet.",
+      "Command (Change fleet name, V201, NEW NAME) is redone.",
+      "Delivery Van Fleet NEW NAME (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": [
+      [
+        "Create delivery van fleet, V201, HARBOUR EXPRESS",
+        "Add driver, D201, Casey Ho, van driver",
+        "Change fleet name, V201, NEW NAME"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "TC25",
+    "title": "Empty system commands and exit",
+    "input": "sa\nsf\nu\nr\nl\nx\n",
+    "steps": "Empty system commands and exit",
+    "expected": "Empty display/history feedback and clean exit; both lists empty.",
+    "ordered": [
+      "No fleets available.",
+      "No current fleet selected.",
+      "Nothing to undo.",
+      "Nothing to redo.",
+      "Undo List\n-- End of undo list --\nRedo List\n-- End of redo list --\n",
+      "Thank you for using SDFMS. System terminated."
+    ],
+    "counts": {},
+    "absent": [],
+    "history": [
+      [],
+      []
+    ]
+  },
+  {
+    "id": "SAMPLE",
+    "title": "Assignment sample run, all fifteen illustrated stages",
+    "input": "c\nv\nF001\nCENTRAL EXPRESS\na\nd001, Alex Chan\n1\na\nd002, Jamie Lee\n2\nsf\nc\nr\nF102\nFROST LINE\nsa\na\nd101, Morgan Wong\n1\na\nd102, Taylor Lam\n2\nsf\ns\nF001\nsa\nm\nd001\n2\nsf\nd\nd002\nsf\ncn\nMETRO EXPRESS\nsf\nl\nu\nu\nu\nsf\nr\nr\nr\nsf\ns\nF999\nd\nd999\nq\nx\n",
+    "steps": "Reproduce supplied sample commands with the published names and IDs.",
+    "expected": "Published fleet/driver results, history entries, undo/redo, errors and exit are reproduced; prompts are absent in redirected-input mode.",
+    "ordered": [
+      "Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver:\n\nd001, Alex Chan\n\nCourier Driver:\n\nd002, Jamie Lee\n\n",
+      "Refrigerated Truck Fleet FROST LINE (F102)\n\nRefrigerated-Truck Driver:\n\nd101, Morgan Wong\n\nCold-Chain Delivery Driver:\n\nd102, Taylor Lam\n\n",
+      "Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan\n\nd002, Jamie Lee\n\n",
+      "Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan\n\n",
+      "Delivery Van Fleet METRO EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan\n\n",
+      "Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver:\n\nd001, Alex Chan\n\nCourier Driver:\n\nd002, Jamie Lee\n\n",
+      "Delivery Van Fleet METRO EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan\n\n",
+      "Fleet F999 is not found!",
+      "Driver d999 is not found in the current fleet!",
+      "Invalid command!"
+    ],
+    "counts": {
+      " is undone.": 3,
+      " is redone.": 3
+    },
+    "absent": [],
+    "history": null
+  }
+]

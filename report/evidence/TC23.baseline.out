@@ -1,0 +1,28 @@
+Delivery van fleet is created.
+Current fleet is changed to V201.
+Please enter driver information in the format: ID, Name.
+Driver ID and name cannot be empty.
+Driver ID and name cannot be empty.
+Invalid driver role. Please enter 1 or 2.
+Invalid driver role for delivery van fleet.
+Fleet name cannot be empty.
+Fleet ID cannot be empty.
+Fleet name cannot be empty.
+Driver is added.
+Invalid driver role. Please enter 1 or 2.
+Invalid driver role for delivery van fleet.
+Delivery Van Fleet HARBOUR EXPRESS (V201)
+
+Van Driver:
+
+D201, Casey Ho
+
+Courier Driver: NIL
+
+Undo List
+Create delivery van fleet, V201, HARBOUR EXPRESS
+Add driver, D201, Casey Ho, van driver
+-- End of undo list --
+Redo List
+-- End of redo list --
+Thank you for using SDFMS. System terminated.

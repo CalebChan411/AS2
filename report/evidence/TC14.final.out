@@ -1,0 +1,47 @@
+Delivery van fleet is created.
+Current fleet is changed to V201.
+Driver is added.
+Refrigerated truck fleet is created.
+Current fleet is changed to R301.
+Driver is added.
+Changed current fleet to V201.
+Driver role is updated.
+Changed current fleet to R301.
+Command (Modify driver role, D201, courier driver) is undone.
+Refrigerated Truck Fleet ARCTIC LINE (R301)
+
+Refrigerated-Truck Driver:
+
+D201, Sam Tse
+
+Cold-Chain Delivery Driver: NIL
+
+Changed current fleet to V201.
+Delivery Van Fleet HARBOUR EXPRESS (V201)
+
+Van Driver:
+
+D201, Casey Ho
+
+Courier Driver: NIL
+
+Changed current fleet to R301.
+Command (Modify driver role, D201, courier driver) is redone.
+Refrigerated Truck Fleet ARCTIC LINE (R301)
+
+Refrigerated-Truck Driver:
+
+D201, Sam Tse
+
+Cold-Chain Delivery Driver: NIL
+
+Changed current fleet to V201.
+Delivery Van Fleet HARBOUR EXPRESS (V201)
+
+Van Driver: NIL
+
+Courier Driver:
+
+D201, Casey Ho
+
+Thank you for using SDFMS. System terminated.

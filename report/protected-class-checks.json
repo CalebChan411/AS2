@@ -1,0 +1,22 @@
+{
+  "Driver.java": {
+    "uploaded_sha256": "1ff2861b766f4d346bc728a5268b3462d007e0462cfce615288331e60bcb4f91",
+    "final_sha256": "1ff2861b766f4d346bc728a5268b3462d007e0462cfce615288331e60bcb4f91",
+    "identical_upload_remote_final": true
+  },
+  "VehicleFleet.java": {
+    "uploaded_sha256": "b84399b4232ee1fd83feb28fe3d06f7f8d237ebacbfc44c49b5a55ac2aa1a2d7",
+    "final_sha256": "b84399b4232ee1fd83feb28fe3d06f7f8d237ebacbfc44c49b5a55ac2aa1a2d7",
+    "identical_upload_remote_final": true
+  },
+  "DeliveryVanFleet.java": {
+    "uploaded_sha256": "3ef6b42f0bb2933458415e1db067b3f7db556ce0a2eec9af4a0f506862e570d1",
+    "final_sha256": "3ef6b42f0bb2933458415e1db067b3f7db556ce0a2eec9af4a0f506862e570d1",
+    "identical_upload_remote_final": true
+  },
+  "RefrigeratedTruckFleet.java": {
+    "uploaded_sha256": "9fd9b32de09d52d137ea2022871754417bdb751b39fac6fc93250b421605597b",
+    "final_sha256": "9fd9b32de09d52d137ea2022871754417bdb751b39fac6fc93250b421605597b",
+    "identical_upload_remote_final": true
+  }
+}

@@ -1,0 +1,42 @@
+Delivery van fleet is created.
+Current fleet is changed to V201.
+Driver is added.
+Driver role is updated.
+Driver is deleted.
+Fleet name is updated.
+Command (Change fleet name, V201, RENAMED) is undone.
+Command (Delete driver, D201) is undone.
+Command (Modify driver role, D201, courier driver) is undone.
+Command (Add driver, D201, Casey Ho, van driver) is undone.
+Command (Create delivery van fleet, V201, HARBOUR EXPRESS) is undone.
+No fleets available.
+Undo List
+-- End of undo list --
+Redo List
+Change fleet name, V201, RENAMED
+Delete driver, D201
+Modify driver role, D201, courier driver
+Add driver, D201, Casey Ho, van driver
+Create delivery van fleet, V201, HARBOUR EXPRESS
+-- End of redo list --
+Command (Create delivery van fleet, V201, HARBOUR EXPRESS) is redone.
+Command (Add driver, D201, Casey Ho, van driver) is redone.
+Command (Modify driver role, D201, courier driver) is redone.
+Command (Delete driver, D201) is redone.
+Command (Change fleet name, V201, RENAMED) is redone.
+Delivery Van Fleet RENAMED (V201)
+
+Van Driver: NIL
+
+Courier Driver: NIL
+
+Undo List
+Create delivery van fleet, V201, HARBOUR EXPRESS
+Add driver, D201, Casey Ho, van driver
+Modify driver role, D201, courier driver
+Delete driver, D201
+Change fleet name, V201, RENAMED
+-- End of undo list --
+Redo List
+-- End of redo list --
+Thank you for using SDFMS. System terminated.

@@ -1,0 +1,552 @@
+{
+  "description": "Genuine browser screenshots of live Java console sessions. Java was freshly executed for every case; stdout equality was checked against the independently validated final test output. Expected output was never rendered as evidence. Piped input mode suppresses the application menu/prompts, matching baseline comparison mode. UTC+8 timestamp shown in each capture.",
+  "cases": [
+    {
+      "id": "TC01",
+      "title": "Create a delivery van fleet and select it",
+      "execution_started_utc": "2026-11-12T13:36:40.517744+00:00",
+      "command": "java -cp final-classes Main < TC01.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "267c9cde27ce1ef877c641542d1ac021a8f33f1cb416902e7efe2ab23f69c790",
+      "matches_test_stdout": true,
+      "input_sha256": "e5c798f53878eb5193f2ef8beff7b6ddd30852178bf12df3a17c54ccd26182a7",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC01.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC01.png"
+      ]
+    },
+    {
+      "id": "TC02",
+      "title": "Create a refrigerated truck fleet",
+      "execution_started_utc": "2026-11-12T13:36:40.909708+00:00",
+      "command": "java -cp final-classes Main < TC02.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "bc0c38b235d9fb8eed43034301f351f524363f18226dbb7d1b007f9010bbb1ce",
+      "matches_test_stdout": true,
+      "input_sha256": "31858832f766a5aedb768b66ccac17d956c4eda568a55ea495b6101cf7b30283",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC02.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC02.png"
+      ]
+    },
+    {
+      "id": "TC03",
+      "title": "Add both legal delivery van roles",
+      "execution_started_utc": "2026-11-12T13:36:41.220945+00:00",
+      "command": "java -cp final-classes Main < TC03.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "37381478b3f45b6a53d20fd8f971c7b0b14bd7df9663819576fd41a704fc9300",
+      "matches_test_stdout": true,
+      "input_sha256": "19e36a01a40971471fcecbc502fcfd91571b63d8768a82bd6aa75c020c4e1708",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC03.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC03.png"
+      ]
+    },
+    {
+      "id": "TC04",
+      "title": "Add both legal refrigerated truck roles",
+      "execution_started_utc": "2026-11-12T13:36:41.544045+00:00",
+      "command": "java -cp final-classes Main < TC04.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "8e77485c048da7beecbb2c463865f2bbe8f85272168a397c1b57443a9f0e0f67",
+      "matches_test_stdout": true,
+      "input_sha256": "299ae6260bf900bd19b1b490edbd25020a19e47c9ba21d333aa2dfeb0b2dc665",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC04.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC04.png"
+      ]
+    },
+    {
+      "id": "TC05",
+      "title": "Switch current fleet in both directions",
+      "execution_started_utc": "2026-11-12T13:36:41.860203+00:00",
+      "command": "java -cp final-classes Main < TC05.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "4269b4200bd670e1b665dbdfa301c4436a85b5cb00a89ff16b31cb8b08053d3c",
+      "matches_test_stdout": true,
+      "input_sha256": "943ff7d3a94de579efe2d5fe8269a01b1bf8121c76f41c8c1d3b99bcaf265b57",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC05.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC05.png"
+      ]
+    },
+    {
+      "id": "TC06",
+      "title": "Modify delivery van driver role",
+      "execution_started_utc": "2026-11-12T13:36:42.201377+00:00",
+      "command": "java -cp final-classes Main < TC06.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "08cff2bb52cfac7b9cd5380732d4336bc856ee73151d0d65ab4a55d375f45c24",
+      "matches_test_stdout": true,
+      "input_sha256": "9be410f356bf95e45dd7ed05ed7dd8098bcd4e6771ba1598bdd755a71d0fb751",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC06.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC06.png"
+      ]
+    },
+    {
+      "id": "TC07",
+      "title": "Modify refrigerated truck driver role",
+      "execution_started_utc": "2026-11-12T13:36:42.569246+00:00",
+      "command": "java -cp final-classes Main < TC07.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "e9125425fac12077698ef1611619ff3447a122c6a31947226509dea71d35e080",
+      "matches_test_stdout": true,
+      "input_sha256": "00ca69ca1acbcd0d9b0c97db8dc5699ede7348daa387f082a05c14bb066233e7",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC07.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC07.png"
+      ]
+    },
+    {
+      "id": "TC08",
+      "title": "Delete middle driver, undo order, and redo",
+      "execution_started_utc": "2026-11-12T13:36:42.905135+00:00",
+      "command": "java -cp final-classes Main < TC08.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "253ab3b7aaebf296cc0dcb6116a727095c6c56f0502dac8adfa2088185be0f70",
+      "matches_test_stdout": true,
+      "input_sha256": "1fac7e13ec725d05a1325c3c80f5a1c16a05f65327f5393fa7db4874025f3754",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC08.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC08-1.png",
+        "/workspace/task-work/screenshots/captures/TC08-2.png"
+      ]
+    },
+    {
+      "id": "TC09",
+      "title": "Rename without changing fleet ID or drivers",
+      "execution_started_utc": "2026-11-12T13:36:43.430857+00:00",
+      "command": "java -cp final-classes Main < TC09.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "28374a2b731278e8d110db223fafe125c5a6968227fc0ed532d7a3e50753a309",
+      "matches_test_stdout": true,
+      "input_sha256": "adb33fd60ae66e59414760ea9ac2179edf9d3ec9b3abb7a1121ed96244aa75e6",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC09.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC09.png"
+      ]
+    },
+    {
+      "id": "TC10",
+      "title": "Undo and redo creation with previous selection",
+      "execution_started_utc": "2026-11-12T13:36:43.761412+00:00",
+      "command": "java -cp final-classes Main < TC10.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "ecf9b48b20d66c246bc0aba62306e88c6697a58ef282ae422f6a60422a40469d",
+      "matches_test_stdout": true,
+      "input_sha256": "366d7a34a1903e9a6dc35ac1da955f61f4c20cad535e46463e9087e89a909f30",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC10.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC10.png"
+      ]
+    },
+    {
+      "id": "TC11",
+      "title": "Repeat undo and redo of adding a driver",
+      "execution_started_utc": "2026-11-12T13:36:44.111158+00:00",
+      "command": "java -cp final-classes Main < TC11.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "bc2281be1b3213337f5424d93134472cfcfa468357323c9674a0adaa80b6f563",
+      "matches_test_stdout": true,
+      "input_sha256": "df2426547a278d162a9021e8db65fd8cef09222624c190c5e3e5782ee01dafd8",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC11.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC11.png"
+      ]
+    },
+    {
+      "id": "TC12",
+      "title": "Repeat role restoration 2 to 1 to 2 to 1 to 2",
+      "execution_started_utc": "2026-11-12T13:36:44.455504+00:00",
+      "command": "java -cp final-classes Main < TC12.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "720ebc5bb9b9046e6f1de2706aecc319a8543224b8b648a0c3ef76f80d7d12c4",
+      "matches_test_stdout": true,
+      "input_sha256": "0b3bc6570b84f59649e99262fa43c57937b16d5ead9e44025ea9d1472ff995cd",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC12.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC12-1.png",
+        "/workspace/task-work/screenshots/captures/TC12-2.png"
+      ]
+    },
+    {
+      "id": "TC13",
+      "title": "Undo and redo two successive name changes",
+      "execution_started_utc": "2026-11-12T13:36:44.969351+00:00",
+      "command": "java -cp final-classes Main < TC13.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "b19210768eaf2c00d39702bff408af5bfcf7d54fefbf740ea05fa5d8c9ecc513",
+      "matches_test_stdout": true,
+      "input_sha256": "203651f1b07be426b9c63312a539d753ac1d063f3ee5cb05247af5547cc18b8a",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC13.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC13-1.png",
+        "/workspace/task-work/screenshots/captures/TC13-2.png"
+      ]
+    },
+    {
+      "id": "TC14",
+      "title": "Restore original target despite same driver ID in another fleet",
+      "execution_started_utc": "2026-11-12T13:36:45.450035+00:00",
+      "command": "java -cp final-classes Main < TC14.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "955904f647f9b6c59ea17d9ff80f34f87e47805527ca4c4f357a14aea067c065",
+      "matches_test_stdout": true,
+      "input_sha256": "6d62938a57bfffac1fd094f3272eae395b91144dcb701348d450922612efcf31",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC14.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC14-1.png",
+        "/workspace/task-work/screenshots/captures/TC14-2.png"
+      ]
+    },
+    {
+      "id": "TC15",
+      "title": "Record only the five undoable commands",
+      "execution_started_utc": "2026-11-12T13:36:45.972822+00:00",
+      "command": "java -cp final-classes Main < TC15.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "e73de35eea606a5ea0b3bed708a1b6354d4e4001782518fcce560488c1d82467",
+      "matches_test_stdout": true,
+      "input_sha256": "6c36944561f564bd15e99303ed218662db980e6ebeb1774ed5976c64a1492c81",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC15.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC15.png"
+      ]
+    },
+    {
+      "id": "TC16",
+      "title": "Undo all five mutation types then redo all in LIFO order",
+      "execution_started_utc": "2026-11-12T13:36:46.362621+00:00",
+      "command": "java -cp final-classes Main < TC16.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "2a9e3c3fdb704a232961acfd1e659df8d9023e15ec5039ccad438de5bafedb25",
+      "matches_test_stdout": true,
+      "input_sha256": "3685f194cd7d2b830b0c0673583cdb58c9afae6b7fcd467fc52292b71007d832",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC16.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC16-1.png",
+        "/workspace/task-work/screenshots/captures/TC16-2.png"
+      ]
+    },
+    {
+      "id": "TC17",
+      "title": "Successful new mutation clears redo",
+      "execution_started_utc": "2026-11-12T13:36:46.991754+00:00",
+      "command": "java -cp final-classes Main < TC17.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "e07d51edde9b373fe8eeaeb0124221d501b4c379177ed65fa394200a692c8587",
+      "matches_test_stdout": true,
+      "input_sha256": "bf0e68012da22edd48ebf8cba0347dc1b8d184866c2aa595c3e8548444ee91db",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC17.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC17.png"
+      ]
+    },
+    {
+      "id": "TC18",
+      "title": "Read and selection commands preserve redo",
+      "execution_started_utc": "2026-11-12T13:36:47.345013+00:00",
+      "command": "java -cp final-classes Main < TC18.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "25f5e5b6a573951e1fa61da3411f94e5f65e22501efc02dece5cb52ce4e9ab52",
+      "matches_test_stdout": true,
+      "input_sha256": "645b5985453022d14ca9a4b953eb22dedef15e189342347de2c4b72aff41388d",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC18.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC18.png"
+      ]
+    },
+    {
+      "id": "TC19",
+      "title": "Reject duplicate fleet ID case-insensitively",
+      "execution_started_utc": "2026-11-12T13:36:47.705910+00:00",
+      "command": "java -cp final-classes Main < TC19.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "a79b09fd6bbc55b2f9c76695d0470a6aa067e835b53c1d6eeac6e364eaa4fd8e",
+      "matches_test_stdout": true,
+      "input_sha256": "7e82ae373b128b91bdb2fe5f33544179b0a4f0e4734fc5d337c108cd778d4870",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC19.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC19.png"
+      ]
+    },
+    {
+      "id": "TC20",
+      "title": "Reject duplicate driver ID in the same fleet",
+      "execution_started_utc": "2026-11-12T13:36:48.054964+00:00",
+      "command": "java -cp final-classes Main < TC20.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "1d278d6ed8edd1a39bf2338f79601671618eac3bf86c82f139f98df12c462235",
+      "matches_test_stdout": true,
+      "input_sha256": "7e43868fb88b6d09a7371777b51843024335f822f4622ce72d23a96891bcdf09",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC20.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC20.png"
+      ]
+    },
+    {
+      "id": "TC21",
+      "title": "Reject unknown fleet type then accept valid input",
+      "execution_started_utc": "2026-11-12T13:36:48.390857+00:00",
+      "command": "java -cp final-classes Main < TC21.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "5325ae3ed96043356211666c869cc9f2e6bd3af082936e0c71f14cc142d8b3df",
+      "matches_test_stdout": true,
+      "input_sha256": "bc50b3becf7046e89ddb71f1a5e28b258a94b2015a0c1b265cef90670c85db5f",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC21.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC21.png"
+      ]
+    },
+    {
+      "id": "TC22",
+      "title": "Handle missing targets and unknown command",
+      "execution_started_utc": "2026-11-12T13:36:48.696724+00:00",
+      "command": "java -cp final-classes Main < TC22.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "c4f8cba6c707e27b7302e8b1eec4b87098c25ab2c5a2fdfeb700512828d10b5d",
+      "matches_test_stdout": true,
+      "input_sha256": "0856e70eb01739849ef8393034eea02c86d6ec07cde666d2c4af2a61fecfd49a",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC22.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC22.png"
+      ]
+    },
+    {
+      "id": "TC23",
+      "title": "Reject malformed input, blank fields and invalid roles",
+      "execution_started_utc": "2026-11-12T13:36:49.020795+00:00",
+      "command": "java -cp final-classes Main < TC23.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "0536077a7a11dae62b07d74014d0517e6cd099d694da485369ed0f52f697e2fe",
+      "matches_test_stdout": true,
+      "input_sha256": "4a3dc75bce512c06a51bfcca76261fd48581142a0d6818c5f9c9041967267210",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC23.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC23.png"
+      ]
+    },
+    {
+      "id": "TC24",
+      "title": "Failed mutations preserve redo",
+      "execution_started_utc": "2026-11-12T13:36:49.352086+00:00",
+      "command": "java -cp final-classes Main < TC24.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "17fd13f10a5c1016eed75f33a87ce585c8d4631ff8f7ac5ffaa4dfc176d6b06d",
+      "matches_test_stdout": true,
+      "input_sha256": "bef8f271d80a9894a1b0148d42d6cb58268106060c9604928a368b207d6c391b",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC24.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC24.png"
+      ]
+    },
+    {
+      "id": "TC25",
+      "title": "Empty system commands and exit",
+      "execution_started_utc": "2026-11-12T13:36:49.693918+00:00",
+      "command": "java -cp final-classes Main < TC25.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "4d9b36cb5be526a947ba1c45f8dacdee33ef7ecd34c6b6cc6777cd20dc1a7bfa",
+      "matches_test_stdout": true,
+      "input_sha256": "e86cacdb62985048d24ab682b5947be793c558fc98a9857aacc5ed5120230387",
+      "stdout_file": "/workspace/task-work/screenshots/runs/TC25.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/TC25.png"
+      ]
+    },
+    {
+      "id": "SAMPLE",
+      "title": "Assignment sample run, all fifteen illustrated stages",
+      "execution_started_utc": "2026-11-12T13:36:50.012097+00:00",
+      "command": "java -cp final-classes Main < SAMPLE.in",
+      "working_directory": "/workspace/task-work/tests",
+      "java_path": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "exit_code": 0,
+      "stdout_sha256": "f03b0c8d26151b1b12d60a26eb5a06502adad1f163cd09038641f82f5a7369cc",
+      "matches_test_stdout": true,
+      "input_sha256": "04f5c5582c5ad901c2eb240198a4de329322cc76e8b799e965a610accc051006",
+      "stdout_file": "/workspace/task-work/screenshots/runs/SAMPLE.stdout",
+      "capture_kind": "Screenshot of xterm.js displaying live PTY shell execution; Java stdin redirected from the real test input.",
+      "screenshots": [
+        "/workspace/task-work/screenshots/captures/SAMPLE-1.png",
+        "/workspace/task-work/screenshots/captures/SAMPLE-2.png",
+        "/workspace/task-work/screenshots/captures/SAMPLE-3.png"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "AddDriverCommand.java": "2a32eb886c1ccac832812a1a297b53259eeffb067f28bc6223f863ca0af3e1f5",
+    "AddDriverCommandFactory.java": "6e15a35d1517a277cbb6491c3f93d778e43bdfd05d775a2845009197d030f448",
+    "BaseCommand.java": "8d09aa64f88a27702241043e7ffd011adc12325ecb21ac12b864989cbbaf97d6",
+    "ChangeNameCommand.java": "6add8623c9bbc259c7980d46c7f866331e466faa699bc08bc49fcacbc2b2bd30",
+    "ChangeNameCommandFactory.java": "7be37c08d3f1794f5d1c225ce05f5f54ce64b20116ba47b2eea2721234459769",
+    "Command.java": "32c04f755fde71941bb3e09cbd0555bf74041df665f93d35b2720ef2100a7a97",
+    "CommandExecutionException.java": "2e8349c66be0af24361c77f3b2cca3eefd05263991900996e8dd92050ffb420c",
+    "CommandFactory.java": "9c02d6e5adf06510bc67c31bb92f976983e9d7ec6cef8227d0a88bf117fedf45",
+    "CommandFactoryRegistry.java": "a94c2878190f921602b52040d27623b9008bccc9650d1ff11e29077662445c51",
+    "CommandHistory.java": "934d332628c50c7744e3b11004428dd316ca3dbee9bb15385760da2e4b48c81b",
+    "CommandInvoker.java": "e8b8b0e6c7d7025697ab364acc758d8d61e5e2cf8ba7dd7a188f1876f0658ff9",
+    "ConsoleInput.java": "5ed3042f174bbdc9f9628e69019b1f70eb53dcd2801d133305104e6a01cd52ef",
+    "CreateFleetCommand.java": "0e3e79932580cbd29c1e4f4bff4ab6b950ad6eaa6a8a5c1f4b3b0e1ffef70229",
+    "CreateFleetCommandFactory.java": "ec7305de182085b8c3295202d47dfa0d5547177bf57021dc7fdc753f18072543",
+    "DeleteDriverCommand.java": "4f2d9a4feb6949044f8d20f093e9c351fb64b82f9e44658093315b58d18a3ed6",
+    "DeleteDriverCommandFactory.java": "3f8c5ca991a0b0c0663c77c92c9b193dc3ba70338229af3646a437c6a406d027",
+    "DeliveryVanFleet.java": "3ef6b42f0bb2933458415e1db067b3f7db556ce0a2eec9af4a0f506862e570d1",
+    "DeliveryVanFleetFactory.java": "b4b19f608f38999ec5400f9787d2dcd7eaaf830a1e339f86f9314505ed6b5a61",
+    "Driver.java": "1ff2861b766f4d346bc728a5268b3462d007e0462cfce615288331e60bcb4f91",
+    "DriverFactory.java": "93078feafeb13bc0d08f73fb24288c24b8933a5281820fab29d47aceab1bc450",
+    "DriverRoleMemento.java": "9e451c31fa00f836fef41ef43e972d600aeedfeda30dcd40ff84781eea11ca4c",
+    "FleetFactory.java": "f242a06b4273b294c86ed78dcb2587cfccd4be60d800a3cc832ac5f90c6a336e",
+    "FleetFactoryRegistry.java": "164416c154af800865f114eaed660307dc580e4dfd9f542f73b4414e9f3db1d2",
+    "FleetManager.java": "b13ded24a6fa6c36d45ddcda4861cb8943b1ba0d80547945f41a5d27a2a7617c",
+    "FleetNameMemento.java": "56ce849bd55ecf921d3157a00ae8dc518eb6b0f1f2a0124114923ef5effe69e4",
+    "FleetUtil.java": "a93eb1c742fc3f8e5c84df945d61bcab9847c71c0a7772cb241068f67cb7da4c",
+    "ListCommand.java": "16c2baef1da7f92a575ce5144314957886484ae3501359648660dbcf71c8e2f5",
+    "ListCommandFactory.java": "8cf34531c62226bf694bc1ffa7a13b3b993c2d6074b7dab96552046cca78d25d",
+    "Main.java": "c27ba07196eb42db1fb10faf615967f91a068298608e973efdea7e18d4dd1905",
+    "Memento.java": "508afbddf3ebb824e72afe2043a1c46a03dede6b1614c25ea00341aa06283409",
+    "MementoCaretaker.java": "44f491fd15cf57f4a8785ccf74fcc9bcce0b101407556bfca845a273b5eb084e",
+    "ModifyRoleCommand.java": "8a90e2e2a0f0eb21cbaf279ebc0e99bedc8dce31ecd4bb716c8c76b172e54055",
+    "ModifyRoleCommandFactory.java": "5d1bd9c19d5b935f7edfb2aee15a6d8e91076b4ffcf8f3d477f6ab3254a69e2e",
+    "RedoCommand.java": "0fa9e03822c5c73db233b0a67e35242ff46a218cd90e85034322d39ceca7d0f3",
+    "RedoCommandFactory.java": "2ffa3635a0706ab432f5c360a790cb80097a68dec74c9914f85b733015273349",
+    "RefrigeratedTruckFleet.java": "9fd9b32de09d52d137ea2022871754417bdb751b39fac6fc93250b421605597b",
+    "RefrigeratedTruckFleetFactory.java": "a0e097f9aa393fcc0049467931b2c44e518d07c1fd14c3f0da841b9d9aa97493",
+    "SetCurrentFleetCommand.java": "588d51e756f872b55bf55019cb13892a2f42fbdcf19151cd77cee89cfdb7ee4e",
+    "SetCurrentFleetCommandFactory.java": "85ac36d214dd35b2274b15b7cf32d38fd86fd6f55a7d97851860df58b9e56946",
+    "ShowAllFleetsCommand.java": "e4adbe6667acfb2b7da35d38495297686984ff0a8178a8d631c64fde4bd1743b",
+    "ShowAllFleetsCommandFactory.java": "eb784248b3298318dc5e86bb72100603d1416769b034befb62e0104a669ee3de",
+    "ShowFleetCommand.java": "e467edab6954d6b2e6ad19eac15662f5e5d539b0be4d91aace340591a7baa2e8",
+    "ShowFleetCommandFactory.java": "738a74acc886355f2f479b1990d1bd48e09ccd93b6012041f2ba382e997daafe",
+    "UndoCommand.java": "2722f4d46fb8985bc7da4402a3844cfe1318caba6bddc95a3092ff741d730c7d",
+    "UndoCommandFactory.java": "37491e8131f95dfb3959f4453291afabdeb3f9c947a9de9079189fe4de59f7ef",
+    "UndoableCommand.java": "a4d8929fdda2f9de82854b7b9f4ce5b706f55d7ecfcecba9fb90ca7d71f9e79c",
+    "VehicleFleet.java": "b84399b4232ee1fd83feb28fe3d06f7f8d237ebacbfc44c49b5a55ac2aa1a2d7"
+  },
+  "compiled_class_sha256": {
+    "AddDriverCommand.class": "0022d2ef07b5d94085a16e4a30de01d59445494531e1f39b3526ea3b2daf0afa",
+    "AddDriverCommandFactory.class": "944de52bd4370ff849fd21ef40731ffa165c9b565cedaae9eb252156e1b02172",
+    "BaseCommand.class": "2b8bcfaa8370f2b91d3769a172ca5b714238c57ee0ae4e9f2e870545919aca16",
+    "ChangeNameCommand.class": "17a00106e654dec1cb05a2f61e6ccc85f17de84c94f238098653bfeec6243f50",
+    "ChangeNameCommandFactory.class": "6c4df7f93a483f6fd56df1cea91824ad81aee7563198618cd9f995f52e20856c",
+    "Command.class": "6d70230574e655c3b5ea2431be3b4475783e540280cf19dd091eacaaca8dd35c",
+    "CommandExecutionException.class": "f1e4539076e30333a5d99c3234a0b58c98dcd519ffc3aef2088ca91388bc45e5",
+    "CommandFactory.class": "f11411d57e22090f0367571b4b216e36a5888f847b73c0afb796e1d47c466512",
+    "CommandFactoryRegistry.class": "0e9be7b0e7adeeec17f127b3abaa81d0ad7f151e6dd1e0f47178a2d506948e75",
+    "CommandHistory.class": "7f12dbd4aa73651188236559559ef501e44f5ea98568cbd3d996a5582d173094",
+    "CommandInvoker.class": "458674e37ad1aeda19ac88f16f3774c6e34c215ed77941bec9607fd5c4b7cc2f",
+    "ConsoleInput.class": "1849f531df0a75d9495e131629e74ea616ad71e76d4e20d7e8dbc09981e7ec6e",
+    "CreateFleetCommand.class": "d8e855e469209ad4be4f26ef66db5b803953245c6961d742504006797bd44679",
+    "CreateFleetCommandFactory.class": "d9fafc6d076240c6ba53ae3953ddd586b5a0fe4264d432517a5bf8eed51bfea0",
+    "DeleteDriverCommand.class": "c574f49b77300f454c63b05b0656b5accb1989ff909e72774c7d2ecf207789be",
+    "DeleteDriverCommandFactory.class": "90516bed1f3b75ca444b5cbc317c65ca0874bae992b0ab324104f3a156712446",
+    "DeliveryVanFleet.class": "862d7478c46ce5980a313f04784894a8cdee10eecd0478205da611a06d78eb47",
+    "DeliveryVanFleetFactory.class": "1f17b2964c5f83f150971fb7d3cedbd29637df69b1e8f1540f1a7fa0dd583bef",
+    "Driver.class": "32a7fc0fd9cbab15bc0a2c909c7024e1f1c1bca3119a8a9a38d6fa5a0869a107",
+    "DriverFactory.class": "17184085e6193e96613addd40793c2fbcdc911ff41483d27064b5a5ac57a95d0",
+    "DriverRoleMemento.class": "d27eac4fb7b26e4954507e427d918d6453d907c25d8da52252f00b9214e21407",
+    "FleetFactory.class": "f6801fa6c403fa96d6eb6246f909d08340ef7d9aeb9dc3f9d3dda67e3fd3e62a",
+    "FleetFactoryRegistry.class": "2e888351bc860cca037c2453e52d228ebc7a9b9cf8ac4e05be2784a22f21d86e",
+    "FleetManager.class": "e9fcdd69fc9297177d8dd7d44f8c99bc0bc79bd91dfad72c8f88129cf9d4dd94",
+    "FleetNameMemento.class": "94cf65715243cfbe3d52c71b2f11f880711c8ad6c30eee3e8db667c7c572f7b1",
+    "FleetUtil.class": "426b57ea2c3d0c284b06cd69df478c85dbf4ed4c4cd61fd3d17d46c40abda10f",
+    "ListCommand.class": "d2d1087b1a44b3cf6c3387efab61916eb9c6fe28731c7936cacb9fb966ec7712",
+    "ListCommandFactory.class": "340323a56974902f6b93b1902d84cabb146d3810428baba637443152babafc41",
+    "Main.class": "31560cba05fc01be8c32a15a7a4f20dfc4c68c64096d94ff71f398a1c99025a9",
+    "Memento.class": "9e5caf8f926ffd0d2e858f8ea37b7466a09b664944cade829871e36273a3a896",
+    "MementoCaretaker.class": "52838d078a21e04f51bea7ca6e37e11ab3be71871c70216cc6101ac6e53b40c7",
+    "ModifyRoleCommand.class": "13b49a7450d8a3fa6715cc8ec3292243eb301fcb6014a197ff68515257dfa485",
+    "ModifyRoleCommandFactory.class": "300fcc218b948f60323153ab20be6c7cd21363ff4b745c75e1c1a209d6f5d309",
+    "RedoCommand.class": "30aff0a2ef5ba7b1c38b59d57195626ceaa8fc1eee4bcd830a11d1a613a6f0b9",
+    "RedoCommandFactory.class": "1924077e5ca6e5b8cd640a35bfbba7e55707716ea572ce393cedc0b7eb74ea0f",
+    "RefrigeratedTruckFleet.class": "093ffe4595009e3ecbbe0321b14e009a553b3f701e0fde5f674ed9f516ae1d9c",
+    "RefrigeratedTruckFleetFactory.class": "b770d45fc054c417df44ac63249b3464dcfbe783b469142347ac54f821d696e9",
+    "SetCurrentFleetCommand.class": "08489c84108f9d5b3341039b51228a4bdef0b86582bae9de7e0ef966f1594df3",
+    "SetCurrentFleetCommandFactory.class": "6343368a3bd148673653cbe9267da2f00c0330bf66e37ad834053a393b50b318",
+    "ShowAllFleetsCommand.class": "bb487040d54af8589ddbf8e4c20d39073b5743aa1d8e33ca13bacb4feffcb5c7",
+    "ShowAllFleetsCommandFactory.class": "759a824aac8cc1ffff93f98ddd7bd19c96e0cffa99284d2bc4b53892064b6dd2",
+    "ShowFleetCommand.class": "7423644ebc9adbf7a210a407b967533649ccb4061f5e4a7ec4c6556c1b937bc8",
+    "ShowFleetCommandFactory.class": "4201c7922ca0cb5cadcab91ee9b70e2c210592d8b825840532abf4fd06e8e02c",
+    "UndoCommand.class": "2f8688a7d0933ceca07a645c745a8748a1e9a886004c07513cb5415c7737f356",
+    "UndoCommandFactory.class": "e9b4f9562c099680e707ffaf383c97ed693168431e3c21c5243e1a477fb38452",
+    "UndoableCommand.class": "7676177de8bf51dcb2a90de47e1dd7df02972d5d657413729efddecc02b0df0f",
+    "VehicleFleet.class": "7633716b61d2920bd0f6590058214dbf7ba06cffa702679eff4b1cc8db80e546"
+  }
+}

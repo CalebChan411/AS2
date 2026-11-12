@@ -1,0 +1,26 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", nodesep=.35, ranksep=.6, pad=.2, fontname="DejaVu Sans", fontsize=12, labelloc=t, label="Factory and Command collaboration\nSummary view — selected members and relationships"];
+node [shape=plain, fontname="DejaVu Sans", fontsize=10];
+edge [fontname="DejaVu Sans", fontsize=9, arrowsize=.7];
+Main [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>Main</B></TD></TR><TR><TD ALIGN="LEFT">+main(args)</TD></TR></TABLE>>];
+CommandFactoryRegistry [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>CommandFactoryRegistry</B></TD></TR><TR><TD ALIGN="LEFT">-factories</TD></TR></TABLE>>];
+CommandFactory [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>«interface»<BR/>CommandFactory</B></TD></TR><TR><TD ALIGN="LEFT">+createCommand()</TD></TR></TABLE>>];
+AddDriverCommandFactory [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>AddDriverCommandFactory</B></TD></TR><TR><TD ALIGN="LEFT">+createCommand()</TD></TR></TABLE>>];
+CommandInvoker [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>CommandInvoker</B></TD></TR><TR><TD ALIGN="LEFT">-history</TD></TR><TR><TD ALIGN="LEFT">+execute(command)</TD></TR></TABLE>>];
+CommandHistory [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>CommandHistory</B></TD></TR><TR><TD ALIGN="LEFT">-undoStack / redoStack</TD></TR><TR><TD ALIGN="LEFT">+record(command)</TD></TR></TABLE>>];
+Command [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>«interface»<BR/>Command</B></TD></TR><TR><TD ALIGN="LEFT">+execute() / undo() / redo()</TD></TR></TABLE>>];
+AddDriverCommand [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>AddDriverCommand</B></TD></TR><TR><TD ALIGN="LEFT">+execute() / undo() / redo()</TD></TR></TABLE>>];
+Main -> CommandFactoryRegistry [style=dashed,arrowhead=open,label="getFactory"];
+Main -> CommandInvoker [style=dashed,arrowhead=open,label="dispatch"];
+CommandFactoryRegistry -> CommandFactory [arrowhead=open,label="factories"];
+AddDriverCommandFactory -> CommandFactory [style=dashed,arrowhead=empty];
+AddDriverCommandFactory -> AddDriverCommand [style=dashed,arrowhead=open,label="«create»"];
+CommandInvoker -> CommandHistory [arrowhead=open,label="history"];
+CommandInvoker -> Command [style=dashed,arrowhead=open,label="execute"];
+CommandHistory -> Command [arrowhead=open,label="stored requests"];
+AddDriverCommand -> Command [style=dashed,arrowhead=empty,label="via base classes"];
+{rank=same; CommandFactoryRegistry; CommandInvoker;}
+{rank=same; CommandFactory; CommandHistory;}
+{rank=same; AddDriverCommandFactory; Command;}
+{rank=same; AddDriverCommand;}
+}

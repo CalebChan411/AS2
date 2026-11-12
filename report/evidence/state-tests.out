@@ -1,0 +1,88 @@
+Delivery van fleet is created.
+Current fleet is changed to V1.
+Refrigerated truck fleet is created.
+Current fleet is changed to R1.
+Command (Create refrigerated truck fleet, R1, SECOND) is undone.
+Command (Create refrigerated truck fleet, R1, SECOND) is redone.
+Command (Create refrigerated truck fleet, R1, SECOND) is undone.
+Command (Create delivery van fleet, V1, FIRST) is undone.
+Command (Create delivery van fleet, V1, FIRST) is redone.
+PASS create undo/redo collection, current fleet and identity
+Delivery van fleet is created.
+Current fleet is changed to V1.
+Driver is added.
+Driver is added.
+Driver is added.
+Driver is deleted.
+Command (Delete driver, B) is undone.
+Command (Delete driver, B) is redone.
+Command (Delete driver, B) is undone.
+Command (Delete driver, B) is redone.
+Command (Delete driver, B) is undone.
+Command (Delete driver, B) is redone.
+Command (Delete driver, B) is undone.
+Command (Add driver, C, Gamma, van driver) is undone.
+Command (Add driver, C, Gamma, van driver) is redone.
+PASS delete restores driver order and identities through repeated cycles
+Delivery van fleet is created.
+Current fleet is changed to V1.
+Driver is added.
+Refrigerated truck fleet is created.
+Current fleet is changed to R1.
+Driver is added.
+Driver role is updated.
+Command (Modify driver role, D1, van driver) is undone.
+Command (Modify driver role, D1, van driver) is redone.
+Command (Modify driver role, D1, van driver) is undone.
+PASS role snapshots bind original object across current-fleet changes
+Delivery van fleet is created.
+Current fleet is changed to V1.
+Driver is added.
+Refrigerated truck fleet is created.
+Current fleet is changed to R1.
+Fleet name is updated.
+Fleet name is updated.
+Command (Change fleet name, V1, C) is undone.
+Command (Change fleet name, V1, B) is undone.
+Command (Change fleet name, V1, B) is redone.
+Command (Change fleet name, V1, C) is redone.
+PASS independent name snapshots, replay and original target
+PASS direct Memento interface and caretaker restoration
+undo failure
+Command (probe) is undone.
+redo failure
+execute failure
+Undo List
+-- End of undo list --
+Redo List
+probe
+-- End of redo list --
+Command (probe) is redone.
+Command (probe) is undone.
+Nothing to redo.
+PASS history moves only after success; failed operations retain retryable entries
+Delivery van fleet is created.
+Current fleet is changed to V1.
+Driver is added.
+Fleet name is updated.
+Command (Change fleet name, V1, RENAMED) is undone.
+Invalid driver role for delivery van fleet.
+Invalid driver role for delivery van fleet.
+Fleet name cannot be empty.
+Command (Change fleet name, V1, RENAMED) is redone.
+PASS failed mutations roll back state and preserve redo
+Delivery van fleet is created.
+Current fleet is changed to V1.
+Command (Create delivery van fleet, V1, FACTORY) is undone.
+Command (Create delivery van fleet, V1, FACTORY) is redone.
+Driver is added.
+Command (Add driver, D1, Name, van driver) is undone.
+Command (Add driver, D1, Name, van driver) is redone.
+Command (Add driver, D1, Name, van driver) is undone.
+Command (Add driver, D1, Name, van driver) is redone.
+Driver is added.
+PASS factories create fresh requests; undo/redo never recreates business objects
+Command (probe) is undone.
+Command (probe) is redone.
+PASS backward constructor compatibility and missing-snapshot feedback
+RESULT: 9 state-test groups passed; 65 assertions passed.

@@ -1,0 +1,1328 @@
+[
+  {
+    "id": "TC01",
+    "title": "Create a delivery van fleet and select it",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\nsf\nx\n",
+    "steps": "Create a delivery van fleet and select it",
+    "expected": "One V201 van fleet becomes current, both roles empty.",
+    "ordered": [
+      "Delivery van fleet is created.\nCurrent fleet is changed to V201.\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. One V201 van fleet becomes current, both roles empty.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery van fleet is created.\nCurrent fleet is changed to V201.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC02",
+    "title": "Create a refrigerated truck fleet",
+    "input": "c\nr\nR301\nARCTIC LINE\nsf\nx\n",
+    "steps": "Create a refrigerated truck fleet",
+    "expected": "One R301 refrigerated fleet becomes current; both roles empty.",
+    "ordered": [
+      "Refrigerated truck fleet is created.\nCurrent fleet is changed to R301.\n",
+      "Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. One R301 refrigerated fleet becomes current; both roles empty.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Refrigerated truck fleet is created.\nCurrent fleet is changed to R301.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL",
+        "pass": true
+      }
+    ],
+    "stdout": "Refrigerated truck fleet is created.\nCurrent fleet is changed to R301.\nRefrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC03",
+    "title": "Add both legal delivery van roles",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\na\nD202, Riley Ng\n2\nsf\nx\n",
+    "steps": "Add both legal delivery van roles",
+    "expected": "Casey is van driver and Riley is courier driver.",
+    "ordered": [
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver:\n\nD202, Riley Ng\n\n"
+    ],
+    "counts": {
+      "Driver is added.": 2
+    },
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. Casey is van driver and Riley is courier driver.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver:\n\nD202, Riley Ng",
+        "pass": true
+      },
+      {
+        "check": "count 'Driver is added.' is 2",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDriver is added.\nDriver is added.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver:\n\nD202, Riley Ng\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC04",
+    "title": "Add both legal refrigerated truck roles",
+    "input": "c\nr\nR301\nARCTIC LINE\na\nD201, Casey Ho\n1\na\nD202, Riley Ng\n2\nsf\nx\n",
+    "steps": "Add both legal refrigerated truck roles",
+    "expected": "Casey is refrigerated-truck driver and Riley is cold-chain delivery driver.",
+    "ordered": [
+      "Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Casey Ho\n\nCold-Chain Delivery Driver:\n\nD202, Riley Ng\n\n"
+    ],
+    "counts": {
+      "Driver is added.": 2
+    },
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. Casey is refrigerated-truck driver and Riley is cold-chain delivery driver.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Casey Ho\n\nCold-Chain Delivery Driver:\n\nD202, Riley Ng",
+        "pass": true
+      },
+      {
+        "check": "count 'Driver is added.' is 2",
+        "pass": true
+      }
+    ],
+    "stdout": "Refrigerated truck fleet is created.\nCurrent fleet is changed to R301.\nDriver is added.\nDriver is added.\nRefrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Casey Ho\n\nCold-Chain Delivery Driver:\n\nD202, Riley Ng\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC05",
+    "title": "Switch current fleet in both directions",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\nc\nr\nR301\nARCTIC LINE\ns\nV201\nsf\ns\nR301\nsf\nx\n",
+    "steps": "Switch current fleet in both directions",
+    "expected": "Switching selects each existing fleet without changing membership.",
+    "ordered": [
+      "Changed current fleet to V201.",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Changed current fleet to R301.",
+      "Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. Switching selects each existing fleet without changing membership.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Changed current fleet to V201.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Changed current fleet to R301.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nRefrigerated truck fleet is created.\nCurrent fleet is changed to R301.\nChanged current fleet to V201.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nChanged current fleet to R301.\nRefrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC06",
+    "title": "Modify delivery van driver role",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\nm\nD201\n2\nsf\nx\n",
+    "steps": "Modify delivery van driver role",
+    "expected": "Casey moves from van to courier role.",
+    "ordered": [
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\n"
+    ],
+    "counts": {
+      "Driver role is updated.": 1
+    },
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. Casey moves from van to courier role.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho",
+        "pass": true
+      },
+      {
+        "check": "count 'Driver role is updated.' is 1",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDriver is added.\nDriver role is updated.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC07",
+    "title": "Modify refrigerated truck driver role",
+    "input": "c\nr\nR301\nARCTIC LINE\na\nD201, Casey Ho\n1\nm\nD201\n2\nsf\nx\n",
+    "steps": "Modify refrigerated truck driver role",
+    "expected": "Casey moves from refrigerated-truck to cold-chain delivery role.",
+    "ordered": [
+      "Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver:\n\nD201, Casey Ho\n\n"
+    ],
+    "counts": {
+      "Driver role is updated.": 1
+    },
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. Casey moves from refrigerated-truck to cold-chain delivery role.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver:\n\nD201, Casey Ho",
+        "pass": true
+      },
+      {
+        "check": "count 'Driver role is updated.' is 1",
+        "pass": true
+      }
+    ],
+    "stdout": "Refrigerated truck fleet is created.\nCurrent fleet is changed to R301.\nDriver is added.\nDriver role is updated.\nRefrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver:\n\nD201, Casey Ho\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC08",
+    "title": "Delete middle driver, undo order, and redo",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\na\nD202, Riley Ng\n1\na\nD203, Jordan Yip\n1\nd\nD202\nsf\nu\nsf\nr\nsf\nx\n",
+    "steps": "Delete middle driver, undo order, and redo",
+    "expected": "Membership progresses Casey/Jordan, Casey/Riley/Jordan, Casey/Jordan.",
+    "ordered": [
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD203, Jordan Yip\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD202, Riley Ng\n\nD203, Jordan Yip\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD203, Jordan Yip\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. Membership progresses Casey/Jordan, Casey/Riley/Jordan, Casey/Jordan.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD203, Jordan Yip\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD202, Riley Ng\n\nD203, Jordan Yip\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD203, Jordan Yip\n\nCourier Driver: NIL",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDriver is added.\nDriver is added.\nDriver is added.\nDriver is deleted.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD203, Jordan Yip\n\nCourier Driver: NIL\n\nCommand (Delete driver, D202) is undone.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD202, Riley Ng\n\nD203, Jordan Yip\n\nCourier Driver: NIL\n\nCommand (Delete driver, D202) is redone.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD203, Jordan Yip\n\nCourier Driver: NIL\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC09",
+    "title": "Rename without changing fleet ID or drivers",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\ncn\nHARBOUR PLUS\nsf\nx\n",
+    "steps": "Rename without changing fleet ID or drivers",
+    "expected": "Name changes to HARBOUR PLUS; ID V201 and Casey remain.",
+    "ordered": [
+      "Delivery Van Fleet HARBOUR PLUS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. Name changes to HARBOUR PLUS; ID V201 and Casey remain.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR PLUS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDriver is added.\nFleet name is updated.\nDelivery Van Fleet HARBOUR PLUS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC10",
+    "title": "Undo and redo creation with previous selection",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\nc\nr\nR301\nARCTIC LINE\nu\nsa\nsf\nr\nsa\nsf\nx\n",
+    "steps": "Undo and redo creation with previous selection",
+    "expected": "Undo removes R301 and restores V201 current; redo restores same fleet and selects R301.",
+    "ordered": [
+      "Command (Create refrigerated truck fleet, R301, ARCTIC LINE) is undone.",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Command (Create refrigerated truck fleet, R301, ARCTIC LINE) is redone.",
+      "Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. Undo removes R301 and restores V201 current; redo restores same fleet and selects R301.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Command (Create refrigerated truck fleet, R301, ARCTIC LINE) is undone.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Command (Create refrigerated truck fleet, R301, ARCTIC LINE) is redone.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nRefrigerated truck fleet is created.\nCurrent fleet is changed to R301.\nCommand (Create refrigerated truck fleet, R301, ARCTIC LINE) is undone.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nCommand (Create refrigerated truck fleet, R301, ARCTIC LINE) is redone.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\nRefrigerated Truck Fleet ARCTIC LINE (R301)\nRefrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC11",
+    "title": "Repeat undo and redo of adding a driver",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\nu\nsf\nr\nsf\nu\nsf\nr\nsf\nx\n",
+    "steps": "Repeat undo and redo of adding a driver",
+    "expected": "Two undo/redo cycles alternate empty and exactly one Casey.",
+    "ordered": [
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {
+      "D201, Casey Ho\n": 2
+    },
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. Two undo/redo cycles alternate empty and exactly one Casey.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "count 'D201, Casey Ho\\n' is 2",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDriver is added.\nCommand (Add driver, D201, Casey Ho, van driver) is undone.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nCommand (Add driver, D201, Casey Ho, van driver) is redone.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\nCommand (Add driver, D201, Casey Ho, van driver) is undone.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nCommand (Add driver, D201, Casey Ho, van driver) is redone.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC12",
+    "title": "Repeat role restoration 2 to 1 to 2 to 1 to 2",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n2\nsf\nm\nD201\n1\nsf\nu\nsf\nr\nsf\nu\nsf\nx\n",
+    "steps": "Repeat role restoration 2 to 1 to 2 to 1 to 2",
+    "expected": "The displayed role sequence is 2, 1, 2, 1, 2.",
+    "ordered": [
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. The displayed role sequence is 2, 1, 2, 1, 2.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDriver is added.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\nDriver role is updated.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\nCommand (Modify driver role, D201, van driver) is undone.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\nCommand (Modify driver role, D201, van driver) is redone.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\nCommand (Modify driver role, D201, van driver) is undone.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC13",
+    "title": "Undo and redo two successive name changes",
+    "input": "c\nv\nV201\nA\nsf\ncn\nB\nsf\ncn\nC\nsf\nu\nsf\nu\nsf\nr\nsf\nr\nsf\nx\n",
+    "steps": "Undo and redo two successive name changes",
+    "expected": "Name sequence is A, B, C, B, A, B, C.",
+    "ordered": [
+      "Delivery Van Fleet A (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet C (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet A (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Delivery Van Fleet C (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. Name sequence is A, B, C, B, A, B, C.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet A (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet C (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet A (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet C (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDelivery Van Fleet A (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nFleet name is updated.\nDelivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nFleet name is updated.\nDelivery Van Fleet C (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nCommand (Change fleet name, V201, C) is undone.\nDelivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nCommand (Change fleet name, V201, B) is undone.\nDelivery Van Fleet A (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nCommand (Change fleet name, V201, B) is redone.\nDelivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nCommand (Change fleet name, V201, C) is redone.\nDelivery Van Fleet C (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC14",
+    "title": "Restore original target despite same driver ID in another fleet",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\nc\nr\nR301\nARCTIC LINE\na\nD201, Sam Tse\n1\ns\nV201\nm\nD201\n2\ns\nR301\nu\nsf\ns\nV201\nsf\ns\nR301\nr\nsf\ns\nV201\nsf\nx\n",
+    "steps": "Restore original target despite same driver ID in another fleet",
+    "expected": "Undo/redo affects Casey in V201; Sam in R301 stays role 1.",
+    "ordered": [
+      "Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Sam Tse\n\nCold-Chain Delivery Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n",
+      "Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Sam Tse\n\nCold-Chain Delivery Driver: NIL\n\n",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. Undo/redo affects Casey in V201; Sam in R301 stays role 1.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Sam Tse\n\nCold-Chain Delivery Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Sam Tse\n\nCold-Chain Delivery Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDriver is added.\nRefrigerated truck fleet is created.\nCurrent fleet is changed to R301.\nDriver is added.\nChanged current fleet to V201.\nDriver role is updated.\nChanged current fleet to R301.\nCommand (Modify driver role, D201, courier driver) is undone.\nRefrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Sam Tse\n\nCold-Chain Delivery Driver: NIL\n\nChanged current fleet to V201.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\nChanged current fleet to R301.\nCommand (Modify driver role, D201, courier driver) is redone.\nRefrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Sam Tse\n\nCold-Chain Delivery Driver: NIL\n\nChanged current fleet to V201.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC15",
+    "title": "Record only the five undoable commands",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\nm\nD201\n2\nd\nD201\ncn\nRENAMED\nsf\nsa\ns\nV201\nl\nx\n",
+    "steps": "Record only the five undoable commands",
+    "expected": "Undo list contains create, add, modify, delete and rename only; redo empty.",
+    "ordered": [],
+    "counts": {},
+    "absent": [],
+    "history": [
+      [
+        "Create delivery van fleet, V201, HARBOUR EXPRESS",
+        "Add driver, D201, Casey Ho, van driver",
+        "Modify driver role, D201, courier driver",
+        "Delete driver, D201",
+        "Change fleet name, V201, RENAMED"
+      ],
+      []
+    ],
+    "actual": "All independent checks passed. Undo list contains create, add, modify, delete and rename only; redo empty.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "exact last undo and redo list contents",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDriver is added.\nDriver role is updated.\nDriver is deleted.\nFleet name is updated.\nDelivery Van Fleet RENAMED (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nDelivery Van Fleet RENAMED (V201)\nChanged current fleet to V201.\nUndo List\nCreate delivery van fleet, V201, HARBOUR EXPRESS\nAdd driver, D201, Casey Ho, van driver\nModify driver role, D201, courier driver\nDelete driver, D201\nChange fleet name, V201, RENAMED\n-- End of undo list --\nRedo List\n-- End of redo list --\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC16",
+    "title": "Undo all five mutation types then redo all in LIFO order",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\nm\nD201\n2\nd\nD201\ncn\nRENAMED\nu\nu\nu\nu\nu\nsa\nl\nr\nr\nr\nr\nr\nsf\nl\nx\n",
+    "steps": "Undo all five mutation types then redo all in LIFO order",
+    "expected": "All undo empties fleets. All redo restores renamed V201 with no drivers.",
+    "ordered": [
+      "No fleets available.",
+      "Delivery Van Fleet RENAMED (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {
+      " is undone.": 5,
+      " is redone.": 5
+    },
+    "absent": [],
+    "history": [
+      [
+        "Create delivery van fleet, V201, HARBOUR EXPRESS",
+        "Add driver, D201, Casey Ho, van driver",
+        "Modify driver role, D201, courier driver",
+        "Delete driver, D201",
+        "Change fleet name, V201, RENAMED"
+      ],
+      []
+    ],
+    "actual": "All independent checks passed. All undo empties fleets. All redo restores renamed V201 with no drivers.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: No fleets available.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet RENAMED (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "count ' is undone.' is 5",
+        "pass": true
+      },
+      {
+        "check": "count ' is redone.' is 5",
+        "pass": true
+      },
+      {
+        "check": "exact last undo and redo list contents",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDriver is added.\nDriver role is updated.\nDriver is deleted.\nFleet name is updated.\nCommand (Change fleet name, V201, RENAMED) is undone.\nCommand (Delete driver, D201) is undone.\nCommand (Modify driver role, D201, courier driver) is undone.\nCommand (Add driver, D201, Casey Ho, van driver) is undone.\nCommand (Create delivery van fleet, V201, HARBOUR EXPRESS) is undone.\nNo fleets available.\nUndo List\n-- End of undo list --\nRedo List\nChange fleet name, V201, RENAMED\nDelete driver, D201\nModify driver role, D201, courier driver\nAdd driver, D201, Casey Ho, van driver\nCreate delivery van fleet, V201, HARBOUR EXPRESS\n-- End of redo list --\nCommand (Create delivery van fleet, V201, HARBOUR EXPRESS) is redone.\nCommand (Add driver, D201, Casey Ho, van driver) is redone.\nCommand (Modify driver role, D201, courier driver) is redone.\nCommand (Delete driver, D201) is redone.\nCommand (Change fleet name, V201, RENAMED) is redone.\nDelivery Van Fleet RENAMED (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nUndo List\nCreate delivery van fleet, V201, HARBOUR EXPRESS\nAdd driver, D201, Casey Ho, van driver\nModify driver role, D201, courier driver\nDelete driver, D201\nChange fleet name, V201, RENAMED\n-- End of undo list --\nRedo List\n-- End of redo list --\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC17",
+    "title": "Successful new mutation clears redo",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\nu\ncn\nNEW NAME\nr\nsf\nl\nx\n",
+    "steps": "Successful new mutation clears redo",
+    "expected": "Rename after undo clears redo; Casey stays absent.",
+    "ordered": [
+      "Nothing to redo.",
+      "Delivery Van Fleet NEW NAME (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": [
+      [
+        "Create delivery van fleet, V201, HARBOUR EXPRESS",
+        "Change fleet name, V201, NEW NAME"
+      ],
+      []
+    ],
+    "actual": "All independent checks passed. Rename after undo clears redo; Casey stays absent.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Nothing to redo.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet NEW NAME (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "exact last undo and redo list contents",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDriver is added.\nCommand (Add driver, D201, Casey Ho, van driver) is undone.\nFleet name is updated.\nNothing to redo.\nDelivery Van Fleet NEW NAME (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nUndo List\nCreate delivery van fleet, V201, HARBOUR EXPRESS\nChange fleet name, V201, NEW NAME\n-- End of undo list --\nRedo List\n-- End of redo list --\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC18",
+    "title": "Read and selection commands preserve redo",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\nu\nsf\nsa\nl\ns\nV201\nr\nsf\nx\n",
+    "steps": "Read and selection commands preserve redo",
+    "expected": "sf, sa, l and s preserve undone add; redo restores Casey.",
+    "ordered": [
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n",
+      "Command (Add driver, D201, Casey Ho, van driver) is redone.",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [
+      "Nothing to redo."
+    ],
+    "history": null,
+    "actual": "All independent checks passed. sf, sa, l and s preserve undone add; redo restores Casey.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Command (Add driver, D201, Casey Ho, van driver) is redone.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "not present: Nothing to redo.",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDriver is added.\nCommand (Add driver, D201, Casey Ho, van driver) is undone.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nDelivery Van Fleet HARBOUR EXPRESS (V201)\nUndo List\nCreate delivery van fleet, V201, HARBOUR EXPRESS\n-- End of undo list --\nRedo List\nAdd driver, D201, Casey Ho, van driver\n-- End of redo list --\nChanged current fleet to V201.\nCommand (Add driver, D201, Casey Ho, van driver) is redone.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC19",
+    "title": "Reject duplicate fleet ID case-insensitively",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\nc\nr\nv201\nDUPLICATE\nsa\nsf\nl\nx\n",
+    "steps": "Reject duplicate fleet ID case-insensitively",
+    "expected": "Duplicate v201 is rejected and original V201 unchanged.",
+    "ordered": [
+      "Fleet ID v201 already exists!",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [
+      "DUPLICATE (v201)"
+    ],
+    "history": [
+      [
+        "Create delivery van fleet, V201, HARBOUR EXPRESS"
+      ],
+      []
+    ],
+    "actual": "All independent checks passed. Duplicate v201 is rejected and original V201 unchanged.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Fleet ID v201 already exists!",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "not present: DUPLICATE (v201)",
+        "pass": true
+      },
+      {
+        "check": "exact last undo and redo list contents",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nFleet ID v201 already exists!\nDelivery Van Fleet HARBOUR EXPRESS (V201)\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL\n\nUndo List\nCreate delivery van fleet, V201, HARBOUR EXPRESS\n-- End of undo list --\nRedo List\n-- End of redo list --\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC20",
+    "title": "Reject duplicate driver ID in the same fleet",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\na\nd201, Other Person\n2\nsf\nl\nx\n",
+    "steps": "Reject duplicate driver ID in the same fleet",
+    "expected": "Duplicate d201 rejected; only original Casey remains.",
+    "ordered": [
+      "Driver d201 already exists in the current fleet!",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [
+      "Other Person\n"
+    ],
+    "history": [
+      [
+        "Create delivery van fleet, V201, HARBOUR EXPRESS",
+        "Add driver, D201, Casey Ho, van driver"
+      ],
+      []
+    ],
+    "actual": "All independent checks passed. Duplicate d201 rejected; only original Casey remains.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Driver d201 already exists in the current fleet!",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "not present: Other Person\n",
+        "pass": true
+      },
+      {
+        "check": "exact last undo and redo list contents",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDriver is added.\nDriver d201 already exists in the current fleet!\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\nUndo List\nCreate delivery van fleet, V201, HARBOUR EXPRESS\nAdd driver, D201, Casey Ho, van driver\n-- End of undo list --\nRedo List\n-- End of redo list --\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC21",
+    "title": "Reject unknown fleet type then accept valid input",
+    "input": "c\nz\nZ999\nINVALID\nc\nv\nV201\nHARBOUR EXPRESS\nsa\nx\n",
+    "steps": "Reject unknown fleet type then accept valid input",
+    "expected": "Unknown type rejected; valid creation afterward succeeds.",
+    "ordered": [
+      "Invalid fleet type!",
+      "Delivery van fleet is created.",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)"
+    ],
+    "counts": {
+      " is created.": 1
+    },
+    "absent": [
+      "INVALID (Z999)"
+    ],
+    "history": null,
+    "actual": "All independent checks passed. Unknown type rejected; valid creation afterward succeeds.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Invalid fleet type!",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery van fleet is created.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)",
+        "pass": true
+      },
+      {
+        "check": "count ' is created.' is 1",
+        "pass": true
+      },
+      {
+        "check": "not present: INVALID (Z999)",
+        "pass": true
+      }
+    ],
+    "stdout": "Invalid fleet type!\nDelivery van fleet is created.\nCurrent fleet is changed to V201.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC22",
+    "title": "Handle missing targets and unknown command",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\ns\nF999\nm\nD999\n2\nd\nD999\nq\nsf\nx\n",
+    "steps": "Handle missing targets and unknown command",
+    "expected": "Three missing targets and unknown command reported; original state unchanged.",
+    "ordered": [
+      "Fleet F999 is not found!",
+      "Driver D999 is not found in the current fleet!",
+      "Driver D999 is not found in the current fleet!",
+      "Invalid command!",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. Three missing targets and unknown command reported; original state unchanged.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Fleet F999 is not found!",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Driver D999 is not found in the current fleet!",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Driver D999 is not found in the current fleet!",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Invalid command!",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDriver is added.\nFleet F999 is not found!\nDriver D999 is not found in the current fleet!\nDriver D999 is not found in the current fleet!\nInvalid command!\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC23",
+    "title": "Reject malformed input, blank fields and invalid roles",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nmissing comma\na\n , Name\na\nD999,   \na\nD998, Nope\nword\na\nD997, Nope\n3\ncn\n   \nc\nv\n\nEMPTY ID\nc\nr\nR999\n\na\nD201, Casey Ho\n1\nm\nD201\nword\nm\nD201\n9\nsf\nl\nx\n",
+    "steps": "Reject malformed input, blank fields and invalid roles",
+    "expected": "Invalid values rejected with recovery; V201 and one original role-1 driver remain.",
+    "ordered": [
+      "Please enter driver information in the format: ID, Name.",
+      "Driver ID and name cannot be empty.",
+      "Driver ID and name cannot be empty.",
+      "Invalid driver role. Please enter 1 or 2.",
+      "Invalid driver role for delivery van fleet.",
+      "Fleet name cannot be empty.",
+      "Fleet ID cannot be empty.",
+      "Fleet name cannot be empty.",
+      "Driver is added.",
+      "Invalid driver role. Please enter 1 or 2.",
+      "Invalid driver role for delivery van fleet.",
+      "Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": [
+      [
+        "Create delivery van fleet, V201, HARBOUR EXPRESS",
+        "Add driver, D201, Casey Ho, van driver"
+      ],
+      []
+    ],
+    "actual": "All independent checks passed. Invalid values rejected with recovery; V201 and one original role-1 driver remain.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Please enter driver information in the format: ID, Name.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Driver ID and name cannot be empty.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Driver ID and name cannot be empty.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Invalid driver role. Please enter 1 or 2.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Invalid driver role for delivery van fleet.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Fleet name cannot be empty.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Fleet ID cannot be empty.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Fleet name cannot be empty.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Driver is added.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Invalid driver role. Please enter 1 or 2.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Invalid driver role for delivery van fleet.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "exact last undo and redo list contents",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nPlease enter driver information in the format: ID, Name.\nDriver ID and name cannot be empty.\nDriver ID and name cannot be empty.\nInvalid driver role. Please enter 1 or 2.\nInvalid driver role for delivery van fleet.\nFleet name cannot be empty.\nFleet ID cannot be empty.\nFleet name cannot be empty.\nDriver is added.\nInvalid driver role. Please enter 1 or 2.\nInvalid driver role for delivery van fleet.\nDelivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\nUndo List\nCreate delivery van fleet, V201, HARBOUR EXPRESS\nAdd driver, D201, Casey Ho, van driver\n-- End of undo list --\nRedo List\n-- End of redo list --\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC24",
+    "title": "Failed mutations preserve redo",
+    "input": "c\nv\nV201\nHARBOUR EXPRESS\na\nD201, Casey Ho\n1\ncn\nNEW NAME\nu\nc\nv\nV201\nDUPLICATE\na\nD201, Duplicate\n2\nm\nD201\n9\nr\nsf\nl\nx\n",
+    "steps": "Failed mutations preserve redo",
+    "expected": "Duplicate fleet/driver and invalid role do not clear undone rename; redo restores NEW NAME.",
+    "ordered": [
+      "Fleet ID V201 already exists!",
+      "Driver D201 already exists in the current fleet!",
+      "Invalid driver role for delivery van fleet.",
+      "Command (Change fleet name, V201, NEW NAME) is redone.",
+      "Delivery Van Fleet NEW NAME (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\n"
+    ],
+    "counts": {},
+    "absent": [],
+    "history": [
+      [
+        "Create delivery van fleet, V201, HARBOUR EXPRESS",
+        "Add driver, D201, Casey Ho, van driver",
+        "Change fleet name, V201, NEW NAME"
+      ],
+      []
+    ],
+    "actual": "All independent checks passed. Duplicate fleet/driver and invalid role do not clear undone rename; redo restores NEW NAME.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Fleet ID V201 already exists!",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Driver D201 already exists in the current fleet!",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Invalid driver role for delivery van fleet.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Command (Change fleet name, V201, NEW NAME) is redone.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet NEW NAME (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+        "pass": true
+      },
+      {
+        "check": "exact last undo and redo list contents",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to V201.\nDriver is added.\nFleet name is updated.\nCommand (Change fleet name, V201, NEW NAME) is undone.\nFleet ID V201 already exists!\nDriver D201 already exists in the current fleet!\nInvalid driver role for delivery van fleet.\nCommand (Change fleet name, V201, NEW NAME) is redone.\nDelivery Van Fleet NEW NAME (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL\n\nUndo List\nCreate delivery van fleet, V201, HARBOUR EXPRESS\nAdd driver, D201, Casey Ho, van driver\nChange fleet name, V201, NEW NAME\n-- End of undo list --\nRedo List\n-- End of redo list --\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "TC25",
+    "title": "Empty system commands and exit",
+    "input": "sa\nsf\nu\nr\nl\nx\n",
+    "steps": "Empty system commands and exit",
+    "expected": "Empty display/history feedback and clean exit; both lists empty.",
+    "ordered": [
+      "No fleets available.",
+      "No current fleet selected.",
+      "Nothing to undo.",
+      "Nothing to redo.",
+      "Undo List\n-- End of undo list --\nRedo List\n-- End of redo list --\n",
+      "Thank you for using SDFMS. System terminated."
+    ],
+    "counts": {},
+    "absent": [],
+    "history": [
+      [],
+      []
+    ],
+    "actual": "All independent checks passed. Empty display/history feedback and clean exit; both lists empty.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: No fleets available.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: No current fleet selected.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Nothing to undo.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Nothing to redo.",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Undo List\n-- End of undo list --\nRedo List\n-- End of redo list --",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Thank you for using SDFMS. System terminated.",
+        "pass": true
+      },
+      {
+        "check": "exact last undo and redo list contents",
+        "pass": true
+      }
+    ],
+    "stdout": "No fleets available.\nNo current fleet selected.\nNothing to undo.\nNothing to redo.\nUndo List\n-- End of undo list --\nRedo List\n-- End of redo list --\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  },
+  {
+    "id": "SAMPLE",
+    "title": "Assignment sample run, all fifteen illustrated stages",
+    "input": "c\nv\nF001\nCENTRAL EXPRESS\na\nd001, Alex Chan\n1\na\nd002, Jamie Lee\n2\nsf\nc\nr\nF102\nFROST LINE\nsa\na\nd101, Morgan Wong\n1\na\nd102, Taylor Lam\n2\nsf\ns\nF001\nsa\nm\nd001\n2\nsf\nd\nd002\nsf\ncn\nMETRO EXPRESS\nsf\nl\nu\nu\nu\nsf\nr\nr\nr\nsf\ns\nF999\nd\nd999\nq\nx\n",
+    "steps": "Reproduce supplied sample commands with the published names and IDs.",
+    "expected": "Published fleet/driver results, history entries, undo/redo, errors and exit are reproduced; prompts are absent in redirected-input mode.",
+    "ordered": [
+      "Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver:\n\nd001, Alex Chan\n\nCourier Driver:\n\nd002, Jamie Lee\n\n",
+      "Refrigerated Truck Fleet FROST LINE (F102)\n\nRefrigerated-Truck Driver:\n\nd101, Morgan Wong\n\nCold-Chain Delivery Driver:\n\nd102, Taylor Lam\n\n",
+      "Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan\n\nd002, Jamie Lee\n\n",
+      "Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan\n\n",
+      "Delivery Van Fleet METRO EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan\n\n",
+      "Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver:\n\nd001, Alex Chan\n\nCourier Driver:\n\nd002, Jamie Lee\n\n",
+      "Delivery Van Fleet METRO EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan\n\n",
+      "Fleet F999 is not found!",
+      "Driver d999 is not found in the current fleet!",
+      "Invalid command!"
+    ],
+    "counts": {
+      " is undone.": 3,
+      " is redone.": 3
+    },
+    "absent": [],
+    "history": null,
+    "actual": "All independent checks passed. Published fleet/driver results, history entries, undo/redo, errors and exit are reproduced; prompts are absent in redirected-input mode.",
+    "status": "PASS",
+    "baseline_identical": true,
+    "assertions": [
+      {
+        "check": "process exits successfully",
+        "pass": true
+      },
+      {
+        "check": "exit acknowledgement printed once",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver:\n\nd001, Alex Chan\n\nCourier Driver:\n\nd002, Jamie Lee",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Refrigerated Truck Fleet FROST LINE (F102)\n\nRefrigerated-Truck Driver:\n\nd101, Morgan Wong\n\nCold-Chain Delivery Driver:\n\nd102, Taylor Lam",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan\n\nd002, Jamie Lee",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet METRO EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver:\n\nd001, Alex Chan\n\nCourier Driver:\n\nd002, Jamie Lee",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Delivery Van Fleet METRO EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Fleet F999 is not found!",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Driver d999 is not found in the current fleet!",
+        "pass": true
+      },
+      {
+        "check": "expected ordered result: Invalid command!",
+        "pass": true
+      },
+      {
+        "check": "count ' is undone.' is 3",
+        "pass": true
+      },
+      {
+        "check": "count ' is redone.' is 3",
+        "pass": true
+      }
+    ],
+    "stdout": "Delivery van fleet is created.\nCurrent fleet is changed to F001.\nDriver is added.\nDriver is added.\nDelivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver:\n\nd001, Alex Chan\n\nCourier Driver:\n\nd002, Jamie Lee\n\nRefrigerated truck fleet is created.\nCurrent fleet is changed to F102.\nDelivery Van Fleet CENTRAL EXPRESS (F001)\nRefrigerated Truck Fleet FROST LINE (F102)\nDriver is added.\nDriver is added.\nRefrigerated Truck Fleet FROST LINE (F102)\n\nRefrigerated-Truck Driver:\n\nd101, Morgan Wong\n\nCold-Chain Delivery Driver:\n\nd102, Taylor Lam\n\nChanged current fleet to F001.\nDelivery Van Fleet CENTRAL EXPRESS (F001)\nRefrigerated Truck Fleet FROST LINE (F102)\nDriver role is updated.\nDelivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan\n\nd002, Jamie Lee\n\nDriver is deleted.\nDelivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan\n\nFleet name is updated.\nDelivery Van Fleet METRO EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan\n\nUndo List\nCreate delivery van fleet, F001, CENTRAL EXPRESS\nAdd driver, d001, Alex Chan, van driver\nAdd driver, d002, Jamie Lee, courier driver\nCreate refrigerated truck fleet, F102, FROST LINE\nAdd driver, d101, Morgan Wong, refrigerated-truck driver\nAdd driver, d102, Taylor Lam, cold-chain delivery driver\nModify driver role, d001, courier driver\nDelete driver, d002\nChange fleet name, F001, METRO EXPRESS\n-- End of undo list --\nRedo List\n-- End of redo list --\nCommand (Change fleet name, F001, METRO EXPRESS) is undone.\nCommand (Delete driver, d002) is undone.\nCommand (Modify driver role, d001, courier driver) is undone.\nDelivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver:\n\nd001, Alex Chan\n\nCourier Driver:\n\nd002, Jamie Lee\n\nCommand (Modify driver role, d001, courier driver) is redone.\nCommand (Delete driver, d002) is redone.\nCommand (Change fleet name, F001, METRO EXPRESS) is redone.\nDelivery Van Fleet METRO EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan\n\nFleet F999 is not found!\nDriver d999 is not found in the current fleet!\nInvalid command!\nThank you for using SDFMS. System terminated.\n",
+    "returncode": 0
+  }
+]

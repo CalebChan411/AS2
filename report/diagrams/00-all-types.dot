@@ -1,0 +1,22 @@
+digraph G {
+graph [pad=.2, bgcolor="white"];
+node [shape=plain, fontname="DejaVu Sans", fontsize=11];
+all [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="12" CELLPADDING="10"><TR><TD COLSPAN="2" BGCOLOR="#dcecf8"><B>SDFMS — complete catalogue of 47 types</B><BR/>Names only; exact members and relationships appear in detailed views.</TD></TR>
+<TR>
+<TD ALIGN="LEFT" VALIGN="TOP"><B>Domain (4)</B><BR/><BR/>Driver<BR ALIGN="LEFT"/><I>VehicleFleet</I> (abstract)<BR ALIGN="LEFT"/>DeliveryVanFleet<BR ALIGN="LEFT"/>RefrigeratedTruckFleet<BR ALIGN="LEFT"/></TD>
+<TD ALIGN="LEFT" VALIGN="TOP"><B>Command abstraction (3)</B><BR/><BR/>«interface» Command<BR ALIGN="LEFT"/><I>BaseCommand</I> (abstract)<BR ALIGN="LEFT"/><I>UndoableCommand</I> (abstract)<BR ALIGN="LEFT"/></TD>
+</TR>
+<TR>
+<TD ALIGN="LEFT" VALIGN="TOP"><B>Five undoable commands (5)</B><BR/><BR/>CreateFleetCommand<BR ALIGN="LEFT"/>AddDriverCommand<BR ALIGN="LEFT"/>ModifyRoleCommand<BR ALIGN="LEFT"/>DeleteDriverCommand<BR ALIGN="LEFT"/>ChangeNameCommand<BR ALIGN="LEFT"/></TD>
+<TD ALIGN="LEFT" VALIGN="TOP"><B>Six non-undoable commands (6)</B><BR/><BR/>SetCurrentFleetCommand<BR ALIGN="LEFT"/>ShowFleetCommand<BR ALIGN="LEFT"/>ShowAllFleetsCommand<BR ALIGN="LEFT"/>UndoCommand<BR ALIGN="LEFT"/>RedoCommand<BR ALIGN="LEFT"/>ListCommand<BR ALIGN="LEFT"/></TD>
+</TR>
+<TR>
+<TD ALIGN="LEFT" VALIGN="TOP"><B>Command creation (12)</B><BR/><BR/>«interface» CommandFactory<BR ALIGN="LEFT"/>AddDriverCommandFactory<BR ALIGN="LEFT"/>ChangeNameCommandFactory<BR ALIGN="LEFT"/>CreateFleetCommandFactory<BR ALIGN="LEFT"/>DeleteDriverCommandFactory<BR ALIGN="LEFT"/>ListCommandFactory<BR ALIGN="LEFT"/>ModifyRoleCommandFactory<BR ALIGN="LEFT"/>RedoCommandFactory<BR ALIGN="LEFT"/>SetCurrentFleetCommandFactory<BR ALIGN="LEFT"/>ShowAllFleetsCommandFactory<BR ALIGN="LEFT"/>ShowFleetCommandFactory<BR ALIGN="LEFT"/>UndoCommandFactory<BR ALIGN="LEFT"/></TD>
+<TD ALIGN="LEFT" VALIGN="TOP"><B>Fleet creation (4)</B><BR/><BR/>«interface» FleetFactory<BR ALIGN="LEFT"/>DeliveryVanFleetFactory<BR ALIGN="LEFT"/>RefrigeratedTruckFleetFactory<BR ALIGN="LEFT"/>FleetFactoryRegistry<BR ALIGN="LEFT"/></TD>
+</TR>
+<TR>
+<TD ALIGN="LEFT" VALIGN="TOP"><B>History and Memento (6)</B><BR/><BR/>CommandInvoker<BR ALIGN="LEFT"/>CommandHistory<BR ALIGN="LEFT"/>«interface» Memento<BR ALIGN="LEFT"/>MementoCaretaker<BR ALIGN="LEFT"/>DriverRoleMemento<BR ALIGN="LEFT"/>FleetNameMemento<BR ALIGN="LEFT"/></TD>
+<TD ALIGN="LEFT" VALIGN="TOP"><B>Startup and support (7)</B><BR/><BR/>Main<BR ALIGN="LEFT"/>ConsoleInput<BR ALIGN="LEFT"/>FleetManager<BR ALIGN="LEFT"/>CommandFactoryRegistry<BR ALIGN="LEFT"/>DriverFactory<BR ALIGN="LEFT"/>FleetUtil<BR ALIGN="LEFT"/>CommandExecutionException<BR ALIGN="LEFT"/></TD>
+</TR>
+</TABLE>>];
+}

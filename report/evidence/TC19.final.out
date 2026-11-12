@@ -1,0 +1,16 @@
+Delivery van fleet is created.
+Current fleet is changed to V201.
+Fleet ID v201 already exists!
+Delivery Van Fleet HARBOUR EXPRESS (V201)
+Delivery Van Fleet HARBOUR EXPRESS (V201)
+
+Van Driver: NIL
+
+Courier Driver: NIL
+
+Undo List
+Create delivery van fleet, V201, HARBOUR EXPRESS
+-- End of undo list --
+Redo List
+-- End of redo list --
+Thank you for using SDFMS. System terminated.

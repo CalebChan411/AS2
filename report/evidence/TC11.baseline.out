@@ -1,0 +1,36 @@
+Delivery van fleet is created.
+Current fleet is changed to V201.
+Driver is added.
+Command (Add driver, D201, Casey Ho, van driver) is undone.
+Delivery Van Fleet HARBOUR EXPRESS (V201)
+
+Van Driver: NIL
+
+Courier Driver: NIL
+
+Command (Add driver, D201, Casey Ho, van driver) is redone.
+Delivery Van Fleet HARBOUR EXPRESS (V201)
+
+Van Driver:
+
+D201, Casey Ho
+
+Courier Driver: NIL
+
+Command (Add driver, D201, Casey Ho, van driver) is undone.
+Delivery Van Fleet HARBOUR EXPRESS (V201)
+
+Van Driver: NIL
+
+Courier Driver: NIL
+
+Command (Add driver, D201, Casey Ho, van driver) is redone.
+Delivery Van Fleet HARBOUR EXPRESS (V201)
+
+Van Driver:
+
+D201, Casey Ho
+
+Courier Driver: NIL
+
+Thank you for using SDFMS. System terminated.

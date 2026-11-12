@@ -1,0 +1,619 @@
+[
+  {
+    "id": "A01",
+    "source": "AddDriverCommand",
+    "target": "Driver",
+    "fields": [
+      "driver"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A02",
+    "source": "AddDriverCommand",
+    "target": "DriverFactory",
+    "fields": [
+      "driverFactory"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "REPLACE dependency with association",
+    "note": ""
+  },
+  {
+    "id": "A03",
+    "source": "AddDriverCommand",
+    "target": "FleetFactory",
+    "fields": [
+      "fleetFactory"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A04",
+    "source": "AddDriverCommand",
+    "target": "VehicleFleet",
+    "fields": [
+      "fleet"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A05",
+    "source": "AddDriverCommandFactory",
+    "target": "ConsoleInput",
+    "fields": [
+      "input"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A06",
+    "source": "AddDriverCommandFactory",
+    "target": "DriverFactory",
+    "fields": [
+      "driverFactory"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A07",
+    "source": "AddDriverCommandFactory",
+    "target": "FleetManager",
+    "fields": [
+      "manager"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A08",
+    "source": "ChangeNameCommand",
+    "target": "MementoCaretaker",
+    "fields": [
+      "caretaker"
+    ],
+    "sourceMultiplicity": "0..1",
+    "targetMultiplicity": "1",
+    "status": "ADD (refactor)",
+    "note": ""
+  },
+  {
+    "id": "A09",
+    "source": "ChangeNameCommand",
+    "target": "VehicleFleet",
+    "fields": [
+      "fleet"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A10",
+    "source": "ChangeNameCommandFactory",
+    "target": "ConsoleInput",
+    "fields": [
+      "input"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A11",
+    "source": "ChangeNameCommandFactory",
+    "target": "FleetManager",
+    "fields": [
+      "manager"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A12",
+    "source": "CommandFactoryRegistry",
+    "target": "CommandFactory",
+    "fields": [
+      "factories"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..*",
+    "status": "REPLACE dependency with association",
+    "note": ""
+  },
+  {
+    "id": "A13",
+    "source": "CommandHistory",
+    "target": "Command",
+    "fields": [
+      "redoStack",
+      "undoStack"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..*",
+    "status": "ADD (refactor)",
+    "note": "Merge undoStack and redoStack. Each is 0..*; successful normal requests occupy one stack at a time. Listing is oldest to newest; undo/redo uses the top."
+  },
+  {
+    "id": "A14",
+    "source": "CommandInvoker",
+    "target": "CommandHistory",
+    "fields": [
+      "history"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (refactor)",
+    "note": ""
+  },
+  {
+    "id": "A15",
+    "source": "CreateFleetCommand",
+    "target": "FleetFactory",
+    "fields": [
+      "factory"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A16",
+    "source": "CreateFleetCommand",
+    "target": "FleetFactoryRegistry",
+    "fields": [
+      "fleetRegistry"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "REPLACE dependency with association",
+    "note": ""
+  },
+  {
+    "id": "A17",
+    "source": "CreateFleetCommand",
+    "target": "VehicleFleet",
+    "fields": [
+      "fleet",
+      "previousCurrentFleet"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..2",
+    "status": "ADD (missing stored-reference association)",
+    "note": "Merge fleet (0..1 before execution) and previousCurrentFleet (0..1): at most two distinct fleet objects."
+  },
+  {
+    "id": "A18",
+    "source": "CreateFleetCommandFactory",
+    "target": "ConsoleInput",
+    "fields": [
+      "input"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A19",
+    "source": "CreateFleetCommandFactory",
+    "target": "FleetFactoryRegistry",
+    "fields": [
+      "fleetRegistry"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A20",
+    "source": "CreateFleetCommandFactory",
+    "target": "FleetManager",
+    "fields": [
+      "manager"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A21",
+    "source": "DeleteDriverCommand",
+    "target": "Driver",
+    "fields": [
+      "driver",
+      "originalDriverOrder"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..*",
+    "status": "ADD (missing stored-reference association)",
+    "note": "Merge driver (0..1) and originalDriverOrder (0..*). Snapshot preserves object identities and order, including the deleted driver."
+  },
+  {
+    "id": "A22",
+    "source": "DeleteDriverCommand",
+    "target": "VehicleFleet",
+    "fields": [
+      "fleet"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A23",
+    "source": "DeleteDriverCommandFactory",
+    "target": "ConsoleInput",
+    "fields": [
+      "input"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A24",
+    "source": "DeleteDriverCommandFactory",
+    "target": "FleetManager",
+    "fields": [
+      "manager"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A25",
+    "source": "DriverRoleMemento",
+    "target": "Driver",
+    "fields": [
+      "driver"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "REPLACE dependency with association",
+    "note": "Snapshot retains the actual target object; equal Driver IDs in distinct fleets do not alias."
+  },
+  {
+    "id": "A26",
+    "source": "FleetFactoryRegistry",
+    "target": "FleetFactory",
+    "fields": [
+      "factories"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..*",
+    "status": "KEEP / complete labels",
+    "note": ""
+  },
+  {
+    "id": "A27",
+    "source": "FleetManager",
+    "target": "FleetFactory",
+    "fields": [
+      "fleetFactories"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..*",
+    "status": "KEEP / complete labels",
+    "note": "fleetFactories map values; several fleets can share one registered factory."
+  },
+  {
+    "id": "A28",
+    "source": "FleetManager",
+    "target": "VehicleFleet",
+    "fields": [
+      "currentFleet",
+      "fleetFactories",
+      "fleets"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..*",
+    "status": "KEEP / complete labels",
+    "note": "Merge fleets (0..*), fleetFactories keys (0..*), and currentFleet (0..1). currentFleet is null or belongs to fleets. The one-argument addFleet overload does not add a factory mapping."
+  },
+  {
+    "id": "A29",
+    "source": "FleetNameMemento",
+    "target": "VehicleFleet",
+    "fields": [
+      "fleet"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "REPLACE dependency with association",
+    "note": "Snapshot retains the actual target fleet and its old name."
+  },
+  {
+    "id": "A30",
+    "source": "ListCommand",
+    "target": "CommandInvoker",
+    "fields": [
+      "invoker"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A31",
+    "source": "ListCommandFactory",
+    "target": "CommandInvoker",
+    "fields": [
+      "invoker"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "KEEP / complete labels",
+    "note": ""
+  },
+  {
+    "id": "A32",
+    "source": "MementoCaretaker",
+    "target": "Memento",
+    "fields": [
+      "memento"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..1",
+    "status": "ADD (refactor)",
+    "note": "Initially empty; save stores one snapshot reference. restore delegates without inspecting concrete state."
+  },
+  {
+    "id": "A33",
+    "source": "ModifyRoleCommand",
+    "target": "Driver",
+    "fields": [
+      "driver"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A34",
+    "source": "ModifyRoleCommand",
+    "target": "FleetFactory",
+    "fields": [
+      "fleetFactory"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A35",
+    "source": "ModifyRoleCommand",
+    "target": "MementoCaretaker",
+    "fields": [
+      "caretaker"
+    ],
+    "sourceMultiplicity": "0..1",
+    "targetMultiplicity": "1",
+    "status": "ADD (refactor)",
+    "note": ""
+  },
+  {
+    "id": "A36",
+    "source": "ModifyRoleCommand",
+    "target": "VehicleFleet",
+    "fields": [
+      "fleet"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A37",
+    "source": "ModifyRoleCommandFactory",
+    "target": "ConsoleInput",
+    "fields": [
+      "input"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A38",
+    "source": "ModifyRoleCommandFactory",
+    "target": "FleetManager",
+    "fields": [
+      "manager"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A39",
+    "source": "RedoCommand",
+    "target": "CommandInvoker",
+    "fields": [
+      "invoker"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A40",
+    "source": "RedoCommandFactory",
+    "target": "CommandInvoker",
+    "fields": [
+      "invoker"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "KEEP / complete labels",
+    "note": ""
+  },
+  {
+    "id": "A41",
+    "source": "SetCurrentFleetCommand",
+    "target": "FleetManager",
+    "fields": [
+      "manager"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A42",
+    "source": "SetCurrentFleetCommandFactory",
+    "target": "ConsoleInput",
+    "fields": [
+      "input"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A43",
+    "source": "SetCurrentFleetCommandFactory",
+    "target": "FleetManager",
+    "fields": [
+      "manager"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A44",
+    "source": "ShowAllFleetsCommand",
+    "target": "FleetManager",
+    "fields": [
+      "manager"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A45",
+    "source": "ShowAllFleetsCommandFactory",
+    "target": "FleetManager",
+    "fields": [
+      "manager"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A46",
+    "source": "ShowFleetCommand",
+    "target": "FleetManager",
+    "fields": [
+      "manager"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A47",
+    "source": "ShowFleetCommandFactory",
+    "target": "FleetManager",
+    "fields": [
+      "manager"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A48",
+    "source": "UndoCommand",
+    "target": "CommandInvoker",
+    "fields": [
+      "invoker"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "ADD (missing stored-reference association)",
+    "note": ""
+  },
+  {
+    "id": "A49",
+    "source": "UndoCommandFactory",
+    "target": "CommandInvoker",
+    "fields": [
+      "invoker"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "KEEP / complete labels",
+    "note": ""
+  },
+  {
+    "id": "A50",
+    "source": "UndoableCommand",
+    "target": "FleetManager",
+    "fields": [
+      "manager"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "1",
+    "status": "KEEP / complete labels",
+    "note": ""
+  },
+  {
+    "id": "A51",
+    "source": "VehicleFleet",
+    "target": "Driver",
+    "fields": [
+      "drivers"
+    ],
+    "sourceMultiplicity": "0..*",
+    "targetMultiplicity": "0..*",
+    "status": "KEEP / complete labels",
+    "note": "Original field type is raw AbstractList; runtime elements are Driver. Normal application adds a new Driver for each membership. Unmodified public API itself does not enforce inverse uniqueness."
+  }
+]

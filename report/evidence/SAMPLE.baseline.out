@@ -1,0 +1,103 @@
+Delivery van fleet is created.
+Current fleet is changed to F001.
+Driver is added.
+Driver is added.
+Delivery Van Fleet CENTRAL EXPRESS (F001)
+
+Van Driver:
+
+d001, Alex Chan
+
+Courier Driver:
+
+d002, Jamie Lee
+
+Refrigerated truck fleet is created.
+Current fleet is changed to F102.
+Delivery Van Fleet CENTRAL EXPRESS (F001)
+Refrigerated Truck Fleet FROST LINE (F102)
+Driver is added.
+Driver is added.
+Refrigerated Truck Fleet FROST LINE (F102)
+
+Refrigerated-Truck Driver:
+
+d101, Morgan Wong
+
+Cold-Chain Delivery Driver:
+
+d102, Taylor Lam
+
+Changed current fleet to F001.
+Delivery Van Fleet CENTRAL EXPRESS (F001)
+Refrigerated Truck Fleet FROST LINE (F102)
+Driver role is updated.
+Delivery Van Fleet CENTRAL EXPRESS (F001)
+
+Van Driver: NIL
+
+Courier Driver:
+
+d001, Alex Chan
+
+d002, Jamie Lee
+
+Driver is deleted.
+Delivery Van Fleet CENTRAL EXPRESS (F001)
+
+Van Driver: NIL
+
+Courier Driver:
+
+d001, Alex Chan
+
+Fleet name is updated.
+Delivery Van Fleet METRO EXPRESS (F001)
+
+Van Driver: NIL
+
+Courier Driver:
+
+d001, Alex Chan
+
+Undo List
+Create delivery van fleet, F001, CENTRAL EXPRESS
+Add driver, d001, Alex Chan, van driver
+Add driver, d002, Jamie Lee, courier driver
+Create refrigerated truck fleet, F102, FROST LINE
+Add driver, d101, Morgan Wong, refrigerated-truck driver
+Add driver, d102, Taylor Lam, cold-chain delivery driver
+Modify driver role, d001, courier driver
+Delete driver, d002
+Change fleet name, F001, METRO EXPRESS
+-- End of undo list --
+Redo List
+-- End of redo list --
+Command (Change fleet name, F001, METRO EXPRESS) is undone.
+Command (Delete driver, d002) is undone.
+Command (Modify driver role, d001, courier driver) is undone.
+Delivery Van Fleet CENTRAL EXPRESS (F001)
+
+Van Driver:
+
+d001, Alex Chan
+
+Courier Driver:
+
+d002, Jamie Lee
+
+Command (Modify driver role, d001, courier driver) is redone.
+Command (Delete driver, d002) is redone.
+Command (Change fleet name, F001, METRO EXPRESS) is redone.
+Delivery Van Fleet METRO EXPRESS (F001)
+
+Van Driver: NIL
+
+Courier Driver:
+
+d001, Alex Chan
+
+Fleet F999 is not found!
+Driver d999 is not found in the current fleet!
+Invalid command!
+Thank you for using SDFMS. System terminated.

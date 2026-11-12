@@ -1,0 +1,25 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", nodesep=.35, ranksep=.6, pad=.2, fontname="DejaVu Sans", fontsize=12, labelloc=t, label="Memento collaboration\nSummary view — selected members and relationships"];
+node [shape=plain, fontname="DejaVu Sans", fontsize=10];
+edge [fontname="DejaVu Sans", fontsize=9, arrowsize=.7];
+ModifyRoleCommand [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>ModifyRoleCommand</B></TD></TR><TR><TD ALIGN="LEFT">-caretaker</TD></TR></TABLE>>];
+ChangeNameCommand [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>ChangeNameCommand</B></TD></TR><TR><TD ALIGN="LEFT">-caretaker</TD></TR></TABLE>>];
+MementoCaretaker [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>MementoCaretaker</B></TD></TR><TR><TD ALIGN="LEFT">-memento : Memento</TD></TR><TR><TD ALIGN="LEFT">+save(memento) / restore()</TD></TR></TABLE>>];
+Memento [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>«interface»<BR/>Memento</B></TD></TR><TR><TD ALIGN="LEFT">+restore() : void</TD></TR></TABLE>>];
+DriverRoleMemento [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>DriverRoleMemento</B></TD></TR><TR><TD ALIGN="LEFT">-driver / oldRole</TD></TR><TR><TD ALIGN="LEFT">+restore()</TD></TR></TABLE>>];
+FleetNameMemento [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>FleetNameMemento</B></TD></TR><TR><TD ALIGN="LEFT">-fleet / oldName</TD></TR><TR><TD ALIGN="LEFT">+restore()</TD></TR></TABLE>>];
+Driver [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>Driver</B></TD></TR><TR><TD ALIGN="LEFT">+getRole() / setRole(role)</TD></TR></TABLE>>];
+VehicleFleet [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BGCOLOR="#dcecf8"><B>VehicleFleet</B></TD></TR><TR><TD ALIGN="LEFT">+getName() / setName(name)</TD></TR></TABLE>>];
+ModifyRoleCommand -> MementoCaretaker [arrowhead=open,label="1 caretaker"];
+ChangeNameCommand -> MementoCaretaker [arrowhead=open,label="1 caretaker"];
+MementoCaretaker -> Memento [arrowhead=open,label="0..1 snapshot"];
+DriverRoleMemento -> Memento [style=dashed,arrowhead=empty];
+FleetNameMemento -> Memento [style=dashed,arrowhead=empty];
+ModifyRoleCommand -> DriverRoleMemento [style=dashed,arrowhead=open,label="«create»"];
+ChangeNameCommand -> FleetNameMemento [style=dashed,arrowhead=open,label="«create»"];
+DriverRoleMemento -> Driver [arrowhead=open,label="same object"];
+FleetNameMemento -> VehicleFleet [arrowhead=open,label="same object"];
+{rank=same; ModifyRoleCommand; ChangeNameCommand;}
+{rank=same; DriverRoleMemento; FleetNameMemento;}
+{rank=same; Driver; VehicleFleet;}
+}

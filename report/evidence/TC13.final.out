@@ -1,0 +1,51 @@
+Delivery van fleet is created.
+Current fleet is changed to V201.
+Delivery Van Fleet A (V201)
+
+Van Driver: NIL
+
+Courier Driver: NIL
+
+Fleet name is updated.
+Delivery Van Fleet B (V201)
+
+Van Driver: NIL
+
+Courier Driver: NIL
+
+Fleet name is updated.
+Delivery Van Fleet C (V201)
+
+Van Driver: NIL
+
+Courier Driver: NIL
+
+Command (Change fleet name, V201, C) is undone.
+Delivery Van Fleet B (V201)
+
+Van Driver: NIL
+
+Courier Driver: NIL
+
+Command (Change fleet name, V201, B) is undone.
+Delivery Van Fleet A (V201)
+
+Van Driver: NIL
+
+Courier Driver: NIL
+
+Command (Change fleet name, V201, B) is redone.
+Delivery Van Fleet B (V201)
+
+Van Driver: NIL
+
+Courier Driver: NIL
+
+Command (Change fleet name, V201, C) is redone.
+Delivery Van Fleet C (V201)
+
+Van Driver: NIL
+
+Courier Driver: NIL
+
+Thank you for using SDFMS. System terminated.
