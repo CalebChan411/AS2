@@ -60,9 +60,23 @@
     "VehicleFleet.java": "b84399b4232ee1fd83feb28fe3d06f7f8d237ebacbfc44c49b5a55ac2aa1a2d7"
   },
   "artifacts_sha256": {
-    "SDFMS_Report.docx": "524f056f13f001bdabb907c067ea0ad357bd7681f5f6f995ddb4424f0511947f",
-    "SDFMS_Report.pdf": "3045a284af93a13237d3eb261908bd02779ce67f3a881beea29eebcc114c9ea0",
+    "SDFMS_Report.docx": "a8ec4f60c134e7c65ff729cf965730ab0208e7e9cd53fd71a2cf02152e24f42a",
+    "SDFMS_Report.pdf": "beffe8b05727540720902e2f33d250e237d27403f7e2b01bcc7d2d31c6e8c7d8",
     "Final_Class_Diagram.pdf": "448e0cea244603a52ca59dd47dbb59aa87afad82297f13694be304d66453a460",
-    "SDFMS_Submission.zip": "de0524b1cba70b5c8818ae41b536a035767ceb4ecf8665b9ca2a3d79454bccd0"
-  }
+    "SDFMS_Submission.zip": "acecabeab02730310f75b6d83570697b9b2e82924f998b4dcb4559dec8d139bb",
+    "Single_Page_Class_Diagram_Reference.pdf": "cb39136e67da3889819f7d8fbf67e8edf0c8eee09d6ea3f522f0a8eb2de84c22"
+  },
+  "report_structure": "Five requested Parts, plus User Guide and References",
+  "report_pdf_pages": 128,
+  "report_execution_screenshots": 33,
+  "part3_student_code_screenshot_positions": 12,
+  "part2_student_diagram_position": 1,
+  "pending_student_completion": [
+    "Cover personal details",
+    "Part 2 class diagram",
+    "Part 3 figures 3.1-3.12",
+    "Refresh contents/fields and PDF after inserting images"
+  ],
+  "fresh_console_scenarios": 26,
+  "fresh_console_passed": 26
 }

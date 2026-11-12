@@ -1,0 +1,18 @@
+{
+  "code_commit": "bf10becbdceb873e77c5c36b0c8d59d5cebaed4b",
+  "pdf_pages": 128,
+  "part3_code_screenshot_positions": 12,
+  "part2_diagram_position": 1,
+  "part4_output_images": 33,
+  "part4_scenarios": 26,
+  "part5_java_files": 47,
+  "full_source_listing_matches_source": true,
+  "cover_horizontal_vertical_centered": true,
+  "contents_page_numbers_verified": true,
+  "pending_student_work": [
+    "Student name/number/date",
+    "Part 2 final class diagram",
+    "Part 3 figures 3.1-3.12",
+    "Update contents/fields and PDF after insertion"
+  ]
+}

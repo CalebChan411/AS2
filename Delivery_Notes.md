@@ -1,16 +1,19 @@
-# SDFMS delivery
+# SDFMS report delivery
 
-Code repository: https://github.com/CalebChan411/AS2
+Code: main commit `bf10becbdceb873e77c5c36b0c8d59d5cebaed4b` (47 Java files).
 
-- `main`: 47 application Java sources, commit `bf10becbdceb873e77c5c36b0c8d59d5cebaed4b`.
-- `report`: the same code plus this report, final diagrams, evidence, Windows `run.bat` and the submission ZIP.
-- `report/SDFMS_Report.docx`: editable English report; PDF is its rendered review copy.
-- `report/Final_Class_Diagram.pdf`: final source-derived diagram catalogue; SVG/DOT detail views are in `report/diagrams/`.
-- `report/Diagram_Audit.md`: all member signatures and 51 deduplicated association relationships, including endpoint multiplicities and drawing corrections.
-- `SDFMS_Submission.zip`: 47 Java files, `run.bat`, Word/PDF report and final diagram. Extract the folder, open a Windows Command Prompt in it and run `run.bat`.
+The report branch contains the same application source plus the report and submission artifacts. The report has been restructured to match the requested five Parts:
 
-Validation: baseline and final compiled with OpenJDK 21.0.13 on Linux. 26/26 console scenarios passed (25 independently designed cases plus assignment sample), 166/166 independent output assertions; all baseline/final outputs byte-identical. State suite: 9 groups, 65 assertions passed. Every console scenario has actual fresh-run terminal screenshots. The four protected classes are byte-identical to both available baselines. Test inputs, raw outputs, capture timestamps and checksums are included in `report/evidence/`.
+1. Assumptions Regarding the Problem Context — written.
+2. Application Design with Class Diagram — one landscape page reserved for the student's final diagram.
+3. Discussion of the Design Patterns — explanation, 12 code screenshot positions, exact source ranges and annotations.
+4. Test Plan and Test Cases — 25 self-designed cases plus the assignment sample, 33 genuine actual-result images.
+5. Well-documented Source Code — every one of the 47 Java files, copied in full with readable monospaced formatting.
 
-Before Moodle submission: fill student name, student number and submission date on the report cover, then regenerate its PDF if edited. Review the assignment declaration and final files personally. Windows execution has not been tested here; Linux compile/execution was tested. The uploaded Visual Paradigm PDF was audited, not edited; newly generated final diagrams and the manual correction checklist are supplied. The original teacher Java archive was not supplied, so byte preservation is certified against the uploaded ZIP and inspected AS baseline only.
+Appendix A supplies the separately required User Guide. The cover is centered horizontally and vertically; the Contents lists all five Part titles plus User Guide and References, with verified page numbers.
 
-No external credentials or application services are needed. All runtime data and history are held only in memory for the current session.
+Files: `report/SDFMS_Report.docx`, `report/SDFMS_Report.pdf`, `report/Part3_Screenshot_Checklist_ZH.md`, `report/Submission_Checklist_ZH.txt`. `SDFMS_Submission.zip` combines source, run.bat, the report, checklists, evidence and a single-page diagram reference.
+
+The report currently has 128 pages, mostly full source and per-case evidence. Current code was recompiled and all 26 scenario outputs were rerun and matched the validated evidence; all 166 independent output assertions remain satisfied. Figures are actual application output, not rendered expected answers.
+
+Before submission: complete name/number/date, insert Part 2 diagram and Part 3 code screenshots, remove placeholder instructions, update Word fields/contents (Ctrl+A, F9), and export a new PDF. This is intentionally a report with student image positions; it is not yet a fully filled submission. Windows execution was not tested here; Linux compilation/execution were tested. Source files and run.bat must be submitted separately as well as listed in the report.
