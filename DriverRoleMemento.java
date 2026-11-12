@@ -1,17 +1,14 @@
-/** Saves the old role value; only restore exposes the snapshot's behaviour. */
-public class DriverRoleMemento {
-    private String driverID;
+/** Snapshots the role of the actual driver, including its object identity. */
+public class DriverRoleMemento implements Memento {
+    private Driver driver;
     private int oldRole;
 
-    public DriverRoleMemento(String driverID, int oldRole) {
-        this.driverID = driverID;
-        this.oldRole = oldRole;
+    public DriverRoleMemento(Driver driver) {
+        this.driver = driver;
+        this.oldRole = driver.getRole();
     }
 
-    public void restore(Driver driver) {
-        if (driver == null || !driver.getDriverID().equals(driverID)) {
-            throw new CommandExecutionException("Driver does not match the saved role.");
-        }
+    public void restore() {
         driver.setRole(oldRole);
     }
 }

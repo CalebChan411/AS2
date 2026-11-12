@@ -1,17 +1,14 @@
-/** Saves the old name value and restores it through the original public setter. */
-public class FleetNameMemento {
-    private String fleetID;
+/** Restores the original name through the unchanged fleet's public API. */
+public class FleetNameMemento implements Memento {
+    private VehicleFleet fleet;
     private String oldName;
 
-    public FleetNameMemento(String fleetID, String oldName) {
-        this.fleetID = fleetID;
-        this.oldName = oldName;
+    public FleetNameMemento(VehicleFleet fleet) {
+        this.fleet = fleet;
+        this.oldName = fleet.getName();
     }
 
-    public void restore(VehicleFleet fleet) {
-        if (fleet == null || !fleet.getFleetID().equals(fleetID)) {
-            throw new CommandExecutionException("Fleet does not match the saved name.");
-        }
+    public void restore() {
         fleet.setName(oldName);
     }
 }

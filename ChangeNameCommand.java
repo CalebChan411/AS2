@@ -2,24 +2,27 @@
 public class ChangeNameCommand extends UndoableCommand {
     private String newName;
     private VehicleFleet fleet;
-    private FleetNameMemento memento;
+    private MementoCaretaker caretaker;
 
     public ChangeNameCommand(FleetManager manager, String newName) {
         super(manager);
+        caretaker = new MementoCaretaker();
         this.newName = newName;
     }
 
     public void execute() {
         fleet = manager.getCurrentFleet();
         if (fleet == null) throw new CommandExecutionException("No current fleet selected.");
-        memento = new FleetNameMemento(fleet.getFleetID(), fleet.getName());
+        if (!caretaker.hasMemento()) {
+            caretaker.save(new FleetNameMemento(fleet));
+        }
         redo();
         System.out.println("Fleet name is updated.");
     }
 
     public void undo() {
-        if (memento == null) throw new CommandExecutionException("Unable to undo fleet name change.");
-        memento.restore(fleet);
+        if (!caretaker.hasMemento()) throw new CommandExecutionException("Unable to undo fleet name change.");
+        caretaker.restore();
     }
 
     public void redo() {

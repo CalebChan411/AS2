@@ -16,7 +16,8 @@ public class Main {
         fleetRegistry.registerFactory(new DeliveryVanFleetFactory());
         fleetRegistry.registerFactory(new RefrigeratedTruckFleetFactory());
         DriverFactory driverFactory = new DriverFactory();
-        CommandInvoker invoker = new CommandInvoker();
+        CommandHistory history = new CommandHistory();
+        CommandInvoker invoker = new CommandInvoker(history);
 
         CommandFactoryRegistry commandFactories = new CommandFactoryRegistry();
         commandFactories.registerFactory("c",

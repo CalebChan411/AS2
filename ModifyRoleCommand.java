@@ -4,11 +4,12 @@ public class ModifyRoleCommand extends UndoableCommand {
     private int newRole;
     private VehicleFleet fleet;
     private Driver driver;
-    private DriverRoleMemento memento;
+    private MementoCaretaker caretaker;
     private FleetFactory fleetFactory;
 
     public ModifyRoleCommand(FleetManager manager, String driverID, int newRole) {
         super(manager);
+        caretaker = new MementoCaretaker();
         this.driverID = driverID;
         this.newRole = newRole;
     }
@@ -21,14 +22,16 @@ public class ModifyRoleCommand extends UndoableCommand {
             throw new CommandExecutionException("Driver " + driverID + " is not found in the current fleet!");
         }
         fleetFactory = manager.getFleetFactory(fleet);
-        memento = new DriverRoleMemento(driver.getDriverID(), driver.getRole());
+        if (!caretaker.hasMemento()) {
+            caretaker.save(new DriverRoleMemento(driver));
+        }
         redo();
         System.out.println("Driver role is updated.");
     }
 
     public void undo() {
-        if (memento == null) throw new CommandExecutionException("Unable to undo driver role modification.");
-        memento.restore(driver);
+        if (!caretaker.hasMemento()) throw new CommandExecutionException("Unable to undo driver role modification.");
+        caretaker.restore();
         fleet.updateDriverRole();
     }
 
