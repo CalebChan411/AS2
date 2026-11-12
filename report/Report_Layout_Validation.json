@@ -1,7 +1,7 @@
 {
   "code_commit": "bf10becbdceb873e77c5c36b0c8d59d5cebaed4b",
   "pdf_pages": 128,
-  "part3_code_screenshot_positions": 12,
+  "part3_code_screenshot_positions": 0,
   "part2_diagram_position": 1,
   "part4_output_images": 33,
   "part4_scenarios": 26,
@@ -10,9 +10,11 @@
   "cover_horizontal_vertical_centered": true,
   "contents_page_numbers_verified": true,
   "pending_student_work": [
-    "Student name/number/date",
+    "Cover name/number/date",
     "Part 2 final class diagram",
-    "Part 3 figures 3.1-3.12",
-    "Update contents/fields and PDF after insertion"
-  ]
+    "Refresh contents/fields and PDF after inserting diagram"
+  ],
+  "part3_code_figures_inserted": 12,
+  "actual_output_images": 33,
+  "total_report_images": 45
 }

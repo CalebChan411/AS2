@@ -1,16 +1,11 @@
-新版报告按五个Part整理，英文正文已写好。
+Part3的12张代码截图已生成并按Figure3.1至3.12插入完整报告，原有文字说明和注释已保留。
 
-你仍需填写或插入：
+仍需补齐：
 1. 封面姓名、学号、提交日期。
-2. Part 2 整张最终class diagram。
-3. Part 3 图3.1至3.12的实际代码截图，文件/方法/行范围和图下注释已在图位给出。
-4. 删除各图位中的占位说明，插图后全选Ctrl+A、F9更新目录和页码，重新导出PDF。
+2. Part2整张最终class diagram。
+3. 插图后Ctrl+A、F9更新目录，再导出PDF。
 
-已完成：Part 1 assumptions；Part 3模式解释与图下注释；Part 4测试计划、25个自拟案例+1个assignment样例、33张真实结果截图；Part 5完整47份Java源码；Appendix A User Guide；References。
-Part 2与Part 5使用横向页面；其余为纵向页面。源码为等宽字体，长结果图放大至独立页面。
-报告当前共128页，大部分为逐案例证据和完整源码。
-
-当前代码main bf10bec，已重新编译与重跑26组输入，输出与实际截图对应记录一致。
-输入输出与截图源于真实Java运行，截图中的piped-input模式不显示菜单提示。
-run.bat和47个.java仍须作为源文件另交，不能只提交报告中的代码图片/文字。
-本包含待你补图的报告，不应直接当作已完成最终提交。
+Part3截图专用Word/PDF及独立PNG在report/part3-code-screenshots/。
+Part2放整张类图，Part3无需重复贴整张class diagram；Part4是实际运行结果截图。
+代码图来自当前bf10bec真实源码查看页面，保留原文件名与行号。
+47份Java源文件和run.bat仍须另交。

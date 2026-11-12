@@ -1,0 +1,258 @@
+{
+  "code_commit": "bf10becbdceb873e77c5c36b0c8d59d5cebaed4b",
+  "captured_at": "2026-11-13T04:42:51.079627+08:00",
+  "figures": [
+    {
+      "figure": "3.1",
+      "title": "Command contract and reversible requests",
+      "image": "Figure_3_01.png",
+      "source_ranges": [
+        {
+          "file": "Command.java",
+          "start": 2,
+          "end": 8,
+          "sha256": "32c04f755fde71941bb3e09cbd0555bf74041df665f93d35b2720ef2100a7a97"
+        },
+        {
+          "file": "UndoableCommand.java",
+          "start": 2,
+          "end": 16,
+          "sha256": "a4d8929fdda2f9de82854b7b9f4ce5b706f55d7ecfcecba9fb90ca7d71f9e79c"
+        }
+      ],
+      "exact_source_text_verified": true,
+      "horizontal_clipping": false,
+      "capture_type": "Browser screenshot of actual-source-code viewer; not an IDE screenshot or runtime output.",
+      "image_sha256": "ac29e86f3ca27dcc73725d3c171dd1e50d10ef7c30ca686f2b76166cfc3fc8db"
+    },
+    {
+      "figure": "3.2",
+      "title": "Execute first, record only after success",
+      "image": "Figure_3_02.png",
+      "source_ranges": [
+        {
+          "file": "CommandInvoker.java",
+          "start": 13,
+          "end": 23,
+          "sha256": "e8b8b0e6c7d7025697ab364acc758d8d61e5e2cf8ba7dd7a188f1876f0658ff9"
+        }
+      ],
+      "exact_source_text_verified": true,
+      "horizontal_clipping": false,
+      "capture_type": "Browser screenshot of actual-source-code viewer; not an IDE screenshot or runtime output.",
+      "image_sha256": "5c97286d4c9e0d45674072fc604ddbabf0e8e940a257315f453b880e97319fd3"
+    },
+    {
+      "figure": "3.3",
+      "title": "Record and undo history",
+      "image": "Figure_3_03.png",
+      "source_ranges": [
+        {
+          "file": "CommandHistory.java",
+          "start": 14,
+          "end": 38,
+          "sha256": "934d332628c50c7744e3b11004428dd316ca3dbee9bb15385760da2e4b48c81b"
+        }
+      ],
+      "exact_source_text_verified": true,
+      "horizontal_clipping": false,
+      "capture_type": "Browser screenshot of actual-source-code viewer; not an IDE screenshot or runtime output.",
+      "image_sha256": "25ebf0a9b9c3fd23129081f9f4bcf4460414f26289452ccee69a8cf24e49c4c9"
+    },
+    {
+      "figure": "3.4",
+      "title": "Redo without recreating a request",
+      "image": "Figure_3_04.png",
+      "source_ranges": [
+        {
+          "file": "CommandHistory.java",
+          "start": 40,
+          "end": 56,
+          "sha256": "934d332628c50c7744e3b11004428dd316ca3dbee9bb15385760da2e4b48c81b"
+        }
+      ],
+      "exact_source_text_verified": true,
+      "horizontal_clipping": false,
+      "capture_type": "Browser screenshot of actual-source-code viewer; not an IDE screenshot or runtime output.",
+      "image_sha256": "3c2aaf72ba5cdaf0b562ad3e8fbb4712d90c2e7bebb06ac24a8e82e8fda9302b"
+    },
+    {
+      "figure": "3.5",
+      "title": "Command factories and dispatch",
+      "image": "Figure_3_05.png",
+      "source_ranges": [
+        {
+          "file": "CommandFactory.java",
+          "start": 1,
+          "end": 4,
+          "sha256": "9c02d6e5adf06510bc67c31bb92f976983e9d7ec6cef8227d0a88bf117fedf45"
+        },
+        {
+          "file": "CreateFleetCommandFactory.java",
+          "start": 14,
+          "end": 23,
+          "sha256": "ec7305de182085b8c3295202d47dfa0d5547177bf57021dc7fdc753f18072543"
+        },
+        {
+          "file": "Main.java",
+          "start": 47,
+          "end": 55,
+          "sha256": "c27ba07196eb42db1fb10faf615967f91a068298608e973efdea7e18d4dd1905"
+        }
+      ],
+      "exact_source_text_verified": true,
+      "horizontal_clipping": false,
+      "capture_type": "Browser screenshot of actual-source-code viewer; not an IDE screenshot or runtime output.",
+      "image_sha256": "7d42be471c85a7026a734a74de66e1f3f58db3311576611bd8d72ec4c07ee59a"
+    },
+    {
+      "figure": "3.6",
+      "title": "Fleet creation through a common factory interface",
+      "image": "Figure_3_06.png",
+      "source_ranges": [
+        {
+          "file": "FleetFactory.java",
+          "start": 1,
+          "end": 7,
+          "sha256": "f242a06b4273b294c86ed78dcb2587cfccd4be60d800a3cc832ac5f90c6a336e"
+        },
+        {
+          "file": "DeliveryVanFleetFactory.java",
+          "start": 2,
+          "end": 5,
+          "sha256": "b4b19f608f38999ec5400f9787d2dcd7eaaf830a1e339f86f9314505ed6b5a61"
+        },
+        {
+          "file": "RefrigeratedTruckFleetFactory.java",
+          "start": 2,
+          "end": 5,
+          "sha256": "a0e097f9aa393fcc0049467931b2c44e518d07c1fd14c3f0da841b9d9aa97493"
+        }
+      ],
+      "exact_source_text_verified": true,
+      "horizontal_clipping": false,
+      "capture_type": "Browser screenshot of actual-source-code viewer; not an IDE screenshot or runtime output.",
+      "image_sha256": "852e73a7a48743cda9f0fde680ee0c0306d809ef6e2e47bbf387a557b9629d86"
+    },
+    {
+      "figure": "3.7",
+      "title": "Driver creation from actual request data",
+      "image": "Figure_3_07.png",
+      "source_ranges": [
+        {
+          "file": "DriverFactory.java",
+          "start": 1,
+          "end": 8,
+          "sha256": "93078feafeb13bc0d08f73fb24288c24b8933a5281820fab29d47aceab1bc450"
+        },
+        {
+          "file": "AddDriverCommand.java",
+          "start": 20,
+          "end": 30,
+          "sha256": "2a32eb886c1ccac832812a1a297b53259eeffb067f28bc6223f863ca0af3e1f5"
+        }
+      ],
+      "exact_source_text_verified": true,
+      "horizontal_clipping": false,
+      "capture_type": "Browser screenshot of actual-source-code viewer; not an IDE screenshot or runtime output.",
+      "image_sha256": "e991b1ba03f21c2273ec33e18962ca141dfcadba0ec05448e959d81d81ca5c1b"
+    },
+    {
+      "figure": "3.8",
+      "title": "Common Memento interface and caretaker",
+      "image": "Figure_3_08.png",
+      "source_ranges": [
+        {
+          "file": "Memento.java",
+          "start": 1,
+          "end": 4,
+          "sha256": "508afbddf3ebb824e72afe2043a1c46a03dede6b1614c25ea00341aa06283409"
+        },
+        {
+          "file": "MementoCaretaker.java",
+          "start": 1,
+          "end": 20,
+          "sha256": "44f491fd15cf57f4a8785ccf74fcc9bcce0b101407556bfca845a273b5eb084e"
+        }
+      ],
+      "exact_source_text_verified": true,
+      "horizontal_clipping": false,
+      "capture_type": "Browser screenshot of actual-source-code viewer; not an IDE screenshot or runtime output.",
+      "image_sha256": "7bbc93385307db744b80c0b2dbac1b220b69843447c09ec3e03df459d051fef5"
+    },
+    {
+      "figure": "3.9",
+      "title": "Snapshots bound to the original objects",
+      "image": "Figure_3_09.png",
+      "source_ranges": [
+        {
+          "file": "DriverRoleMemento.java",
+          "start": 1,
+          "end": 14,
+          "sha256": "9e451c31fa00f836fef41ef43e972d600aeedfeda30dcd40ff84781eea11ca4c"
+        },
+        {
+          "file": "FleetNameMemento.java",
+          "start": 1,
+          "end": 14,
+          "sha256": "56ce849bd55ecf921d3157a00ae8dc518eb6b0f1f2a0124114923ef5effe69e4"
+        }
+      ],
+      "exact_source_text_verified": true,
+      "horizontal_clipping": false,
+      "capture_type": "Browser screenshot of actual-source-code viewer; not an IDE screenshot or runtime output.",
+      "image_sha256": "20cbacd66c8f652ad38320ba5b97aadd3e26772bc85b795ad0ddf7182227596f"
+    },
+    {
+      "figure": "3.10",
+      "title": "Capture before modifying a driver role",
+      "image": "Figure_3_10.png",
+      "source_ranges": [
+        {
+          "file": "ModifyRoleCommand.java",
+          "start": 17,
+          "end": 36,
+          "sha256": "8a90e2e2a0f0eb21cbaf279ebc0e99bedc8dce31ecd4bb716c8c76b172e54055"
+        }
+      ],
+      "exact_source_text_verified": true,
+      "horizontal_clipping": false,
+      "capture_type": "Browser screenshot of actual-source-code viewer; not an IDE screenshot or runtime output.",
+      "image_sha256": "c63839b995ef921c08a44eb3fbf04736a20eb95ebe28889290129fcdfc8b6c7e"
+    },
+    {
+      "figure": "3.11",
+      "title": "Reapply the requested role with rollback",
+      "image": "Figure_3_11.png",
+      "source_ranges": [
+        {
+          "file": "ModifyRoleCommand.java",
+          "start": 38,
+          "end": 50,
+          "sha256": "8a90e2e2a0f0eb21cbaf279ebc0e99bedc8dce31ecd4bb716c8c76b172e54055"
+        }
+      ],
+      "exact_source_text_verified": true,
+      "horizontal_clipping": false,
+      "capture_type": "Browser screenshot of actual-source-code viewer; not an IDE screenshot or runtime output.",
+      "image_sha256": "072ac587365c2235e560729fb80ed9514cdfbfec11a74ee9a70b5dbe6f6b9a6a"
+    },
+    {
+      "figure": "3.12",
+      "title": "Fleet-name Memento in execute, undo and redo",
+      "image": "Figure_3_12.png",
+      "source_ranges": [
+        {
+          "file": "ChangeNameCommand.java",
+          "start": 13,
+          "end": 31,
+          "sha256": "6add8623c9bbc259c7980d46c7f866331e466faa699bc08bc49fcacbc2b2bd30"
+        }
+      ],
+      "exact_source_text_verified": true,
+      "horizontal_clipping": false,
+      "capture_type": "Browser screenshot of actual-source-code viewer; not an IDE screenshot or runtime output.",
+      "image_sha256": "d25310b57cdf6c9749b839678ea63f2453dfd12149db895586a2379593e4cd24"
+    }
+  ]
+}

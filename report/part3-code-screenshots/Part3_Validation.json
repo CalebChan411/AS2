@@ -1,0 +1,16 @@
+{
+  "source_commit": "bf10becbdceb873e77c5c36b0c8d59d5cebaed4b",
+  "code_figures": 12,
+  "source_excerpts": 20,
+  "standalone_pdf_pages": 13,
+  "full_report_pdf_pages": 128,
+  "exact_source_text_checked": true,
+  "horizontal_clipping": false,
+  "full_report_source_listings_unchanged": true,
+  "part4_output_images_unchanged": 33,
+  "part3_images_inserted": 12,
+  "pending": [
+    "Cover name/number/date",
+    "Part 2 final class diagram"
+  ]
+}

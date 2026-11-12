@@ -6,7 +6,7 @@ The report branch contains the same application source plus the report and submi
 
 1. Assumptions Regarding the Problem Context — written.
 2. Application Design with Class Diagram — one landscape page reserved for the student's final diagram.
-3. Discussion of the Design Patterns — explanation, 12 code screenshot positions, exact source ranges and annotations.
+3. Discussion of the Design Patterns — explanation, 12 inserted actual-source code screenshots, exact source ranges and annotations.
 4. Test Plan and Test Cases — 25 self-designed cases plus the assignment sample, 33 genuine actual-result images.
 5. Well-documented Source Code — every one of the 47 Java files, copied in full with readable monospaced formatting.
 
@@ -16,7 +16,7 @@ Files: `report/SDFMS_Report.docx`, `report/SDFMS_Report.pdf`, `report/Part3_Scre
 
 The report currently has 128 pages, mostly full source and per-case evidence. Current code was recompiled and all 26 scenario outputs were rerun and matched the validated evidence; all 166 independent output assertions remain satisfied. Figures are actual application output, not rendered expected answers.
 
-Before submission: complete name/number/date, insert Part 2 diagram and Part 3 code screenshots, remove placeholder instructions, update Word fields/contents (Ctrl+A, F9), and export a new PDF. This is intentionally a report with student image positions; it is not yet a fully filled submission. Windows execution was not tested here; Linux compilation/execution were tested. Source files and run.bat must be submitted separately as well as listed in the report.
+Before submission: complete name/number/date, insert the Part 2 diagram, remove placeholder instructions, update Word fields/contents (Ctrl+A, F9), and export a new PDF. Part 3 is filled; cover personal details and the Part 2 diagram remain for student completion. Windows execution was not tested here; Linux compilation/execution were tested. Source files and run.bat must be submitted separately as well as listed in the report.
 
 
 ## Simplified diagram view
@@ -24,3 +24,8 @@ Before submission: complete name/number/date, insert Part 2 diagram and Part 3 c
 `report/diagram-no-association/` contains a single-page view with all Association lines omitted. Main has only three usage dependencies: CommandFactory, Command and VehicleFleet. The view retains snapshot creation by commands and interface use by MementoCaretaker; the Chinese explanation distinguishes creation from stored-reference relationships. The full application and report source remain the same.
 
 Word download: https://github.com/CalebChan411/AS2/raw/refs/heads/report/report/SDFMS_Report.docx
+
+
+## Part 3 code screenshot collection
+
+`report/part3-code-screenshots/Part3_Code_Screenshots.docx` and its 13-page PDF contain Figures 3.1-3.12 in the original report order. The same 12 screenshots are already inserted into the 128-page main report. Part 2 remains the overall class-diagram position; no duplicate diagrams are required in Part 3. The images show verified actual Java source excerpts in a source-code viewer, with original filenames/line numbers, not runtime results or simulated IDE screenshots. Independent PNGs, the source mapping and provenance hashes are included.
