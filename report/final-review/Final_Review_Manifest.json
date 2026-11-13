@@ -1,0 +1,26 @@
+{
+  "changes": [
+    "Replaced obsolete Part 3 instructions about empty screenshot positions.",
+    "Fitted the original Part 2 diagram within the portrait page margins; retained all image pixels.",
+    "Added the required Windows run.bat to the source ZIP.",
+    "Included actual .in/.out test records and source fingerprints referenced by Part 4."
+  ],
+  "java_sources_changed": false,
+  "original_diagram_image_changed": false,
+  "remaining_diagram_checks": [
+    "Show static members in Main and FleetUtil using underlining.",
+    "Use int with {readOnly} for the four private final role constants, rather than treating final int as a UML type.",
+    "Explicitly add : void to FleetUtil.restoreDriverOrder(...).",
+    "Use unfilled hollow triangles on all dashed realization (implements) arrows.",
+    "The original single-page diagram is very small when printed at A4; retain a zoomable original."
+  ],
+  "review_status": "Code and report packaging verified; native diagram notation changes remain.",
+  "files_sha256": {
+    "run.bat": "98bc08083917216b8f13c48e693f66f68eb90f3ac8b976eaba5b21b536ceb1ee",
+    "IT114105_ITP4507_250406422_ChanHeiLam.zip": "56b131100bbdfa01ad648db67438b30a29ad05e86c19369e4206cbadf0184952",
+    "IT114105_ITP4507_250406422_ChanHeiLam.pdf": "7615c010b156cdd8edcd1a716fca9c16b8ee2d0c8c5bc161331047783731000a",
+    "IT114105_ITP4507_250406422_ChanHeiLam.docx": "855ba4e8de47d4c5fb73843d355494ec9b9401ff6e8b9eed64022453df88915e",
+    "Final_Review_ZH.md": "fbb645c96bf57828badea4c9ae7b5a4bc853512fb9f41706445d73aba9771239",
+    "Delivery_Validation.json": "a585edf03735fec8ff41340e40a2f6003d200d37ab8c981fe11d211be3a20236"
+  }
+}

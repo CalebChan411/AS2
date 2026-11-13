@@ -1,0 +1,1234 @@
+{
+  "source_count": 47,
+  "compilation": "PASS",
+  "java": "/workspace/task-work/tools/jdk/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+  "scenarios": [
+    {
+      "id": "TC01",
+      "title": "Create a delivery van fleet and select it",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery van fleet is created.\nCurrent fleet is changed to V201.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC02",
+      "title": "Create a refrigerated truck fleet",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Refrigerated truck fleet is created.\nCurrent fleet is changed to R301.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC03",
+      "title": "Add both legal delivery van roles",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver:\n\nD202, Riley Ng",
+          "pass": true
+        },
+        {
+          "description": "count 'Driver is added.'",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC04",
+      "title": "Add both legal refrigerated truck roles",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Casey Ho\n\nCold-Chain Delivery Driver:\n\nD202, Riley Ng",
+          "pass": true
+        },
+        {
+          "description": "count 'Driver is added.'",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC05",
+      "title": "Switch current fleet in both directions",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Changed current fleet to V201.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Changed current fleet to R301.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC06",
+      "title": "Modify delivery van driver role",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho",
+          "pass": true
+        },
+        {
+          "description": "count 'Driver role is updated.'",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC07",
+      "title": "Modify refrigerated truck driver role",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver:\n\nD201, Casey Ho",
+          "pass": true
+        },
+        {
+          "description": "count 'Driver role is updated.'",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC08",
+      "title": "Delete middle driver, undo order, and redo",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD203, Jordan Yip\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD202, Riley Ng\n\nD203, Jordan Yip\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nD203, Jordan Yip\n\nCourier Driver: NIL",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC09",
+      "title": "Rename without changing fleet ID or drivers",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR PLUS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC10",
+      "title": "Undo and redo creation with previous selection",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Command (Create refrigerated truck fleet, R301, ARCTIC LINE) is undone.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Command (Create refrigerated truck fleet, R301, ARCTIC LINE) is redone.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver: NIL\n\nCold-Chain Delivery Driver: NIL",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC11",
+      "title": "Repeat undo and redo of adding a driver",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "count 'D201, Casey Ho\\n'",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC12",
+      "title": "Repeat role restoration 2 to 1 to 2 to 1 to 2",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC13",
+      "title": "Undo and redo two successive name changes",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet A (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet C (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet A (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet B (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet C (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC14",
+      "title": "Restore original target despite same driver ID in another fleet",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Sam Tse\n\nCold-Chain Delivery Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Refrigerated Truck Fleet ARCTIC LINE (R301)\n\nRefrigerated-Truck Driver:\n\nD201, Sam Tse\n\nCold-Chain Delivery Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver:\n\nD201, Casey Ho",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC15",
+      "title": "Record only the five undoable commands",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "exact history lists",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC16",
+      "title": "Undo all five mutation types then redo all in LIFO order",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: No fleets available.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet RENAMED (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "count ' is undone.'",
+          "pass": true
+        },
+        {
+          "description": "count ' is redone.'",
+          "pass": true
+        },
+        {
+          "description": "exact history lists",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC17",
+      "title": "Successful new mutation clears redo",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Nothing to redo.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet NEW NAME (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "exact history lists",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC18",
+      "title": "Read and selection commands preserve redo",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Command (Add driver, D201, Casey Ho, van driver) is redone.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "absent 'Nothing to redo.'",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC19",
+      "title": "Reject duplicate fleet ID case-insensitively",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Fleet ID v201 already exists!",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver: NIL\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "absent 'DUPLICATE (v201)'",
+          "pass": true
+        },
+        {
+          "description": "exact history lists",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC20",
+      "title": "Reject duplicate driver ID in the same fleet",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Driver d201 already exists in the current fleet!",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "absent 'Other Person\\n'",
+          "pass": true
+        },
+        {
+          "description": "exact history lists",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC21",
+      "title": "Reject unknown fleet type then accept valid input",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Invalid fleet type!",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery van fleet is created.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)",
+          "pass": true
+        },
+        {
+          "description": "count ' is created.'",
+          "pass": true
+        },
+        {
+          "description": "absent 'INVALID (Z999)'",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC22",
+      "title": "Handle missing targets and unknown command",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Fleet F999 is not found!",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Driver D999 is not found in the current fleet!",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Driver D999 is not found in the current fleet!",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Invalid command!",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC23",
+      "title": "Reject malformed input, blank fields and invalid roles",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Please enter driver information in the format: ID, Name.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Driver ID and name cannot be empty.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Driver ID and name cannot be empty.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Invalid driver role. Please enter 1 or 2.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Invalid driver role for delivery van fleet.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Fleet name cannot be empty.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Fleet ID cannot be empty.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Fleet name cannot be empty.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Driver is added.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Invalid driver role. Please enter 1 or 2.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Invalid driver role for delivery van fleet.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet HARBOUR EXPRESS (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "exact history lists",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC24",
+      "title": "Failed mutations preserve redo",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Fleet ID V201 already exists!",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Driver D201 already exists in the current fleet!",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Invalid driver role for delivery van fleet.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Command (Change fleet name, V201, NEW NAME) is redone.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet NEW NAME (V201)\n\nVan Driver:\n\nD201, Casey Ho\n\nCourier Driver: NIL",
+          "pass": true
+        },
+        {
+          "description": "exact history lists",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "TC25",
+      "title": "Empty system commands and exit",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: No fleets available.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: No current fleet selected.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Nothing to undo.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Nothing to redo.",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Undo List\n-- End of undo list --\nRedo List\n-- End of redo list --",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Thank you for using SDFMS. System terminated.",
+          "pass": true
+        },
+        {
+          "description": "exact history lists",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": "SAMPLE",
+      "title": "Assignment sample run, all fifteen illustrated stages",
+      "pass": true,
+      "matches_report_evidence": true,
+      "returncode": 0,
+      "checks": [
+        {
+          "description": "process exits successfully",
+          "pass": true
+        },
+        {
+          "description": "exit printed once",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver:\n\nd001, Alex Chan\n\nCourier Driver:\n\nd002, Jamie Lee",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Refrigerated Truck Fleet FROST LINE (F102)\n\nRefrigerated-Truck Driver:\n\nd101, Morgan Wong\n\nCold-Chain Delivery Driver:\n\nd102, Taylor Lam",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan\n\nd002, Jamie Lee",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet METRO EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet CENTRAL EXPRESS (F001)\n\nVan Driver:\n\nd001, Alex Chan\n\nCourier Driver:\n\nd002, Jamie Lee",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Delivery Van Fleet METRO EXPRESS (F001)\n\nVan Driver: NIL\n\nCourier Driver:\n\nd001, Alex Chan",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Fleet F999 is not found!",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Driver d999 is not found in the current fleet!",
+          "pass": true
+        },
+        {
+          "description": "ordered output: Invalid command!",
+          "pass": true
+        },
+        {
+          "description": "count ' is undone.'",
+          "pass": true
+        },
+        {
+          "description": "count ' is redone.'",
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "state_tests": "RESULT: 9 state-test groups passed; 65 assertions passed.",
+  "report_sources": [
+    {
+      "name": "AddDriverCommand.java",
+      "matches_report": true
+    },
+    {
+      "name": "AddDriverCommandFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "BaseCommand.java",
+      "matches_report": true
+    },
+    {
+      "name": "ChangeNameCommand.java",
+      "matches_report": true
+    },
+    {
+      "name": "ChangeNameCommandFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "Command.java",
+      "matches_report": true
+    },
+    {
+      "name": "CommandExecutionException.java",
+      "matches_report": true
+    },
+    {
+      "name": "CommandFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "CommandFactoryRegistry.java",
+      "matches_report": true
+    },
+    {
+      "name": "CommandHistory.java",
+      "matches_report": true
+    },
+    {
+      "name": "CommandInvoker.java",
+      "matches_report": true
+    },
+    {
+      "name": "ConsoleInput.java",
+      "matches_report": true
+    },
+    {
+      "name": "CreateFleetCommand.java",
+      "matches_report": true
+    },
+    {
+      "name": "CreateFleetCommandFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "DeleteDriverCommand.java",
+      "matches_report": true
+    },
+    {
+      "name": "DeleteDriverCommandFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "DeliveryVanFleet.java",
+      "matches_report": true
+    },
+    {
+      "name": "DeliveryVanFleetFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "Driver.java",
+      "matches_report": true
+    },
+    {
+      "name": "DriverFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "DriverRoleMemento.java",
+      "matches_report": true
+    },
+    {
+      "name": "FleetFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "FleetFactoryRegistry.java",
+      "matches_report": true
+    },
+    {
+      "name": "FleetManager.java",
+      "matches_report": true
+    },
+    {
+      "name": "FleetNameMemento.java",
+      "matches_report": true
+    },
+    {
+      "name": "FleetUtil.java",
+      "matches_report": true
+    },
+    {
+      "name": "ListCommand.java",
+      "matches_report": true
+    },
+    {
+      "name": "ListCommandFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "Main.java",
+      "matches_report": true
+    },
+    {
+      "name": "Memento.java",
+      "matches_report": true
+    },
+    {
+      "name": "MementoCaretaker.java",
+      "matches_report": true
+    },
+    {
+      "name": "ModifyRoleCommand.java",
+      "matches_report": true
+    },
+    {
+      "name": "ModifyRoleCommandFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "RedoCommand.java",
+      "matches_report": true
+    },
+    {
+      "name": "RedoCommandFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "RefrigeratedTruckFleet.java",
+      "matches_report": true
+    },
+    {
+      "name": "RefrigeratedTruckFleetFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "SetCurrentFleetCommand.java",
+      "matches_report": true
+    },
+    {
+      "name": "SetCurrentFleetCommandFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "ShowAllFleetsCommand.java",
+      "matches_report": true
+    },
+    {
+      "name": "ShowAllFleetsCommandFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "ShowFleetCommand.java",
+      "matches_report": true
+    },
+    {
+      "name": "ShowFleetCommandFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "UndoCommand.java",
+      "matches_report": true
+    },
+    {
+      "name": "UndoCommandFactory.java",
+      "matches_report": true
+    },
+    {
+      "name": "UndoableCommand.java",
+      "matches_report": true
+    },
+    {
+      "name": "VehicleFleet.java",
+      "matches_report": true
+    }
+  ],
+  "report_inputs": [
+    {
+      "id": "TC01",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC02",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC03",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC04",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC05",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC06",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC07",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC08",
+      "input_matches": true,
+      "result_figures": 2
+    },
+    {
+      "id": "TC09",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC10",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC11",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC12",
+      "input_matches": true,
+      "result_figures": 2
+    },
+    {
+      "id": "TC13",
+      "input_matches": true,
+      "result_figures": 2
+    },
+    {
+      "id": "TC14",
+      "input_matches": true,
+      "result_figures": 2
+    },
+    {
+      "id": "TC15",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC16",
+      "input_matches": true,
+      "result_figures": 2
+    },
+    {
+      "id": "TC17",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC18",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC19",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC20",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC21",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC22",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC23",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC24",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "TC25",
+      "input_matches": true,
+      "result_figures": 1
+    },
+    {
+      "id": "SAMPLE",
+      "input_matches": true,
+      "result_figures": 3
+    }
+  ],
+  "protected_sources_unchanged": {
+    "VehicleFleet.java": true,
+    "Driver.java": true,
+    "DeliveryVanFleet.java": true,
+    "RefrigeratedTruckFleet.java": true
+  }
+}

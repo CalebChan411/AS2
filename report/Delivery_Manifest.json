@@ -89,5 +89,17 @@
     ]
   },
   "part3_inserted_code_figures": 12,
-  "part3_screenshot_collection": "report/part3-code-screenshots/Part3_Code_Screenshots.docx"
+  "part3_screenshot_collection": "report/part3-code-screenshots/Part3_Code_Screenshots.docx",
+  "final_student_submission_review": {
+    "path": "report/final-review",
+    "source_files_unchanged": 47,
+    "scenarios_passed": 26,
+    "output_assertions_passed": 166,
+    "state_assertions_passed": 65,
+    "cover_filled": true,
+    "part2_portrait_diagram_inserted": true,
+    "run_bat_added_to_named_zip": true,
+    "diagram_notation_changes_pending": true,
+    "notes": "report/final-review/Final_Review_ZH.md"
+  }
 }

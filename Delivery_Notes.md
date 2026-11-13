@@ -1,5 +1,13 @@
 # SDFMS report delivery
 
+## Latest student submission review
+
+The current student-uploaded Word report and source ZIP were reviewed against the assignment on 2026-11-13. Download the revised named files from `report/final-review/`; see `report/final-review/Final_Review_ZH.md` for verified results and remaining diagram notation changes. The named ZIP now includes the required run.bat and the test input/output records referenced by the report. The 47 Java sources are unchanged. Cover details and the student's portrait Part 2 diagram are already present in this reviewed report.
+
+The earlier canonical report/template and combined bundles below are retained as historical artifacts; use the named files in `report/final-review/` for this final review.
+
+---
+
 Code: main commit `bf10becbdceb873e77c5c36b0c8d59d5cebaed4b` (47 Java files).
 
 The report branch contains the same application source plus the report and submission artifacts. The report has been restructured to match the requested five Parts:
